@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6C192E73CE003681BE /* Foundation.framework */; };
+		27C79C6F192E73CE003681BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6E192E73CE003681BE /* CoreGraphics.framework */; };
+		27C79C71192E73CE003681BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C70192E73CE003681BE /* UIKit.framework */; };
+		27C79C77192E73CE003681BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27C79C75192E73CE003681BE /* InfoPlist.strings */; };
+		27C79C79192E73CE003681BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79C78192E73CE003681BE /* main.m */; };
+		27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79C7C192E73CE003681BE /* BrinDemoAppDelegate.m */; };
+		27C79C80192E73CE003681BE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C79C7E192E73CE003681BE /* Main_iPhone.storyboard */; };
+		27C79C83192E73CE003681BE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C79C81192E73CE003681BE /* Main_iPad.storyboard */; };
+		27C79C86192E73CE003681BE /* BrinDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79C85192E73CE003681BE /* BrinDemoViewController.m */; };
+		27C79C88192E73CE003681BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C79C87192E73CE003681BE /* Images.xcassets */; };
+		27C79C8F192E73CE003681BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C8E192E73CE003681BE /* XCTest.framework */; };
+		27C79C90192E73CE003681BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6C192E73CE003681BE /* Foundation.framework */; };
+		27C79C91192E73CE003681BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C70192E73CE003681BE /* UIKit.framework */; };
+		27C79C99192E73CE003681BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27C79C97192E73CE003681BE /* InfoPlist.strings */; };
+		27C79C9B192E73CE003681BE /* BrintDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79C9A192E73CE003681BE /* BrintDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27C79C92192E73CE003681BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C79C61192E73CE003681BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27C79C68192E73CE003681BE;
+			remoteInfo = BrintDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27C79C69192E73CE003681BE /* BrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C79C6C192E73CE003681BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27C79C6E192E73CE003681BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27C79C70192E73CE003681BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27C79C74192E73CE003681BE /* BrintDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrintDemo-Info.plist"; sourceTree = "<group>"; };
+		27C79C76192E73CE003681BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27C79C78192E73CE003681BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27C79C7A192E73CE003681BE /* BrintDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrintDemo-Prefix.pch"; sourceTree = "<group>"; };
+		27C79C7B192E73CE003681BE /* BrinDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrinDemoAppDelegate.h; sourceTree = "<group>"; };
+		27C79C7C192E73CE003681BE /* BrinDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrinDemoAppDelegate.m; sourceTree = "<group>"; };
+		27C79C7F192E73CE003681BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		27C79C82192E73CE003681BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		27C79C84192E73CE003681BE /* BrinDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrinDemoViewController.h; sourceTree = "<group>"; };
+		27C79C85192E73CE003681BE /* BrinDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrinDemoViewController.m; sourceTree = "<group>"; };
+		27C79C87192E73CE003681BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27C79C8D192E73CE003681BE /* BrintDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrintDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C79C8E192E73CE003681BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		27C79C96192E73CE003681BE /* BrintDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrintDemoTests-Info.plist"; sourceTree = "<group>"; };
+		27C79C98192E73CE003681BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27C79C9A192E73CE003681BE /* BrintDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrintDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27C79C66192E73CE003681BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C79C6F192E73CE003681BE /* CoreGraphics.framework in Frameworks */,
+				27C79C71192E73CE003681BE /* UIKit.framework in Frameworks */,
+				27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C79C8A192E73CE003681BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C79C8F192E73CE003681BE /* XCTest.framework in Frameworks */,
+				27C79C91192E73CE003681BE /* UIKit.framework in Frameworks */,
+				27C79C90192E73CE003681BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27C79C60192E73CE003681BE = {
+			isa = PBXGroup;
+			children = (
+				27C79C72192E73CE003681BE /* BrintDemo */,
+				27C79C94192E73CE003681BE /* BrintDemoTests */,
+				27C79C6B192E73CE003681BE /* Frameworks */,
+				27C79C6A192E73CE003681BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27C79C6A192E73CE003681BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27C79C69192E73CE003681BE /* BrintDemo.app */,
+				27C79C8D192E73CE003681BE /* BrintDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27C79C6B192E73CE003681BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27C79C6C192E73CE003681BE /* Foundation.framework */,
+				27C79C6E192E73CE003681BE /* CoreGraphics.framework */,
+				27C79C70192E73CE003681BE /* UIKit.framework */,
+				27C79C8E192E73CE003681BE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27C79C72192E73CE003681BE /* BrintDemo */ = {
+			isa = PBXGroup;
+			children = (
+				27C79C7B192E73CE003681BE /* BrinDemoAppDelegate.h */,
+				27C79C7C192E73CE003681BE /* BrinDemoAppDelegate.m */,
+				27C79C7E192E73CE003681BE /* Main_iPhone.storyboard */,
+				27C79C81192E73CE003681BE /* Main_iPad.storyboard */,
+				27C79C84192E73CE003681BE /* BrinDemoViewController.h */,
+				27C79C85192E73CE003681BE /* BrinDemoViewController.m */,
+				27C79C87192E73CE003681BE /* Images.xcassets */,
+				27C79C73192E73CE003681BE /* Supporting Files */,
+			);
+			path = BrintDemo;
+			sourceTree = "<group>";
+		};
+		27C79C73192E73CE003681BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27C79C74192E73CE003681BE /* BrintDemo-Info.plist */,
+				27C79C75192E73CE003681BE /* InfoPlist.strings */,
+				27C79C78192E73CE003681BE /* main.m */,
+				27C79C7A192E73CE003681BE /* BrintDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27C79C94192E73CE003681BE /* BrintDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				27C79C9A192E73CE003681BE /* BrintDemoTests.m */,
+				27C79C95192E73CE003681BE /* Supporting Files */,
+			);
+			path = BrintDemoTests;
+			sourceTree = "<group>";
+		};
+		27C79C95192E73CE003681BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27C79C96192E73CE003681BE /* BrintDemoTests-Info.plist */,
+				27C79C97192E73CE003681BE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27C79C68192E73CE003681BE /* BrintDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C79C9E192E73CE003681BE /* Build configuration list for PBXNativeTarget "BrintDemo" */;
+			buildPhases = (
+				27C79C65192E73CE003681BE /* Sources */,
+				27C79C66192E73CE003681BE /* Frameworks */,
+				27C79C67192E73CE003681BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrintDemo;
+			productName = BrintDemo;
+			productReference = 27C79C69192E73CE003681BE /* BrintDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27C79C8C192E73CE003681BE /* BrintDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C79CA1192E73CE003681BE /* Build configuration list for PBXNativeTarget "BrintDemoTests" */;
+			buildPhases = (
+				27C79C89192E73CE003681BE /* Sources */,
+				27C79C8A192E73CE003681BE /* Frameworks */,
+				27C79C8B192E73CE003681BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27C79C93192E73CE003681BE /* PBXTargetDependency */,
+			);
+			name = BrintDemoTests;
+			productName = BrintDemoTests;
+			productReference = 27C79C8D192E73CE003681BE /* BrintDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27C79C61192E73CE003681BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BrinDemo;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Pradeep;
+				TargetAttributes = {
+					27C79C8C192E73CE003681BE = {
+						TestTargetID = 27C79C68192E73CE003681BE;
+					};
+				};
+			};
+			buildConfigurationList = 27C79C64192E73CE003681BE /* Build configuration list for PBXProject "BrintDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27C79C60192E73CE003681BE;
+			productRefGroup = 27C79C6A192E73CE003681BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27C79C68192E73CE003681BE /* BrintDemo */,
+				27C79C8C192E73CE003681BE /* BrintDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27C79C67192E73CE003681BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C79C83192E73CE003681BE /* Main_iPad.storyboard in Resources */,
+				27C79C88192E73CE003681BE /* Images.xcassets in Resources */,
+				27C79C80192E73CE003681BE /* Main_iPhone.storyboard in Resources */,
+				27C79C77192E73CE003681BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C79C8B192E73CE003681BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C79C99192E73CE003681BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27C79C65192E73CE003681BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C79C86192E73CE003681BE /* BrinDemoViewController.m in Sources */,
+				27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */,
+				27C79C79192E73CE003681BE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C79C89192E73CE003681BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C79C9B192E73CE003681BE /* BrintDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27C79C93192E73CE003681BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27C79C68192E73CE003681BE /* BrintDemo */;
+			targetProxy = 27C79C92192E73CE003681BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27C79C75192E73CE003681BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27C79C76192E73CE003681BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27C79C7E192E73CE003681BE /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27C79C7F192E73CE003681BE /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		27C79C81192E73CE003681BE /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27C79C82192E73CE003681BE /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		27C79C97192E73CE003681BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27C79C98192E73CE003681BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27C79C9C192E73CE003681BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27C79C9D192E73CE003681BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27C79C9F192E73CE003681BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrintDemo/BrintDemo-Prefix.pch";
+				INFOPLIST_FILE = "BrintDemo/BrintDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27C79CA0192E73CE003681BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrintDemo/BrintDemo-Prefix.pch";
+				INFOPLIST_FILE = "BrintDemo/BrintDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		27C79CA2192E73CE003681BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrintDemo.app/BrintDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrintDemo/BrintDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BrintDemoTests/BrintDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		27C79CA3192E73CE003681BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrintDemo.app/BrintDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrintDemo/BrintDemo-Prefix.pch";
+				INFOPLIST_FILE = "BrintDemoTests/BrintDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27C79C64192E73CE003681BE /* Build configuration list for PBXProject "BrintDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C79C9C192E73CE003681BE /* Debug */,
+				27C79C9D192E73CE003681BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27C79C9E192E73CE003681BE /* Build configuration list for PBXNativeTarget "BrintDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C79C9F192E73CE003681BE /* Debug */,
+				27C79CA0192E73CE003681BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27C79CA1192E73CE003681BE /* Build configuration list for PBXNativeTarget "BrintDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C79CA2192E73CE003681BE /* Debug */,
+				27C79CA3192E73CE003681BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27C79C61192E73CE003681BE /* Project object */;
+}
