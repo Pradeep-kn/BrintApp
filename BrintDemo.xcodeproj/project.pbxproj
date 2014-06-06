@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2782592A193F9463000F944A /* mod.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825928193F9463000F944A /* mod.png */; };
+		2782592B193F9463000F944A /* mod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825929193F9463000F944A /* mod@2x.png */; };
+		2782592E193F9686000F944A /* model2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2782592C193F9686000F944A /* model2.png */; };
+		2782592F193F9686000F944A /* model2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2782592D193F9686000F944A /* model2@2x.png */; };
+		278739E61940E7AB00973989 /* BrinDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278739E51940E7AB00973989 /* BrinDemoHomeViewController.m */; };
+		278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278739E81940E7D100973989 /* BrinDemoGoldSplitViewController.m */; };
+		278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278739F21940E95D00973989 /* BrinDemoDiamondSplitViewController.m */; };
+		278739F61940E96D00973989 /* BrinDemoPlatinumSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278739F51940E96D00973989 /* BrinDemoPlatinumSplitViewController.m */; };
+		278739F91940E98100973989 /* BrinDemoSilverSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278739F81940E98100973989 /* BrinDemoSilverSplitViewController.m */; };
+		278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278739FE1940E9CE00973989 /* BrinDemoGoldMasterViewController.m */; };
+		27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A011940E9DC00973989 /* BrinDemoGoldDetailViewController.m */; };
+		27873A051940E9F100973989 /* BrinDemoDiamondMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A041940E9F100973989 /* BrinDemoDiamondMasterViewController.m */; };
+		27873A081940EA1100973989 /* BrinDemoPlatinumMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A071940EA1100973989 /* BrinDemoPlatinumMasterViewController.m */; };
+		27873A0B1940EA3300973989 /* BrinDemoSilverMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A0A1940EA3300973989 /* BrinDemoSilverMasterViewController.m */; };
+		27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A0D1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m */; };
+		27873A111940ED3300973989 /* BrinDemoPlatinumDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A101940ED3300973989 /* BrinDemoPlatinumDetailViewController.m */; };
+		27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A131940ED4A00973989 /* BrinDemoSilverDetailViewController.m */; };
+		27873A161940F33500973989 /* goldFrontView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27873A151940F33500973989 /* goldFrontView.gif */; };
+		27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A181940F78800973989 /* UIImage+animatedGIF.m */; };
+		27873A1C19410BA500973989 /* g20.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1A19410BA500973989 /* g20.png */; };
+		27873A1D19410BA500973989 /* g20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1B19410BA500973989 /* g20@2x.png */; };
 		27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6C192E73CE003681BE /* Foundation.framework */; };
 		27C79C6F192E73CE003681BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6E192E73CE003681BE /* CoreGraphics.framework */; };
 		27C79C71192E73CE003681BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C70192E73CE003681BE /* UIKit.framework */; };
@@ -22,6 +43,32 @@
 		27C79C91192E73CE003681BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C70192E73CE003681BE /* UIKit.framework */; };
 		27C79C99192E73CE003681BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27C79C97192E73CE003681BE /* InfoPlist.strings */; };
 		27C79C9B192E73CE003681BE /* BrintDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79C9A192E73CE003681BE /* BrintDemoTests.m */; };
+		27C79CAE192E7AB9003681BE /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CAC192E7AB9003681BE /* Bg.png */; };
+		27C79CAF192E7AB9003681BE /* Bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CAD192E7AB9003681BE /* Bg@2x.png */; };
+		27C79CB2192E820F003681BE /* ClickHere.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CB0192E820F003681BE /* ClickHere.png */; };
+		27C79CB3192E820F003681BE /* ClickHere@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CB1192E820F003681BE /* ClickHere@2x.png */; };
+		27C79CB6192E8710003681BE /* gold-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CB4192E8710003681BE /* gold-btn@2x.png */; };
+		27C79CB7192E8710003681BE /* gold-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CB5192E8710003681BE /* gold-btn.png */; };
+		27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79CB9192E8ACA003681BE /* BrinDemoLoginViewController.m */; };
+		27C79CD4192FDF4C003681BE /* j1.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC2192FDF4C003681BE /* j1.png */; };
+		27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC3192FDF4C003681BE /* j1@2x.png */; };
+		27C79CD6192FDF4C003681BE /* j2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC4192FDF4C003681BE /* j2.png */; };
+		27C79CD7192FDF4C003681BE /* j2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC5192FDF4C003681BE /* j2@2x.png */; };
+		27C79CD8192FDF4C003681BE /* j3.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC6192FDF4C003681BE /* j3.png */; };
+		27C79CD9192FDF4C003681BE /* j3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC7192FDF4C003681BE /* j3@2x.png */; };
+		27C79CDA192FDF4C003681BE /* j4.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC8192FDF4C003681BE /* j4.png */; };
+		27C79CDB192FDF4C003681BE /* j4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC9192FDF4C003681BE /* j4@2x.png */; };
+		27C79CDC192FDF4C003681BE /* j5.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CCA192FDF4C003681BE /* j5.png */; };
+		27C79CDD192FDF4C003681BE /* j5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CCB192FDF4C003681BE /* j5@2x.png */; };
+		27C79CDE192FDF4C003681BE /* j6.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CCC192FDF4C003681BE /* j6.png */; };
+		27C79CDF192FDF4C003681BE /* j6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CCD192FDF4C003681BE /* j6@2x.png */; };
+		27C79CE0192FDF4C003681BE /* j7.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CCE192FDF4C003681BE /* j7.png */; };
+		27C79CE1192FDF4C003681BE /* j7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CCF192FDF4C003681BE /* j7@2x.png */; };
+		27C79CE2192FDF4C003681BE /* j8.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CD0192FDF4C003681BE /* j8.png */; };
+		27C79CE3192FDF4C003681BE /* j8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CD1192FDF4C003681BE /* j8@2x.png */; };
+		27C79CE4192FDF4C003681BE /* j9.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CD2192FDF4C003681BE /* j9.png */; };
+		27C79CE5192FDF4C003681BE /* j9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CD3192FDF4C003681BE /* j9@2x.png */; };
+		27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79CF0192FF87B003681BE /* BrinDemoSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +82,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27825928193F9463000F944A /* mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mod.png; sourceTree = "<group>"; };
+		27825929193F9463000F944A /* mod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mod@2x.png"; sourceTree = "<group>"; };
+		2782592C193F9686000F944A /* model2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model2.png; sourceTree = "<group>"; };
+		2782592D193F9686000F944A /* model2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "model2@2x.png"; sourceTree = "<group>"; };
+		278739E41940E7AB00973989 /* BrinDemoHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoHomeViewController.h; sourceTree = "<group>"; };
+		278739E51940E7AB00973989 /* BrinDemoHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoHomeViewController.m; sourceTree = "<group>"; };
+		278739E71940E7D100973989 /* BrinDemoGoldSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoGoldSplitViewController.h; sourceTree = "<group>"; };
+		278739E81940E7D100973989 /* BrinDemoGoldSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoGoldSplitViewController.m; sourceTree = "<group>"; };
+		278739F11940E95D00973989 /* BrinDemoDiamondSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoDiamondSplitViewController.h; sourceTree = "<group>"; };
+		278739F21940E95D00973989 /* BrinDemoDiamondSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoDiamondSplitViewController.m; sourceTree = "<group>"; };
+		278739F41940E96D00973989 /* BrinDemoPlatinumSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoPlatinumSplitViewController.h; sourceTree = "<group>"; };
+		278739F51940E96D00973989 /* BrinDemoPlatinumSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoPlatinumSplitViewController.m; sourceTree = "<group>"; };
+		278739F71940E98100973989 /* BrinDemoSilverSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoSilverSplitViewController.h; sourceTree = "<group>"; };
+		278739F81940E98100973989 /* BrinDemoSilverSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoSilverSplitViewController.m; sourceTree = "<group>"; };
+		278739FD1940E9CE00973989 /* BrinDemoGoldMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoGoldMasterViewController.h; sourceTree = "<group>"; };
+		278739FE1940E9CE00973989 /* BrinDemoGoldMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoGoldMasterViewController.m; sourceTree = "<group>"; };
+		27873A001940E9DC00973989 /* BrinDemoGoldDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoGoldDetailViewController.h; sourceTree = "<group>"; };
+		27873A011940E9DC00973989 /* BrinDemoGoldDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoGoldDetailViewController.m; sourceTree = "<group>"; };
+		27873A031940E9F100973989 /* BrinDemoDiamondMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoDiamondMasterViewController.h; sourceTree = "<group>"; };
+		27873A041940E9F100973989 /* BrinDemoDiamondMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoDiamondMasterViewController.m; sourceTree = "<group>"; };
+		27873A061940EA1100973989 /* BrinDemoPlatinumMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoPlatinumMasterViewController.h; sourceTree = "<group>"; };
+		27873A071940EA1100973989 /* BrinDemoPlatinumMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoPlatinumMasterViewController.m; sourceTree = "<group>"; };
+		27873A091940EA3300973989 /* BrinDemoSilverMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoSilverMasterViewController.h; sourceTree = "<group>"; };
+		27873A0A1940EA3300973989 /* BrinDemoSilverMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoSilverMasterViewController.m; sourceTree = "<group>"; };
+		27873A0C1940ED0E00973989 /* BrinDemoDiamondDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoDiamondDetailViewController.h; sourceTree = "<group>"; };
+		27873A0D1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoDiamondDetailViewController.m; sourceTree = "<group>"; };
+		27873A0F1940ED3300973989 /* BrinDemoPlatinumDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoPlatinumDetailViewController.h; sourceTree = "<group>"; };
+		27873A101940ED3300973989 /* BrinDemoPlatinumDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoPlatinumDetailViewController.m; sourceTree = "<group>"; };
+		27873A121940ED4A00973989 /* BrinDemoSilverDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoSilverDetailViewController.h; sourceTree = "<group>"; };
+		27873A131940ED4A00973989 /* BrinDemoSilverDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoSilverDetailViewController.m; sourceTree = "<group>"; };
+		27873A151940F33500973989 /* goldFrontView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = goldFrontView.gif; sourceTree = "<group>"; };
+		27873A171940F78800973989 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		27873A181940F78800973989 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		27873A1A19410BA500973989 /* g20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g20.png; sourceTree = "<group>"; };
+		27873A1B19410BA500973989 /* g20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g20@2x.png"; sourceTree = "<group>"; };
 		27C79C69192E73CE003681BE /* BrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C79C6C192E73CE003681BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27C79C6E192E73CE003681BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +137,34 @@
 		27C79C96192E73CE003681BE /* BrintDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrintDemoTests-Info.plist"; sourceTree = "<group>"; };
 		27C79C98192E73CE003681BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27C79C9A192E73CE003681BE /* BrintDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrintDemoTests.m; sourceTree = "<group>"; };
+		27C79CAC192E7AB9003681BE /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
+		27C79CAD192E7AB9003681BE /* Bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bg@2x.png"; sourceTree = "<group>"; };
+		27C79CB0192E820F003681BE /* ClickHere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClickHere.png; sourceTree = "<group>"; };
+		27C79CB1192E820F003681BE /* ClickHere@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClickHere@2x.png"; sourceTree = "<group>"; };
+		27C79CB4192E8710003681BE /* gold-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-btn@2x.png"; sourceTree = "<group>"; };
+		27C79CB5192E8710003681BE /* gold-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-btn.png"; sourceTree = "<group>"; };
+		27C79CB8192E8ACA003681BE /* BrinDemoLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoLoginViewController.h; sourceTree = "<group>"; };
+		27C79CB9192E8ACA003681BE /* BrinDemoLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoLoginViewController.m; sourceTree = "<group>"; };
+		27C79CC2192FDF4C003681BE /* j1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j1.png; sourceTree = "<group>"; };
+		27C79CC3192FDF4C003681BE /* j1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j1@2x.png"; sourceTree = "<group>"; };
+		27C79CC4192FDF4C003681BE /* j2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j2.png; sourceTree = "<group>"; };
+		27C79CC5192FDF4C003681BE /* j2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j2@2x.png"; sourceTree = "<group>"; };
+		27C79CC6192FDF4C003681BE /* j3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j3.png; sourceTree = "<group>"; };
+		27C79CC7192FDF4C003681BE /* j3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j3@2x.png"; sourceTree = "<group>"; };
+		27C79CC8192FDF4C003681BE /* j4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j4.png; sourceTree = "<group>"; };
+		27C79CC9192FDF4C003681BE /* j4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j4@2x.png"; sourceTree = "<group>"; };
+		27C79CCA192FDF4C003681BE /* j5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j5.png; sourceTree = "<group>"; };
+		27C79CCB192FDF4C003681BE /* j5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j5@2x.png"; sourceTree = "<group>"; };
+		27C79CCC192FDF4C003681BE /* j6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j6.png; sourceTree = "<group>"; };
+		27C79CCD192FDF4C003681BE /* j6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j6@2x.png"; sourceTree = "<group>"; };
+		27C79CCE192FDF4C003681BE /* j7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j7.png; sourceTree = "<group>"; };
+		27C79CCF192FDF4C003681BE /* j7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j7@2x.png"; sourceTree = "<group>"; };
+		27C79CD0192FDF4C003681BE /* j8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j8.png; sourceTree = "<group>"; };
+		27C79CD1192FDF4C003681BE /* j8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j8@2x.png"; sourceTree = "<group>"; };
+		27C79CD2192FDF4C003681BE /* j9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j9.png; sourceTree = "<group>"; };
+		27C79CD3192FDF4C003681BE /* j9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j9@2x.png"; sourceTree = "<group>"; };
+		27C79CEF192FF87B003681BE /* BrinDemoSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoSettingsViewController.h; sourceTree = "<group>"; };
+		27C79CF0192FF87B003681BE /* BrinDemoSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +191,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		278739E11940E73900973989 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				278739EF1940E82E00973989 /* Login */,
+				278739EB1940E7EE00973989 /* Home */,
+				278739EA1940E7DE00973989 /* Gold */,
+				278739EC1940E7FA00973989 /* Diamond */,
+				278739ED1940E80A00973989 /* Platinum */,
+				278739EE1940E81D00973989 /* Silver */,
+				278739F01940E91A00973989 /* Settings */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		278739E21940E75900973989 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				27C79C7B192E73CE003681BE /* BrinDemoAppDelegate.h */,
+				27C79C7C192E73CE003681BE /* BrinDemoAppDelegate.m */,
+				27C79C84192E73CE003681BE /* BrinDemoViewController.h */,
+				27C79C85192E73CE003681BE /* BrinDemoViewController.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		278739E31940E76A00973989 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				27C79C7E192E73CE003681BE /* Main_iPhone.storyboard */,
+				27C79C81192E73CE003681BE /* Main_iPad.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		278739EA1940E7DE00973989 /* Gold */ = {
+			isa = PBXGroup;
+			children = (
+				278739E71940E7D100973989 /* BrinDemoGoldSplitViewController.h */,
+				278739E81940E7D100973989 /* BrinDemoGoldSplitViewController.m */,
+				278739FD1940E9CE00973989 /* BrinDemoGoldMasterViewController.h */,
+				278739FE1940E9CE00973989 /* BrinDemoGoldMasterViewController.m */,
+				27873A001940E9DC00973989 /* BrinDemoGoldDetailViewController.h */,
+				27873A011940E9DC00973989 /* BrinDemoGoldDetailViewController.m */,
+			);
+			name = Gold;
+			sourceTree = "<group>";
+		};
+		278739EB1940E7EE00973989 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				278739E41940E7AB00973989 /* BrinDemoHomeViewController.h */,
+				278739E51940E7AB00973989 /* BrinDemoHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		278739EC1940E7FA00973989 /* Diamond */ = {
+			isa = PBXGroup;
+			children = (
+				278739F11940E95D00973989 /* BrinDemoDiamondSplitViewController.h */,
+				278739F21940E95D00973989 /* BrinDemoDiamondSplitViewController.m */,
+				27873A031940E9F100973989 /* BrinDemoDiamondMasterViewController.h */,
+				27873A041940E9F100973989 /* BrinDemoDiamondMasterViewController.m */,
+				27873A0C1940ED0E00973989 /* BrinDemoDiamondDetailViewController.h */,
+				27873A0D1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m */,
+			);
+			name = Diamond;
+			sourceTree = "<group>";
+		};
+		278739ED1940E80A00973989 /* Platinum */ = {
+			isa = PBXGroup;
+			children = (
+				278739F41940E96D00973989 /* BrinDemoPlatinumSplitViewController.h */,
+				278739F51940E96D00973989 /* BrinDemoPlatinumSplitViewController.m */,
+				27873A061940EA1100973989 /* BrinDemoPlatinumMasterViewController.h */,
+				27873A071940EA1100973989 /* BrinDemoPlatinumMasterViewController.m */,
+				27873A0F1940ED3300973989 /* BrinDemoPlatinumDetailViewController.h */,
+				27873A101940ED3300973989 /* BrinDemoPlatinumDetailViewController.m */,
+			);
+			name = Platinum;
+			sourceTree = "<group>";
+		};
+		278739EE1940E81D00973989 /* Silver */ = {
+			isa = PBXGroup;
+			children = (
+				278739F71940E98100973989 /* BrinDemoSilverSplitViewController.h */,
+				278739F81940E98100973989 /* BrinDemoSilverSplitViewController.m */,
+				27873A091940EA3300973989 /* BrinDemoSilverMasterViewController.h */,
+				27873A0A1940EA3300973989 /* BrinDemoSilverMasterViewController.m */,
+				27873A121940ED4A00973989 /* BrinDemoSilverDetailViewController.h */,
+				27873A131940ED4A00973989 /* BrinDemoSilverDetailViewController.m */,
+				27873A171940F78800973989 /* UIImage+animatedGIF.h */,
+				27873A181940F78800973989 /* UIImage+animatedGIF.m */,
+			);
+			name = Silver;
+			sourceTree = "<group>";
+		};
+		278739EF1940E82E00973989 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				27C79CB8192E8ACA003681BE /* BrinDemoLoginViewController.h */,
+				27C79CB9192E8ACA003681BE /* BrinDemoLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		278739F01940E91A00973989 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				27C79CEF192FF87B003681BE /* BrinDemoSettingsViewController.h */,
+				27C79CF0192FF87B003681BE /* BrinDemoSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		27C79C60192E73CE003681BE = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +339,9 @@
 		27C79C72192E73CE003681BE /* BrintDemo */ = {
 			isa = PBXGroup;
 			children = (
-				27C79C7B192E73CE003681BE /* BrinDemoAppDelegate.h */,
-				27C79C7C192E73CE003681BE /* BrinDemoAppDelegate.m */,
-				27C79C7E192E73CE003681BE /* Main_iPhone.storyboard */,
-				27C79C81192E73CE003681BE /* Main_iPad.storyboard */,
-				27C79C84192E73CE003681BE /* BrinDemoViewController.h */,
-				27C79C85192E73CE003681BE /* BrinDemoViewController.m */,
+				278739E21940E75900973989 /* AppDelegate */,
+				278739E31940E76A00973989 /* StoryBoards */,
+				278739E11940E73900973989 /* ViewControllers */,
 				27C79C87192E73CE003681BE /* Images.xcassets */,
 				27C79C73192E73CE003681BE /* Supporting Files */,
 			);
@@ -129,6 +351,7 @@
 		27C79C73192E73CE003681BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27C79CAB192E7AB9003681BE /* Resources */,
 				27C79C74192E73CE003681BE /* BrintDemo-Info.plist */,
 				27C79C75192E73CE003681BE /* InfoPlist.strings */,
 				27C79C78192E73CE003681BE /* main.m */,
@@ -153,6 +376,52 @@
 				27C79C97192E73CE003681BE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27C79CAB192E7AB9003681BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27C79CC1192FDF4C003681BE /* Jewlelleries */,
+				27C79CAC192E7AB9003681BE /* Bg.png */,
+				27C79CAD192E7AB9003681BE /* Bg@2x.png */,
+				27C79CB0192E820F003681BE /* ClickHere.png */,
+				27C79CB1192E820F003681BE /* ClickHere@2x.png */,
+				27C79CB4192E8710003681BE /* gold-btn@2x.png */,
+				27C79CB5192E8710003681BE /* gold-btn.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27C79CC1192FDF4C003681BE /* Jewlelleries */ = {
+			isa = PBXGroup;
+			children = (
+				27873A1A19410BA500973989 /* g20.png */,
+				27873A1B19410BA500973989 /* g20@2x.png */,
+				27873A151940F33500973989 /* goldFrontView.gif */,
+				2782592C193F9686000F944A /* model2.png */,
+				2782592D193F9686000F944A /* model2@2x.png */,
+				27825928193F9463000F944A /* mod.png */,
+				27825929193F9463000F944A /* mod@2x.png */,
+				27C79CC2192FDF4C003681BE /* j1.png */,
+				27C79CC3192FDF4C003681BE /* j1@2x.png */,
+				27C79CC4192FDF4C003681BE /* j2.png */,
+				27C79CC5192FDF4C003681BE /* j2@2x.png */,
+				27C79CC6192FDF4C003681BE /* j3.png */,
+				27C79CC7192FDF4C003681BE /* j3@2x.png */,
+				27C79CC8192FDF4C003681BE /* j4.png */,
+				27C79CC9192FDF4C003681BE /* j4@2x.png */,
+				27C79CCA192FDF4C003681BE /* j5.png */,
+				27C79CCB192FDF4C003681BE /* j5@2x.png */,
+				27C79CCC192FDF4C003681BE /* j6.png */,
+				27C79CCD192FDF4C003681BE /* j6@2x.png */,
+				27C79CCE192FDF4C003681BE /* j7.png */,
+				27C79CCF192FDF4C003681BE /* j7@2x.png */,
+				27C79CD0192FDF4C003681BE /* j8.png */,
+				27C79CD1192FDF4C003681BE /* j8@2x.png */,
+				27C79CD2192FDF4C003681BE /* j9.png */,
+				27C79CD3192FDF4C003681BE /* j9@2x.png */,
+			);
+			path = Jewlelleries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +501,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27873A1D19410BA500973989 /* g20@2x.png in Resources */,
+				27C79CD6192FDF4C003681BE /* j2.png in Resources */,
+				27C79CAE192E7AB9003681BE /* Bg.png in Resources */,
+				27C79CDB192FDF4C003681BE /* j4@2x.png in Resources */,
+				27C79CAF192E7AB9003681BE /* Bg@2x.png in Resources */,
+				27C79CB6192E8710003681BE /* gold-btn@2x.png in Resources */,
+				27C79CE2192FDF4C003681BE /* j8.png in Resources */,
+				27C79CDD192FDF4C003681BE /* j5@2x.png in Resources */,
+				2782592B193F9463000F944A /* mod@2x.png in Resources */,
 				27C79C83192E73CE003681BE /* Main_iPad.storyboard in Resources */,
+				2782592E193F9686000F944A /* model2.png in Resources */,
+				27C79CDC192FDF4C003681BE /* j5.png in Resources */,
+				27C79CB7192E8710003681BE /* gold-btn.png in Resources */,
+				27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */,
+				2782592F193F9686000F944A /* model2@2x.png in Resources */,
+				27C79CDE192FDF4C003681BE /* j6.png in Resources */,
+				27C79CE1192FDF4C003681BE /* j7@2x.png in Resources */,
 				27C79C88192E73CE003681BE /* Images.xcassets in Resources */,
+				27C79CB2192E820F003681BE /* ClickHere.png in Resources */,
+				27C79CE0192FDF4C003681BE /* j7.png in Resources */,
+				27C79CE4192FDF4C003681BE /* j9.png in Resources */,
+				27C79CE5192FDF4C003681BE /* j9@2x.png in Resources */,
 				27C79C80192E73CE003681BE /* Main_iPhone.storyboard in Resources */,
+				27C79CDA192FDF4C003681BE /* j4.png in Resources */,
+				27C79CD8192FDF4C003681BE /* j3.png in Resources */,
 				27C79C77192E73CE003681BE /* InfoPlist.strings in Resources */,
+				27C79CD4192FDF4C003681BE /* j1.png in Resources */,
+				27C79CDF192FDF4C003681BE /* j6@2x.png in Resources */,
+				27C79CE3192FDF4C003681BE /* j8@2x.png in Resources */,
+				27C79CD7192FDF4C003681BE /* j2@2x.png in Resources */,
+				27873A1C19410BA500973989 /* g20.png in Resources */,
+				27C79CB3192E820F003681BE /* ClickHere@2x.png in Resources */,
+				27C79CD9192FDF4C003681BE /* j3@2x.png in Resources */,
+				2782592A193F9463000F944A /* mod.png in Resources */,
+				27873A161940F33500973989 /* goldFrontView.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +554,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278739F91940E98100973989 /* BrinDemoSilverSplitViewController.m in Sources */,
+				27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */,
+				27873A051940E9F100973989 /* BrinDemoDiamondMasterViewController.m in Sources */,
+				278739E61940E7AB00973989 /* BrinDemoHomeViewController.m in Sources */,
 				27C79C86192E73CE003681BE /* BrinDemoViewController.m in Sources */,
+				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
+				27873A081940EA1100973989 /* BrinDemoPlatinumMasterViewController.m in Sources */,
+				27873A111940ED3300973989 /* BrinDemoPlatinumDetailViewController.m in Sources */,
+				27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */,
+				27873A0B1940EA3300973989 /* BrinDemoSilverMasterViewController.m in Sources */,
 				27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */,
+				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
+				278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */,
+				278739F61940E96D00973989 /* BrinDemoPlatinumSplitViewController.m in Sources */,
+				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,
+				27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */,
+				278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */,
+				27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */,
 				27C79C79192E73CE003681BE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +712,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrintDemo/BrintDemo-Prefix.pch";
 				INFOPLIST_FILE = "BrintDemo/BrintDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,6 +726,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrintDemo/BrintDemo-Prefix.pch";
 				INFOPLIST_FILE = "BrintDemo/BrintDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -475,6 +793,7 @@
 				27C79CA0192E73CE003681BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27C79CA1192E73CE003681BE /* Build configuration list for PBXNativeTarget "BrintDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +802,7 @@
 				27C79CA3192E73CE003681BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
