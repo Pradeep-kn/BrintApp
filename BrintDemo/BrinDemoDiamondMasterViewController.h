@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BrinDemoDiamondMasterViewController : UITableViewController
+@interface BrinDemoDiamondMasterViewController : UIViewController
 
 @end

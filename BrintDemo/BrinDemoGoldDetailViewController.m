@@ -9,6 +9,7 @@
 #import "BrinDemoGoldDetailViewController.h"
 
 @interface BrinDemoGoldDetailViewController ()
+@property (weak, nonatomic) IBOutlet UIView *backGroundView;
 
 @end
 
@@ -26,6 +27,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.backGroundView.layer.borderWidth = 2.0f;
+    self.backGroundView.layer.borderColor = [UIColor blackColor].CGColor;
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
+    self.backGroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
+
 	// Do any additional setup after loading the view.
 }
 

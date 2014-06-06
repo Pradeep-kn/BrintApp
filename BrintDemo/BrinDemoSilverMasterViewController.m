@@ -63,11 +63,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"BrinDemoMasterCell";
+    BrinDemoMasterCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    // Configure the cell...
+    if (!cell) {
+        cell = [[NSBundle mainBundle] loadNibNamed:@"BrinDemoMasterCell" owner:self options:nil][0];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
+    //For transparent background view//
+    //    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
     
+    cell.titleLable.text = [NSString stringWithFormat:@"Gold Item = %d", indexPath.row];
+    cell.subTitleLable.text = [NSString stringWithFormat:@"22 kr"];
+    cell.descriptionLable.text = [NSString stringWithFormat:@"Making charge = %d%%, wastage = 2.3%%", indexPath.row];
+    cell.descriptionLable.numberOfLines = 0;
+    [cell.descriptionLable sizeToFit];
     return cell;
 }
 
