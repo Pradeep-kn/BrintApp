@@ -7,6 +7,7 @@
 //
 
 #import "BrinDemoHomeViewController.h"
+#import "BIHomeViewController.h"
 
 @interface BrinDemoHomeViewController ()
 
@@ -28,8 +29,25 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"RingBg.png"]];
+    
+    UIButton *home = [UIButton buttonWithType:UIButtonTypeSystem];
+    [home addTarget:self action:@selector(showNewHome) forControlEvents:UIControlEventTouchUpInside];
+    [home setTitle:@"HOME" forState:UIControlStateNormal];
+    home.frame = CGRectMake(10, 100, 100, 100);
+    
+//    UIBarButtonItem *lp_rightBtn = [[UIBarButtonItem alloc] initWithCustomView:home];
+//    self.navigationItem.rightBarButtonItem = lp_rightBtn;
 
+    [self.view addSubview:home];
 }
+
+
+- (void)showNewHome
+{
+    BIHomeViewController *homeVC = (BIHomeViewController *)[[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateInitialViewController];
+    [self.navigationController pushViewController:homeVC animated:YES];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated
 {

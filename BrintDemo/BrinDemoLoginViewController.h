@@ -10,4 +10,6 @@
 
 @interface BrinDemoLoginViewController : UIViewController
 
+- (IBAction)loginButtonClicked:(id)sender;
+
 @end
