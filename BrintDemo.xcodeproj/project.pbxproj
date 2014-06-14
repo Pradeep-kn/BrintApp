@@ -27,6 +27,8 @@
 		27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A181940F78800973989 /* UIImage+animatedGIF.m */; };
 		27873A1C19410BA500973989 /* g20.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1A19410BA500973989 /* g20.png */; };
 		27873A1D19410BA500973989 /* g20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1B19410BA500973989 /* g20@2x.png */; };
+		27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A923194B72FC0047B1A8 /* LoginRingBg.png */; };
+		27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */; };
 		27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6C192E73CE003681BE /* Foundation.framework */; };
 		27C79C6F192E73CE003681BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6E192E73CE003681BE /* CoreGraphics.framework */; };
 		27C79C71192E73CE003681BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C70192E73CE003681BE /* UIKit.framework */; };
@@ -128,6 +130,8 @@
 		27873A181940F78800973989 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		27873A1A19410BA500973989 /* g20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g20.png; sourceTree = "<group>"; };
 		27873A1B19410BA500973989 /* g20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g20@2x.png"; sourceTree = "<group>"; };
+		27C1A923194B72FC0047B1A8 /* LoginRingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginRingBg.png; sourceTree = "<group>"; };
+		27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginRingBg@2x.png"; sourceTree = "<group>"; };
 		27C79C69192E73CE003681BE /* BrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C79C6C192E73CE003681BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27C79C6E192E73CE003681BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -416,6 +420,8 @@
 				27CC4DC919425A6C00DC2034 /* LaunchBg@2x.png */,
 				27CC4DCC194260DB00DC2034 /* Pattren@2x.png */,
 				27CC4DCD194260DB00DC2034 /* Pattren.png */,
+				27C1A923194B72FC0047B1A8 /* LoginRingBg.png */,
+				27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */,
 				27C79CC1192FDF4C003681BE /* Jewlelleries */,
 				27C79CAC192E7AB9003681BE /* Bg.png */,
 				27C79CAD192E7AB9003681BE /* Bg@2x.png */,
@@ -556,6 +562,7 @@
 				2782592E193F9686000F944A /* model2.png in Resources */,
 				27C79CDC192FDF4C003681BE /* j5.png in Resources */,
 				27C79CB7192E8710003681BE /* gold-btn.png in Resources */,
+				27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */,
 				27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */,
 				2782592F193F9686000F944A /* model2@2x.png in Resources */,
 				27C79CDE192FDF4C003681BE /* j6.png in Resources */,
@@ -566,6 +573,7 @@
 				27C79CE4192FDF4C003681BE /* j9.png in Resources */,
 				27CC4DC21942527F00DC2034 /* g37.jpeg in Resources */,
 				27C79CE5192FDF4C003681BE /* j9@2x.png in Resources */,
+				27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */,
 				27C79C80192E73CE003681BE /* Main_iPhone.storyboard in Resources */,
 				27C79CDA192FDF4C003681BE /* j4.png in Resources */,
 				27CC4DCE194260DB00DC2034 /* Pattren@2x.png in Resources */,
