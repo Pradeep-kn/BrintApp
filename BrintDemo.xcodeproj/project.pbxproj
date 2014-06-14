@@ -83,6 +83,18 @@
 		27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DCD194260DB00DC2034 /* Pattren.png */; };
 		27CC4DD2194261DD00DC2034 /* RingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DD0194261DD00DC2034 /* RingBg.png */; };
 		27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DD1194261DD00DC2034 /* RingBg@2x.png */; };
+		ED335465194A259D004BDEC6 /* Gold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335464194A259D004BDEC6 /* Gold.storyboard */; };
+		ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED33546C194A27E5004BDEC6 /* Diamond.storyboard */; };
+		ED335470194A2AEE004BDEC6 /* Silver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED33546F194A2AEE004BDEC6 /* Silver.storyboard */; };
+		ED335474194A2B91004BDEC6 /* Platinum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335473194A2B91004BDEC6 /* Platinum.storyboard */; };
+		ED335476194A2BFC004BDEC6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335475194A2BFC004BDEC6 /* Settings.storyboard */; };
+		ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */; };
+		ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */; };
+		EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B8919477ED100D68A33 /* BIHomeViewController.m */; };
+		EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE56B8C19477EFC00D68A33 /* Home.storyboard */; };
+		EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */; };
+		EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B9B194784CF00D68A33 /* SVSegmentedThumb.m */; };
+		EDE56BA1194793D900D68A33 /* BICollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56BA0194793D900D68A33 /* BICollectionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +206,23 @@
 		27CC4DCD194260DB00DC2034 /* Pattren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pattren.png; sourceTree = "<group>"; };
 		27CC4DD0194261DD00DC2034 /* RingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RingBg.png; sourceTree = "<group>"; };
 		27CC4DD1194261DD00DC2034 /* RingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RingBg@2x.png"; sourceTree = "<group>"; };
+		ED335464194A259D004BDEC6 /* Gold.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Gold.storyboard; sourceTree = "<group>"; };
+		ED33546C194A27E5004BDEC6 /* Diamond.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diamond.storyboard; sourceTree = "<group>"; };
+		ED33546F194A2AEE004BDEC6 /* Silver.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Silver.storyboard; sourceTree = "<group>"; };
+		ED335473194A2B91004BDEC6 /* Platinum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Platinum.storyboard; sourceTree = "<group>"; };
+		ED335475194A2BFC004BDEC6 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTabbar.storyboard; sourceTree = "<group>"; };
+		ED33547A194A2FA4004BDEC6 /* BrinDemoTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoTabbarController.h; sourceTree = "<group>"; };
+		ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoTabbarController.m; sourceTree = "<group>"; };
+		EDE56B8819477ED100D68A33 /* BIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeViewController.h; sourceTree = "<group>"; };
+		EDE56B8919477ED100D68A33 /* BIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeViewController.m; sourceTree = "<group>"; };
+		EDE56B8C19477EFC00D68A33 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EDE56B98194784CF00D68A33 /* SVSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedControl.h; sourceTree = "<group>"; };
+		EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedControl.m; sourceTree = "<group>"; };
+		EDE56B9A194784CF00D68A33 /* SVSegmentedThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedThumb.h; sourceTree = "<group>"; };
+		EDE56B9B194784CF00D68A33 /* SVSegmentedThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedThumb.m; sourceTree = "<group>"; };
+		EDE56B9F194793D900D68A33 /* BICollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BICollectionsViewController.h; sourceTree = "<group>"; };
+		EDE56BA0194793D900D68A33 /* BICollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BICollectionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +252,8 @@
 		278739E11940E73900973989 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED33547D194A2FA9004BDEC6 /* Tabbar */,
+				ED33546E194A2923004BDEC6 /* Gold VC */,
 				27CC4DB9194249CD00DC2034 /* BrinDemoMasterCell.h */,
 				27CC4DBA194249CD00DC2034 /* BrinDemoMasterCell.m */,
 				278739EF1940E82E00973989 /* Login */,
@@ -250,6 +281,13 @@
 		278739E31940E76A00973989 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				ED335479194A2F5B004BDEC6 /* HomeTabbar */,
+				ED335472194A2B7C004BDEC6 /* Settings */,
+				ED335471194A2B72004BDEC6 /* Platinum */,
+				ED335467194A26D4004BDEC6 /* Diamond */,
+				ED335466194A26B6004BDEC6 /* Silver */,
+				ED335463194A2589004BDEC6 /* Gold */,
+				EDE56B8B19477ED900D68A33 /* Home-StoryBoard */,
 				27C79C7E192E73CE003681BE /* Main_iPhone.storyboard */,
 				27C79C81192E73CE003681BE /* Main_iPad.storyboard */,
 			);
@@ -272,6 +310,7 @@
 		278739EB1940E7EE00973989 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EDE56B9E194793A900D68A33 /* Home */,
 				278739E41940E7AB00973989 /* BrinDemoHomeViewController.h */,
 				278739E51940E7AB00973989 /* BrinDemoHomeViewController.m */,
 			);
@@ -370,6 +409,7 @@
 		27C79C72192E73CE003681BE /* BrintDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EDE56B96194784A400D68A33 /* Thrid Party Code */,
 				278739E21940E75900973989 /* AppDelegate */,
 				278739E31940E76A00973989 /* StoryBoards */,
 				278739E11940E73900973989 /* ViewControllers */,
@@ -468,6 +508,108 @@
 			path = Jewlelleries;
 			sourceTree = "<group>";
 		};
+		ED335463194A2589004BDEC6 /* Gold */ = {
+			isa = PBXGroup;
+			children = (
+				ED335464194A259D004BDEC6 /* Gold.storyboard */,
+			);
+			name = Gold;
+			sourceTree = "<group>";
+		};
+		ED335466194A26B6004BDEC6 /* Silver */ = {
+			isa = PBXGroup;
+			children = (
+				ED33546F194A2AEE004BDEC6 /* Silver.storyboard */,
+			);
+			name = Silver;
+			sourceTree = "<group>";
+		};
+		ED335467194A26D4004BDEC6 /* Diamond */ = {
+			isa = PBXGroup;
+			children = (
+				ED33546C194A27E5004BDEC6 /* Diamond.storyboard */,
+			);
+			name = Diamond;
+			sourceTree = "<group>";
+		};
+		ED33546E194A2923004BDEC6 /* Gold VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Gold VC";
+			sourceTree = "<group>";
+		};
+		ED335471194A2B72004BDEC6 /* Platinum */ = {
+			isa = PBXGroup;
+			children = (
+				ED335473194A2B91004BDEC6 /* Platinum.storyboard */,
+			);
+			name = Platinum;
+			sourceTree = "<group>";
+		};
+		ED335472194A2B7C004BDEC6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				ED335475194A2BFC004BDEC6 /* Settings.storyboard */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		ED335479194A2F5B004BDEC6 /* HomeTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */,
+			);
+			name = HomeTabbar;
+			sourceTree = "<group>";
+		};
+		ED33547D194A2FA9004BDEC6 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				ED33547A194A2FA4004BDEC6 /* BrinDemoTabbarController.h */,
+				ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */,
+			);
+			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		EDE56B8B19477ED900D68A33 /* Home-StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EDE56B8C19477EFC00D68A33 /* Home.storyboard */,
+			);
+			name = "Home-StoryBoard";
+			sourceTree = "<group>";
+		};
+		EDE56B96194784A400D68A33 /* Thrid Party Code */ = {
+			isa = PBXGroup;
+			children = (
+				EDE56B97194784B200D68A33 /* SVSegmentControl */,
+			);
+			name = "Thrid Party Code";
+			sourceTree = "<group>";
+		};
+		EDE56B97194784B200D68A33 /* SVSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				EDE56B98194784CF00D68A33 /* SVSegmentedControl.h */,
+				EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */,
+				EDE56B9A194784CF00D68A33 /* SVSegmentedThumb.h */,
+				EDE56B9B194784CF00D68A33 /* SVSegmentedThumb.m */,
+			);
+			name = SVSegmentControl;
+			sourceTree = "<group>";
+		};
+		EDE56B9E194793A900D68A33 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EDE56B8819477ED100D68A33 /* BIHomeViewController.h */,
+				EDE56B8919477ED100D68A33 /* BIHomeViewController.m */,
+				EDE56B9F194793D900D68A33 /* BICollectionsViewController.h */,
+				EDE56BA0194793D900D68A33 /* BICollectionsViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -556,6 +698,7 @@
 				27CC4DBE1942512000DC2034 /* buttonFollow.png in Resources */,
 				27C79CE2192FDF4C003681BE /* j8.png in Resources */,
 				27C79CDD192FDF4C003681BE /* j5@2x.png in Resources */,
+				ED335476194A2BFC004BDEC6 /* Settings.storyboard in Resources */,
 				27CC4DC31942527F00DC2034 /* g37@2x.png in Resources */,
 				2782592B193F9463000F944A /* mod@2x.png in Resources */,
 				27C79C83192E73CE003681BE /* Main_iPad.storyboard in Resources */,
@@ -565,16 +708,19 @@
 				27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */,
 				27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */,
 				2782592F193F9686000F944A /* model2@2x.png in Resources */,
+				ED335470194A2AEE004BDEC6 /* Silver.storyboard in Resources */,
 				27C79CDE192FDF4C003681BE /* j6.png in Resources */,
 				27C79CE1192FDF4C003681BE /* j7@2x.png in Resources */,
 				27C79C88192E73CE003681BE /* Images.xcassets in Resources */,
 				27C79CB2192E820F003681BE /* ClickHere.png in Resources */,
+				ED335474194A2B91004BDEC6 /* Platinum.storyboard in Resources */,
 				27C79CE0192FDF4C003681BE /* j7.png in Resources */,
 				27C79CE4192FDF4C003681BE /* j9.png in Resources */,
 				27CC4DC21942527F00DC2034 /* g37.jpeg in Resources */,
 				27C79CE5192FDF4C003681BE /* j9@2x.png in Resources */,
 				27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */,
 				27C79C80192E73CE003681BE /* Main_iPhone.storyboard in Resources */,
+				ED335465194A259D004BDEC6 /* Gold.storyboard in Resources */,
 				27C79CDA192FDF4C003681BE /* j4.png in Resources */,
 				27CC4DCE194260DB00DC2034 /* Pattren@2x.png in Resources */,
 				27C79CD8192FDF4C003681BE /* j3.png in Resources */,
@@ -588,11 +734,14 @@
 				27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */,
 				27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */,
 				27873A1C19410BA500973989 /* g20.png in Resources */,
+				ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */,
 				27C79CB3192E820F003681BE /* ClickHere@2x.png in Resources */,
+				ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */,
 				27C79CD9192FDF4C003681BE /* j3@2x.png in Resources */,
 				2782592A193F9463000F944A /* mod.png in Resources */,
 				27CC4DCB19425A6C00DC2034 /* LaunchBg@2x.png in Resources */,
 				27CC4DCA19425A6C00DC2034 /* LaunchBg.png in Resources */,
+				EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +761,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				278739F91940E98100973989 /* BrinDemoSilverSplitViewController.m in Sources */,
+				EDE56BA1194793D900D68A33 /* BICollectionsViewController.m in Sources */,
+				EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */,
 				27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */,
 				27873A051940E9F100973989 /* BrinDemoDiamondMasterViewController.m in Sources */,
 				278739E61940E7AB00973989 /* BrinDemoHomeViewController.m in Sources */,
@@ -623,6 +774,9 @@
 				27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */,
 				27873A0B1940EA3300973989 /* BrinDemoSilverMasterViewController.m in Sources */,
 				27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */,
+				EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */,
+				ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */,
+				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
 				278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */,
 				278739F61940E96D00973989 /* BrinDemoPlatinumSplitViewController.m in Sources */,
@@ -772,6 +926,7 @@
 				INFOPLIST_FILE = "BrintDemo/BrintDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -786,6 +941,7 @@
 				INFOPLIST_FILE = "BrintDemo/BrintDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

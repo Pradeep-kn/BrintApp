@@ -1,18 +1,18 @@
 //
-//  BrinDemoSettingsViewController.m
+//  BICollectionsViewController.m
 //  BrintDemo
 //
-//  Created by Pradeep on 24/05/14.
+//  Created by Tabrez on 11/06/14.
 //  Copyright (c) 2014 Pradeep. All rights reserved.
 //
 
-#import "BrinDemoSettingsViewController.h"
+#import "BICollectionsViewController.h"
 
-@interface BrinDemoSettingsViewController ()
+@interface BICollectionsViewController ()
 
 @end
 
-@implementation BrinDemoSettingsViewController
+@implementation BICollectionsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,20 +23,16 @@
     return self;
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
 }
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

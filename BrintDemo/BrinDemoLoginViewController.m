@@ -7,6 +7,7 @@
 //
 
 #import "BrinDemoLoginViewController.h"
+#import "BrinDemoAppDelegate.h"
 
 @interface BrinDemoLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *loginScrollView;
@@ -37,8 +38,9 @@
     [self backgroundImageAnimation];
 }
 
-- (IBAction)loginBtnClicked:(id)sender {
-
+- (IBAction)loginBtnClicked:(id)sender
+{
+    ;
 }
 
 - (void)backgroundImageAnimation
@@ -63,6 +65,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)loginButtonClicked:(id)sender
+{
+    BrinDemoAppDelegate *appDelegate = (BrinDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate showHomeView];
 }
 
 @end
