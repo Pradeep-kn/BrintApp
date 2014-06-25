@@ -9,7 +9,6 @@
 #import "BrinDemoGoldMasterViewController.h"
 
 @interface BrinDemoGoldMasterViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -38,12 +37,12 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+//    self.navigationController.navigationBarHidden = YES;
 //    CGFloat topLayoutGuide = self.topLayoutGuide.length + self.tabBarController.navigationController.navigationBar.frame.size.height;
 //    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     self.tableView.layer.borderWidth = 2.0f;
     self.tableView.layer.borderColor = [UIColor blackColor].CGColor;
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,15 +74,11 @@
         cell = [[NSBundle mainBundle] loadNibNamed:@"BrinDemoMasterCell" owner:self options:nil][0];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
+
     //For transparent background view//
 //    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
-
-    cell.titleLable.text = [NSString stringWithFormat:@"Gold Item = %d", indexPath.row];
-    cell.subTitleLable.text = [NSString stringWithFormat:@"22 kr"];
-    cell.descriptionLable.text = [NSString stringWithFormat:@"Making charge = %d%%, wastage = 2.3%%", indexPath.row];
-    cell.descriptionLable.numberOfLines = 0;
-    [cell.descriptionLable sizeToFit];
+    cell.contentView.backgroundColor = [UIColor blackColor];
+    [cell.bgImageView setImage:[[UIImage imageNamed:@"buttonFollow.png"] stretchableImageWithLeftCapWidth:20 topCapHeight:20]];
     return cell;
 }
 

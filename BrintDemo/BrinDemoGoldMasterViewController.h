@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BrinDemoGoldMasterViewController : UIViewController
+@interface BrinDemoGoldMasterViewController : UITableViewController
 
 @end
