@@ -8,12 +8,18 @@
 
 #import "BIHomeViewController.h"
 #import "SVSegmentedControl.h"
+#import "HomePageController.h"
+
 
 @interface BIHomeViewController ()
 
 @end
 
 @implementation BIHomeViewController
+
+
+@synthesize containerView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -57,6 +63,8 @@
     yellowRC.frame = CGRectMake(110, 75, width, 70);
 	
     [self.view addSubview:yellowRC];
+    
+    [yellowRC setSelectedSegmentIndex:0 animated:YES];
 }
 
 
@@ -69,6 +77,21 @@
 
 - (void)segmentedControlChangedValue:(SVSegmentedControl *)segmentedControl
 {
+    
+    int selectedIndex = segmentedControl.selectedSegmentIndex;
+    
+    switch (selectedIndex) {
+        case 0: {
+            HomePageController *pageController = [[HomePageController alloc] init];
+            [self.containerView addSubview:pageController.view];
+            
+            break;
+        }
+            
+        default:
+            break;
+    }
+    
     /*
     
     UIViewController *destinationController = self.destinationViewController;

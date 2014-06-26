@@ -88,6 +88,8 @@
 		ED335476194A2BFC004BDEC6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335475194A2BFC004BDEC6 /* Settings.storyboard */; };
 		ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */; };
 		ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */; };
+		ED7A591A1959F1870068A83F /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A59181959F1870068A83F /* HomePageController.m */; };
+		ED7A591B1959F1870068A83F /* HomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7A59191959F1870068A83F /* HomePageController.xib */; };
 		EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B8919477ED100D68A33 /* BIHomeViewController.m */; };
 		EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE56B8C19477EFC00D68A33 /* Home.storyboard */; };
 		EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */; };
@@ -210,6 +212,9 @@
 		ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTabbar.storyboard; sourceTree = "<group>"; };
 		ED33547A194A2FA4004BDEC6 /* BrinDemoTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoTabbarController.h; sourceTree = "<group>"; };
 		ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoTabbarController.m; sourceTree = "<group>"; };
+		ED7A59171959F1870068A83F /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
+		ED7A59181959F1870068A83F /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
+		ED7A59191959F1870068A83F /* HomePageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageController.xib; sourceTree = "<group>"; };
 		EDE56B8819477ED100D68A33 /* BIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeViewController.h; sourceTree = "<group>"; };
 		EDE56B8919477ED100D68A33 /* BIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeViewController.m; sourceTree = "<group>"; };
 		EDE56B8C19477EFC00D68A33 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -600,6 +605,9 @@
 				EDE56B8919477ED100D68A33 /* BIHomeViewController.m */,
 				EDE56B9F194793D900D68A33 /* BICollectionsViewController.h */,
 				EDE56BA0194793D900D68A33 /* BICollectionsViewController.m */,
+				ED7A59171959F1870068A83F /* HomePageController.h */,
+				ED7A59181959F1870068A83F /* HomePageController.m */,
+				ED7A59191959F1870068A83F /* HomePageController.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -722,6 +730,7 @@
 				27CC4DC7194259B700DC2034 /* HomeBg@2x.png in Resources */,
 				27C79CE3192FDF4C003681BE /* j8@2x.png in Resources */,
 				27C79CD7192FDF4C003681BE /* j2@2x.png in Resources */,
+				ED7A591B1959F1870068A83F /* HomePageController.xib in Resources */,
 				27CC4DD2194261DD00DC2034 /* RingBg.png in Resources */,
 				27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */,
 				27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */,
@@ -767,6 +776,7 @@
 				27873A0B1940EA3300973989 /* BrinDemoSilverMasterViewController.m in Sources */,
 				27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */,
 				EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */,
+				ED7A591A1959F1870068A83F /* HomePageController.m in Sources */,
 				ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */,
 				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,

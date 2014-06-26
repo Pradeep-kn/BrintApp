@@ -10,4 +10,6 @@
 
 @interface BIHomeViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+
 @end
