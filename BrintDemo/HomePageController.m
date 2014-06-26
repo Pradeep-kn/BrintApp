@@ -42,6 +42,8 @@
 
 - (void)initializeScrollViewAndPageControl
 {
+    self.homeScrollView.delegate = self;
+    
     int count = 0;
     
     CGFloat xPadding = 0;
