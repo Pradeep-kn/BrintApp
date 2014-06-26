@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.diamondCategoryListArray = [[NSMutableArray alloc] initWithObjects:@"Women",@"Men",@"Kids",@"Occasion", nil];
+    self.diamondCategoryListArray = [[NSMutableArray alloc] initWithObjects:@"Women",@"Men",@"Occasion",@"Collection", nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated

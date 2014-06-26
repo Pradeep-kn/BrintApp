@@ -15,7 +15,6 @@
 
 @property (nonatomic, retain) NSMutableArray *diamondWomenItemsListArray;
 @property (nonatomic, retain) NSMutableArray *diamondMenItemsListArray;
-@property (nonatomic, retain) NSMutableArray *diamondKidsItemsListArray;
 @property (nonatomic, retain) NSMutableArray *diamondOccasionItemsListArray;
 
 @end
@@ -34,11 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.diamondMenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Ring",@"Chain",@"Pendant",@"Bracelite", nil];
+    self.diamondMenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Ring",@"Chain",@"Bracelite", nil];
     
-    self.diamondWomenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Mangalsuthra",@"Necklace",@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite",@"Maang Tikka", nil];
-    
-    self.diamondKidsItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite", @"Waist Chain", nil];
+    self.diamondWomenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Ring",@"Pendant",@"Bracelite", nil];
     
     self.diamondOccasionItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Daily Wear",@"Office Wear",@"Casual Wear",@"Party Wear", nil];
     
@@ -52,9 +49,6 @@
             self.diamondItemsListArray = self.diamondMenItemsListArray;
             break;
         case 2:
-            self.diamondItemsListArray = self.diamondKidsItemsListArray;
-            break;
-        case 3:
             self.diamondItemsListArray = self.diamondOccasionItemsListArray;
             break;
         default:

@@ -14,8 +14,8 @@
 
 @property (nonatomic, retain) NSMutableArray *diamondWomenItemsListArray;
 @property (nonatomic, retain) NSMutableArray *diamondMenItemsListArray;
-@property (nonatomic, retain) NSMutableArray *diamondKidsItemsListArray;
 @property (nonatomic, retain) NSMutableArray *diamondOccasionItemsListArray;
+@property (nonatomic, retain) NSMutableArray *diamondCollectionItemsListArray;
 
 @end
 
@@ -33,13 +33,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.diamondMenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Ring",@"Chain",@"Pendant",@"Bracelite", nil];
+    self.diamondMenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Ring",@"Pendant",nil];
     
-    self.diamondWomenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Mangalsuthra",@"Necklace",@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite",@"Maang Tikka", nil];
+    self.diamondWomenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Bracelate",@"Ring",@"Earring",@"Nosepin",@"Pendant",@"Tanmaniya",@"Necklace",@"Bangles",nil];
     
-    self.diamondKidsItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite", @"Waist Chain", nil];
+    self.diamondOccasionItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Dialy Ware",@"Office Ware",@"Casual Wear",@"Party Wear",nil];
     
-    self.diamondOccasionItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Daily Wear",@"Office Wear",@"Casual Wear",@"Party Wear", nil];
+    self.diamondCollectionItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Young Flowers", nil];
     
     self.diamondItemsListArray = [[NSMutableArray alloc] init];
     
@@ -51,10 +51,10 @@
             self.diamondItemsListArray = self.diamondMenItemsListArray;
             break;
         case 2:
-            self.diamondItemsListArray = self.diamondKidsItemsListArray;
+            self.diamondItemsListArray = self.diamondOccasionItemsListArray;
             break;
         case 3:
-            self.diamondItemsListArray = self.diamondOccasionItemsListArray;
+            self.diamondItemsListArray = self.diamondCollectionItemsListArray;
             break;
         default:
             break;
