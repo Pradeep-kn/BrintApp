@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BrinDemoGoldMasterViewController : UIViewController
+@interface BrinDemoGoldMasterViewController : UITableViewController
+
+@property (strong, nonatomic) NSIndexPath *selectedRow;
 
 @end

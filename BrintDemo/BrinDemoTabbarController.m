@@ -49,17 +49,49 @@
     BrinDemoSilverSplitViewController *silverSplitVC = (BrinDemoSilverSplitViewController *)[[UIStoryboard storyboardWithName:@"Silver" bundle:nil] instantiateInitialViewController];
     
     BrinDemoSettingsViewController *settingsVC = (BrinDemoSettingsViewController *)[[UIStoryboard storyboardWithName:@"Settings" bundle:nil] instantiateInitialViewController];
+
     
-    self.viewControllers = [NSArray arrayWithObjects:homeVC, goldSplitVC, diamondSplitVC, platinumSplitVC, silverSplitVC, settingsVC,  nil];
+    UITabBarItem *tab1 = [[UITabBarItem alloc] initWithTitle:@"Home"
+                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:1];
+    [homeVC setTabBarItem:tab1];
     
-    NSArray *barButtonItems = self.tabBar.items;
     
-    [[barButtonItems objectAtIndex:0] setTitle:@"HOME"];
-    [[barButtonItems objectAtIndex:1] setTitle:@"GOLD"];
-    [[barButtonItems objectAtIndex:2] setTitle:@"DIAMOND"];
-    [[barButtonItems objectAtIndex:3] setTitle:@"PLATINUM"];
-    [[barButtonItems objectAtIndex:4] setTitle:@"SILVER"];
-    [[barButtonItems objectAtIndex:5] setTitle:@"SETTINGS"];
+    UITabBarItem *tab2 = [[UITabBarItem alloc] initWithTitle:@"Gold"
+                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:2];
+    [goldSplitVC setTabBarItem:tab2];
+    
+    UITabBarItem *tab3 = [[UITabBarItem alloc] initWithTitle:@"Diamond"
+                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:3];
+    [diamondSplitVC setTabBarItem:tab3];
+    
+    UITabBarItem *tab4 = [[UITabBarItem alloc] initWithTitle:@"Platinum"
+                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:4];
+    [platinumSplitVC setTabBarItem:tab4];
+    
+    UITabBarItem *tab5 = [[UITabBarItem alloc] initWithTitle:@"Silver"
+                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:4];
+    [silverSplitVC setTabBarItem:tab5];
+
+    UITabBarItem *tab6 = [[UITabBarItem alloc] initWithTitle:@"Settings"
+                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:4];
+    [settingsVC setTabBarItem:tab6];
+    
+    self.viewControllers = [NSArray arrayWithObjects:homeVC,
+                                    goldSplitVC,
+                                    diamondSplitVC,
+                                    platinumSplitVC,
+                                    silverSplitVC,
+                                    settingsVC,
+                                    nil];
+    
+    
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setBarStyle:UIBarStyleBlack];
+
+    // doing this results in an easier to read unselected state then the default iOS 7 one
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"Thonburi-Bold" size:16.0f],
+                                                        NSForegroundColorAttributeName : [UIColor whiteColor]
+                                                        } forState:UIControlStateNormal];
 }
 
 

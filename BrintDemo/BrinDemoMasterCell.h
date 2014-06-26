@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BrinDemoMasterCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLable;
-@property (weak, nonatomic) IBOutlet UILabel *subTitleLable;
-@property (weak, nonatomic) IBOutlet UILabel *descriptionLable;
+@property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+@property (weak, nonatomic) IBOutlet UILabel *goldItemLable;
 
 @end

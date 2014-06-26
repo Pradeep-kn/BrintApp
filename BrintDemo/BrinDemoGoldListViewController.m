@@ -1,25 +1,31 @@
 //
-//  BrinDemoGoldMasterViewController.m
+//  BrinDemoGoldListViewController.m
 //  BrintDemo
 //
-//  Created by Pradeep on 05/06/14.
+//  Created by Pradeep on 26/06/14.
 //  Copyright (c) 2014 Pradeep. All rights reserved.
 //
 
-#import "BrinDemoGoldMasterViewController.h"
 #import "BrinDemoGoldListViewController.h"
+#import "BrinDemoMasterCell.h"
 
-@interface BrinDemoGoldMasterViewController ()
-@property (nonatomic, retain) NSMutableArray *goldCategoryListArray;
+@interface BrinDemoGoldListViewController ()
+@property (nonatomic, retain) NSMutableArray *goldItemsListArray;
+
+@property (nonatomic, retain) NSMutableArray *goldWomenItemsListArray;
+@property (nonatomic, retain) NSMutableArray *goldMenItemsListArray;
+@property (nonatomic, retain) NSMutableArray *goldKidsItemsListArray;
+@property (nonatomic, retain) NSMutableArray *goldOccasionItemsListArray;
+
 @end
 
-@implementation BrinDemoGoldMasterViewController
+@implementation BrinDemoGoldListViewController
 
-@synthesize selectedRow;
+@synthesize selectedIndex;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -30,23 +36,38 @@
 {
     [super viewDidLoad];
 
-    self.goldCategoryListArray = [[NSMutableArray alloc] initWithObjects:@"Women",@"Men",@"Kids",@"Occasion", nil];
+    self.goldMenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Ring",@"Chain",@"Pendant",@"Bracelite", nil];
+
+    self.goldWomenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Mangalsuthra",@"Necklace",@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite",@"Maang Tikka", nil];
+
+    self.goldKidsItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite", @"Waist Chain", nil];
+
+    self.goldOccasionItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Daily Wear",@"Office Wear",@"Casual Wear",@"Party Wear", nil];
+
+    self.goldItemsListArray = [[NSMutableArray alloc] init];
+
+    switch (self.selectedIndex) {
+        case 0:
+            self.goldItemsListArray = self.goldWomenItemsListArray;
+            break;
+        case 1:
+            self.goldItemsListArray = self.goldMenItemsListArray;
+            break;
+        case 2:
+            self.goldItemsListArray = self.goldKidsItemsListArray;
+            break;
+        case 3:
+            self.goldItemsListArray = self.goldOccasionItemsListArray;
+            break;
+            
+        default:
+            break;
+    }
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-//    self.navigationController.navigationBarHidden = YES;
-//    CGFloat topLayoutGuide = self.topLayoutGuide.length + self.tabBarController.navigationController.navigationBar.frame.size.height;
-//    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
-    self.tableView.layer.borderWidth = 2.0f;
-    self.tableView.layer.borderColor = [UIColor blackColor].CGColor;
-//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,7 +87,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.goldCategoryListArray count];
+    return [self.goldItemsListArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -78,12 +99,12 @@
         cell = [[NSBundle mainBundle] loadNibNamed:@"BrinDemoMasterCell" owner:self options:nil][0];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
+    
     //For transparent background view//
-//    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
+    //    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
     cell.contentView.backgroundColor = [UIColor blackColor];
     [cell.bgImageView setImage:[[UIImage imageNamed:@"buttonFollow.png"] stretchableImageWithLeftCapWidth:20 topCapHeight:20]];
-    cell.goldItemLable.text = [self.goldCategoryListArray objectAtIndex:indexPath.row];
+    cell.goldItemLable.text = [self.goldItemsListArray objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -126,7 +147,7 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -134,15 +155,8 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    BrinDemoGoldListViewController *goldListViewController = (BrinDemoGoldListViewController*)segue.destinationViewController;
-    goldListViewController.selectedIndex = self.selectedRow.row;
-
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    self.selectedRow = indexPath;
-    [self performSegueWithIdentifier: @"GoldList" sender: self];
-}
+ */
 
 @end
