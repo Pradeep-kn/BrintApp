@@ -1,21 +1,25 @@
 //
-//  BrinDemoGoldMasterViewController.m
+//  BrinDemoDiamondListViewController.m
 //  BrintDemo
 //
-//  Created by Pradeep on 05/06/14.
+//  Created by Pradeep on 26/06/14.
 //  Copyright (c) 2014 Pradeep. All rights reserved.
 //
 
-#import "BrinDemoGoldMasterViewController.h"
-#import "BrinDemoGoldListViewController.h"
+#import "BrinDemoDiamondListViewController.h"
+#import "BrinDemoMasterCell.h"
 
-@interface BrinDemoGoldMasterViewController ()
-@property (nonatomic, retain) NSMutableArray *goldCategoryListArray;
+@interface BrinDemoDiamondListViewController ()
+@property (nonatomic, retain) NSMutableArray *diamondItemsListArray;
+
+@property (nonatomic, retain) NSMutableArray *diamondWomenItemsListArray;
+@property (nonatomic, retain) NSMutableArray *diamondMenItemsListArray;
+@property (nonatomic, retain) NSMutableArray *diamondKidsItemsListArray;
+@property (nonatomic, retain) NSMutableArray *diamondOccasionItemsListArray;
+
 @end
 
-@implementation BrinDemoGoldMasterViewController
-
-@synthesize selectedRow;
+@implementation BrinDemoDiamondListViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,9 +33,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.goldCategoryListArray = [[NSMutableArray alloc] initWithObjects:@"Women",@"Men",@"Kids",@"Occasion", nil];
+    self.diamondMenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Ring",@"Chain",@"Pendant",@"Bracelite", nil];
+    
+    self.diamondWomenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Mangalsuthra",@"Necklace",@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite",@"Maang Tikka", nil];
+    
+    self.diamondKidsItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite", @"Waist Chain", nil];
+    
+    self.diamondOccasionItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Daily Wear",@"Office Wear",@"Casual Wear",@"Party Wear", nil];
+    
+    self.diamondItemsListArray = [[NSMutableArray alloc] init];
+    
+    switch (self.selectedIndex) {
+        case 0:
+            self.diamondItemsListArray = self.diamondWomenItemsListArray;
+            break;
+        case 1:
+            self.diamondItemsListArray = self.diamondMenItemsListArray;
+            break;
+        case 2:
+            self.diamondItemsListArray = self.diamondKidsItemsListArray;
+            break;
+        case 3:
+            self.diamondItemsListArray = self.diamondOccasionItemsListArray;
+            break;
+        default:
+            break;
+    }
 }
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -56,7 +85,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.goldCategoryListArray count];
+    return [self.diamondItemsListArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -68,12 +97,12 @@
         cell = [[NSBundle mainBundle] loadNibNamed:@"BrinDemoMasterCell" owner:self options:nil][0];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
+    
     //For transparent background view//
-//    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
+    //    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
     cell.contentView.backgroundColor = [UIColor colorWithRed:251.0f/255.0f green:221.0f/255.0f blue:157.0f/255.0f alpha:0.5f];
     [cell.bgImageView setImage:[[UIImage imageNamed:@"closest-store-active.png"] stretchableImageWithLeftCapWidth:30 topCapHeight:30]];
-    cell.goldItemLable.text = [self.goldCategoryListArray objectAtIndex:indexPath.row];
+    cell.goldItemLable.text = [self.diamondItemsListArray objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -116,7 +145,7 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -124,15 +153,8 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    BrinDemoGoldListViewController *goldListViewController = (BrinDemoGoldListViewController*)segue.destinationViewController;
-    goldListViewController.selectedIndex = self.selectedRow.row;
-
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    self.selectedRow = indexPath;
-    [self performSegueWithIdentifier: @"GoldList" sender: self];
-}
+ */
 
 @end

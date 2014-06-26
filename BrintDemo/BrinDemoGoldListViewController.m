@@ -36,6 +36,8 @@
 {
     [super viewDidLoad];
 
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg1.png"]];
+
     self.goldMenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Ring",@"Chain",@"Pendant",@"Bracelite", nil];
 
     self.goldWomenItemsListArray = [[NSMutableArray alloc] initWithObjects:@"Mangalsuthra",@"Necklace",@"Bangles",@"Earring",@"Ring",@"Chain",@"Pendant",@"Bracelite",@"Maang Tikka", nil];
@@ -63,11 +65,12 @@
         default:
             break;
     }
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -102,8 +105,8 @@
     
     //For transparent background view//
     //    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
-    cell.contentView.backgroundColor = [UIColor blackColor];
-    [cell.bgImageView setImage:[[UIImage imageNamed:@"buttonFollow.png"] stretchableImageWithLeftCapWidth:20 topCapHeight:20]];
+    cell.contentView.backgroundColor = [UIColor colorWithRed:251.0f/255.0f green:221.0f/255.0f blue:157.0f/255.0f alpha:0.5f];
+    [cell.bgImageView setImage:[[UIImage imageNamed:@"closest-store-active.png"] stretchableImageWithLeftCapWidth:30 topCapHeight:30]];
     cell.goldItemLable.text = [self.goldItemsListArray objectAtIndex:indexPath.row];
     return cell;
 }
