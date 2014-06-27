@@ -71,7 +71,8 @@
     //For transparent background view//
     //    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
     cell.contentView.backgroundColor = [UIColor colorWithRed:251.0f/255.0f green:221.0f/255.0f blue:157.0f/255.0f alpha:0.5f];
-    [cell.bgImageView setImage:[[UIImage imageNamed:@"closest-store-active.png"] stretchableImageWithLeftCapWidth:30 topCapHeight:30]];
+    cell.bgImageView.layer.backgroundColor = (RGBACOLOR(249.0f, 206, 19, 1.0f).CGColor);
+    cell.bgImageView.layer.cornerRadius = 3.0f;
     cell.goldItemLable.text = [self.diamondCategoryListArray objectAtIndex:indexPath.row];
     return cell;
     

@@ -17,4 +17,5 @@
     #import "BrinDemoMasterCell.h"
     #import <QuartzCore/QuartzCore.h>
     #import "BDColours.h"
+    #import "BrinDemoConstant.h"
 #endif
