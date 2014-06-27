@@ -27,6 +27,9 @@
 		27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A181940F78800973989 /* UIImage+animatedGIF.m */; };
 		27873A1C19410BA500973989 /* g20.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1A19410BA500973989 /* g20.png */; };
 		27873A1D19410BA500973989 /* g20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1B19410BA500973989 /* g20@2x.png */; };
+		27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */; };
+		27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F1195D83D500E17939 /* BrinDemoPlatinumViewController.m */; };
+		27B2F5F6195D83D500E17939 /* BrinDemoSilverListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F3195D83D500E17939 /* BrinDemoSilverListViewController.m */; };
 		27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A923194B72FC0047B1A8 /* LoginRingBg.png */; };
 		27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */; };
 		27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6C192E73CE003681BE /* Foundation.framework */; };
@@ -147,6 +150,12 @@
 		27873A181940F78800973989 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		27873A1A19410BA500973989 /* g20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g20.png; sourceTree = "<group>"; };
 		27873A1B19410BA500973989 /* g20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g20@2x.png"; sourceTree = "<group>"; };
+		27B2F5EE195D83BC00E17939 /* BrinDemoDiamondListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoDiamondListViewController.h; sourceTree = "<group>"; };
+		27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoDiamondListViewController.m; sourceTree = "<group>"; };
+		27B2F5F0195D83D500E17939 /* BrinDemoPlatinumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoPlatinumViewController.h; sourceTree = "<group>"; };
+		27B2F5F1195D83D500E17939 /* BrinDemoPlatinumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoPlatinumViewController.m; sourceTree = "<group>"; };
+		27B2F5F2195D83D500E17939 /* BrinDemoSilverListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoSilverListViewController.h; sourceTree = "<group>"; };
+		27B2F5F3195D83D500E17939 /* BrinDemoSilverListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoSilverListViewController.m; sourceTree = "<group>"; };
 		27C1A923194B72FC0047B1A8 /* LoginRingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginRingBg.png; sourceTree = "<group>"; };
 		27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginRingBg@2x.png"; sourceTree = "<group>"; };
 		27C79C69192E73CE003681BE /* BrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -338,6 +347,12 @@
 		278739EC1940E7FA00973989 /* Diamond */ = {
 			isa = PBXGroup;
 			children = (
+				27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */,
+				27B2F5F0195D83D500E17939 /* BrinDemoPlatinumViewController.h */,
+				27B2F5F1195D83D500E17939 /* BrinDemoPlatinumViewController.m */,
+				27B2F5F2195D83D500E17939 /* BrinDemoSilverListViewController.h */,
+				27B2F5F3195D83D500E17939 /* BrinDemoSilverListViewController.m */,
+				27B2F5EE195D83BC00E17939 /* BrinDemoDiamondListViewController.h */,
 				278739F11940E95D00973989 /* BrinDemoDiamondSplitViewController.h */,
 				278739F21940E95D00973989 /* BrinDemoDiamondSplitViewController.m */,
 				27873A031940E9F100973989 /* BrinDemoDiamondMasterViewController.h */,
@@ -799,10 +814,12 @@
 				EDE56BA1194793D900D68A33 /* BICollectionsViewController.m in Sources */,
 				EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */,
 				27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */,
+				27B2F5F6195D83D500E17939 /* BrinDemoSilverListViewController.m in Sources */,
 				27873A051940E9F100973989 /* BrinDemoDiamondMasterViewController.m in Sources */,
 				ED7A1C71195C978600679B47 /* iCarousel.m in Sources */,
 				278739E61940E7AB00973989 /* BrinDemoHomeViewController.m in Sources */,
 				27C79C86192E73CE003681BE /* BrinDemoViewController.m in Sources */,
+				27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */,
 				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
 				27873A081940EA1100973989 /* BrinDemoPlatinumMasterViewController.m in Sources */,
 				27CC4DBB194249CD00DC2034 /* BrinDemoMasterCell.m in Sources */,
@@ -821,6 +838,7 @@
 				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,
 				ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */,
 				27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */,
+				27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */,
 				278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */,
 				27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */,
 				ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */,
