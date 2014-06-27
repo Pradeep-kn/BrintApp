@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iCarousel.h"
 
-@interface BIHomeViewController : UIViewController
+
+@interface BIHomeViewController : UIViewController < iCarouselDataSource, iCarouselDelegate >
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIView *homeInfoView;
+@property (weak, nonatomic) IBOutlet UIView *offersInfoView;
+@property (weak, nonatomic) IBOutlet UIView *collectionsInfoView;
+@property (weak, nonatomic) IBOutlet UIView *costInfoView;
+@property (weak, nonatomic) IBOutlet iCarousel *collectionsCarouselView;
 
 @end

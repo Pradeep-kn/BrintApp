@@ -93,6 +93,10 @@
 		ED335476194A2BFC004BDEC6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335475194A2BFC004BDEC6 /* Settings.storyboard */; };
 		ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */; };
 		ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */; };
+		ED7A1C71195C978600679B47 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A1C70195C978600679B47 /* iCarousel.m */; };
+		ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A1C73195CA8D100679B47 /* BDCollectionInfo.m */; };
+		ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A1C76195CAD6F00679B47 /* BDCollectionView.m */; };
+		ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7A1C7A195CADBE00679B47 /* BDCollectionView.xib */; };
 		ED7A591A1959F1870068A83F /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A59181959F1870068A83F /* HomePageController.m */; };
 		ED7A591B1959F1870068A83F /* HomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7A59191959F1870068A83F /* HomePageController.xib */; };
 		EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B8919477ED100D68A33 /* BIHomeViewController.m */; };
@@ -223,6 +227,14 @@
 		ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTabbar.storyboard; sourceTree = "<group>"; };
 		ED33547A194A2FA4004BDEC6 /* BrinDemoTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoTabbarController.h; sourceTree = "<group>"; };
 		ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoTabbarController.m; sourceTree = "<group>"; };
+		ED7A1C6D195C8FBC00679B47 /* BDColours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDColours.h; sourceTree = "<group>"; };
+		ED7A1C6F195C978600679B47 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		ED7A1C70195C978600679B47 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		ED7A1C72195CA8D100679B47 /* BDCollectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionInfo.h; sourceTree = "<group>"; };
+		ED7A1C73195CA8D100679B47 /* BDCollectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionInfo.m; sourceTree = "<group>"; };
+		ED7A1C75195CAD6F00679B47 /* BDCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionView.h; sourceTree = "<group>"; };
+		ED7A1C76195CAD6F00679B47 /* BDCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionView.m; sourceTree = "<group>"; };
+		ED7A1C7A195CADBE00679B47 /* BDCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionView.xib; sourceTree = "<group>"; };
 		ED7A59171959F1870068A83F /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
 		ED7A59181959F1870068A83F /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		ED7A59191959F1870068A83F /* HomePageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageController.xib; sourceTree = "<group>"; };
@@ -588,6 +600,15 @@
 			name = Tabbar;
 			sourceTree = "<group>";
 		};
+		ED7A1C6E195C976500679B47 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				ED7A1C6F195C978600679B47 /* iCarousel.h */,
+				ED7A1C70195C978600679B47 /* iCarousel.m */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
 		EDE56B8B19477ED900D68A33 /* Home-StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +620,7 @@
 		EDE56B96194784A400D68A33 /* Thrid Party Code */ = {
 			isa = PBXGroup;
 			children = (
+				ED7A1C6E195C976500679B47 /* iCarousel */,
 				EDE56B97194784B200D68A33 /* SVSegmentControl */,
 			);
 			name = "Thrid Party Code";
@@ -625,6 +647,12 @@
 				ED7A59171959F1870068A83F /* HomePageController.h */,
 				ED7A59181959F1870068A83F /* HomePageController.m */,
 				ED7A59191959F1870068A83F /* HomePageController.xib */,
+				ED7A1C6D195C8FBC00679B47 /* BDColours.h */,
+				ED7A1C72195CA8D100679B47 /* BDCollectionInfo.h */,
+				ED7A1C73195CA8D100679B47 /* BDCollectionInfo.m */,
+				ED7A1C75195CAD6F00679B47 /* BDCollectionView.h */,
+				ED7A1C76195CAD6F00679B47 /* BDCollectionView.m */,
+				ED7A1C7A195CADBE00679B47 /* BDCollectionView.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -722,6 +750,7 @@
 				27CC4DC31942527F00DC2034 /* g37@2x.png in Resources */,
 				2782592B193F9463000F944A /* mod@2x.png in Resources */,
 				27C79C83192E73CE003681BE /* Main_iPad.storyboard in Resources */,
+				ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */,
 				2782592E193F9686000F944A /* model2.png in Resources */,
 				27C79CDC192FDF4C003681BE /* j5.png in Resources */,
 				27C79CB7192E8710003681BE /* gold-btn.png in Resources */,
@@ -787,6 +816,7 @@
 				EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */,
 				27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */,
 				27873A051940E9F100973989 /* BrinDemoDiamondMasterViewController.m in Sources */,
+				ED7A1C71195C978600679B47 /* iCarousel.m in Sources */,
 				278739E61940E7AB00973989 /* BrinDemoHomeViewController.m in Sources */,
 				27C79C86192E73CE003681BE /* BrinDemoViewController.m in Sources */,
 				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
@@ -805,9 +835,11 @@
 				278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */,
 				278739F61940E96D00973989 /* BrinDemoPlatinumSplitViewController.m in Sources */,
 				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,
+				ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */,
 				27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */,
 				278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */,
 				27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */,
+				ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */,
 				27C79C79192E73CE003681BE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
