@@ -16,7 +16,5 @@
 @property (weak, nonatomic) IBOutlet UIView *homeInfoView;
 @property (weak, nonatomic) IBOutlet UIView *offersInfoView;
 @property (weak, nonatomic) IBOutlet UIView *collectionsInfoView;
-@property (weak, nonatomic) IBOutlet UIView *costInfoView;
-@property (weak, nonatomic) IBOutlet iCarousel *collectionsCarouselView;
 
 @end

@@ -30,6 +30,18 @@
 		27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */; };
 		27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F1195D83D500E17939 /* BrinDemoPlatinumViewController.m */; };
 		27B2F5F6195D83D500E17939 /* BrinDemoSilverListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F3195D83D500E17939 /* BrinDemoSilverListViewController.m */; };
+		27B2F605195D984E00E17939 /* banner1.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F5F9195D984E00E17939 /* banner1.png */; };
+		27B2F606195D984E00E17939 /* banner1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F5FA195D984E00E17939 /* banner1@2x.png */; };
+		27B2F607195D984E00E17939 /* banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F5FB195D984E00E17939 /* banner2.png */; };
+		27B2F608195D984E00E17939 /* banner2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F5FC195D984E00E17939 /* banner2@2x.png */; };
+		27B2F609195D984E00E17939 /* banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F5FD195D984E00E17939 /* banner3.png */; };
+		27B2F60A195D984E00E17939 /* banner3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F5FE195D984E00E17939 /* banner3@2x.png */; };
+		27B2F60B195D984E00E17939 /* banner4.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F5FF195D984E00E17939 /* banner4.png */; };
+		27B2F60C195D984E00E17939 /* banner4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F600195D984E00E17939 /* banner4@2x.png */; };
+		27B2F60D195D984E00E17939 /* banner5.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F601195D984E00E17939 /* banner5.png */; };
+		27B2F60E195D984E00E17939 /* banner5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F602195D984E00E17939 /* banner5@2x.png */; };
+		27B2F60F195D984E00E17939 /* banner6.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F603195D984E00E17939 /* banner6.png */; };
+		27B2F610195D984E00E17939 /* banner6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F604195D984E00E17939 /* banner6@2x.png */; };
 		27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A923194B72FC0047B1A8 /* LoginRingBg.png */; };
 		27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */; };
 		27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6C192E73CE003681BE /* Foundation.framework */; };
@@ -157,6 +169,18 @@
 		27B2F5F2195D83D500E17939 /* BrinDemoSilverListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoSilverListViewController.h; sourceTree = "<group>"; };
 		27B2F5F3195D83D500E17939 /* BrinDemoSilverListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoSilverListViewController.m; sourceTree = "<group>"; };
 		27B2F5F7195D92D400E17939 /* BrinDemoConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrinDemoConstant.h; sourceTree = "<group>"; };
+		27B2F5F9195D984E00E17939 /* banner1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner1.png; sourceTree = "<group>"; };
+		27B2F5FA195D984E00E17939 /* banner1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner1@2x.png"; sourceTree = "<group>"; };
+		27B2F5FB195D984E00E17939 /* banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner2.png; sourceTree = "<group>"; };
+		27B2F5FC195D984E00E17939 /* banner2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner2@2x.png"; sourceTree = "<group>"; };
+		27B2F5FD195D984E00E17939 /* banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner3.png; sourceTree = "<group>"; };
+		27B2F5FE195D984E00E17939 /* banner3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner3@2x.png"; sourceTree = "<group>"; };
+		27B2F5FF195D984E00E17939 /* banner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner4.png; sourceTree = "<group>"; };
+		27B2F600195D984E00E17939 /* banner4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner4@2x.png"; sourceTree = "<group>"; };
+		27B2F601195D984E00E17939 /* banner5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner5.png; sourceTree = "<group>"; };
+		27B2F602195D984E00E17939 /* banner5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner5@2x.png"; sourceTree = "<group>"; };
+		27B2F603195D984E00E17939 /* banner6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner6.png; sourceTree = "<group>"; };
+		27B2F604195D984E00E17939 /* banner6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner6@2x.png"; sourceTree = "<group>"; };
 		27C1A923194B72FC0047B1A8 /* LoginRingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginRingBg.png; sourceTree = "<group>"; };
 		27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginRingBg@2x.png"; sourceTree = "<group>"; };
 		27C79C69192E73CE003681BE /* BrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -410,6 +434,25 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		27B2F5F8195D984E00E17939 /* Banners */ = {
+			isa = PBXGroup;
+			children = (
+				27B2F5F9195D984E00E17939 /* banner1.png */,
+				27B2F5FA195D984E00E17939 /* banner1@2x.png */,
+				27B2F5FB195D984E00E17939 /* banner2.png */,
+				27B2F5FC195D984E00E17939 /* banner2@2x.png */,
+				27B2F5FD195D984E00E17939 /* banner3.png */,
+				27B2F5FE195D984E00E17939 /* banner3@2x.png */,
+				27B2F5FF195D984E00E17939 /* banner4.png */,
+				27B2F600195D984E00E17939 /* banner4@2x.png */,
+				27B2F601195D984E00E17939 /* banner5.png */,
+				27B2F602195D984E00E17939 /* banner5@2x.png */,
+				27B2F603195D984E00E17939 /* banner6.png */,
+				27B2F604195D984E00E17939 /* banner6@2x.png */,
+			);
+			path = Banners;
+			sourceTree = "<group>";
+		};
 		27C79C60192E73CE003681BE = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +530,7 @@
 		27C79CAB192E7AB9003681BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				27B2F5F8195D984E00E17939 /* Banners */,
 				27CC4DD0194261DD00DC2034 /* RingBg.png */,
 				27CC4DD1194261DD00DC2034 /* RingBg@2x.png */,
 				27CC4DC4194259B700DC2034 /* HomeBg.png */,
@@ -743,29 +787,37 @@
 				27C79CD6192FDF4C003681BE /* j2.png in Resources */,
 				27C79CAE192E7AB9003681BE /* Bg.png in Resources */,
 				27C79CDB192FDF4C003681BE /* j4@2x.png in Resources */,
+				27B2F60F195D984E00E17939 /* banner6.png in Resources */,
 				27C79CAF192E7AB9003681BE /* Bg@2x.png in Resources */,
 				27CC4DBF1942512000DC2034 /* buttonFollow@2x.png in Resources */,
 				27CC4DC6194259B700DC2034 /* HomeBg.png in Resources */,
 				27CC4DBE1942512000DC2034 /* buttonFollow.png in Resources */,
+				27B2F610195D984E00E17939 /* banner6@2x.png in Resources */,
 				27C79CE2192FDF4C003681BE /* j8.png in Resources */,
 				27C79CDD192FDF4C003681BE /* j5@2x.png in Resources */,
 				27C96A84195B698100B08F4F /* goldTab.png in Resources */,
 				ED335476194A2BFC004BDEC6 /* Settings.storyboard in Resources */,
 				27CC4DC31942527F00DC2034 /* g37@2x.png in Resources */,
 				2782592B193F9463000F944A /* mod@2x.png in Resources */,
+				27B2F607195D984E00E17939 /* banner2.png in Resources */,
 				27C79C83192E73CE003681BE /* Main_iPad.storyboard in Resources */,
 				ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */,
 				2782592E193F9686000F944A /* model2.png in Resources */,
 				27C79CDC192FDF4C003681BE /* j5.png in Resources */,
+				27B2F609195D984E00E17939 /* banner3.png in Resources */,
 				27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */,
 				27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */,
+				27B2F606195D984E00E17939 /* banner1@2x.png in Resources */,
 				2782592F193F9686000F944A /* model2@2x.png in Resources */,
 				ED335470194A2AEE004BDEC6 /* Silver.storyboard in Resources */,
 				27C79CDE192FDF4C003681BE /* j6.png in Resources */,
+				27B2F60B195D984E00E17939 /* banner4.png in Resources */,
 				27C79CE1192FDF4C003681BE /* j7@2x.png in Resources */,
+				27B2F60A195D984E00E17939 /* banner3@2x.png in Resources */,
 				27C79C88192E73CE003681BE /* Images.xcassets in Resources */,
 				ED335474194A2B91004BDEC6 /* Platinum.storyboard in Resources */,
 				27C79CE0192FDF4C003681BE /* j7.png in Resources */,
+				27B2F60C195D984E00E17939 /* banner4@2x.png in Resources */,
 				27C79CE4192FDF4C003681BE /* j9.png in Resources */,
 				27CC4DC21942527F00DC2034 /* g37.jpeg in Resources */,
 				27C79CE5192FDF4C003681BE /* j9@2x.png in Resources */,
@@ -774,8 +826,11 @@
 				ED335465194A259D004BDEC6 /* Gold.storyboard in Resources */,
 				27C79CDA192FDF4C003681BE /* j4.png in Resources */,
 				27CC4DCE194260DB00DC2034 /* Pattren@2x.png in Resources */,
+				27B2F60D195D984E00E17939 /* banner5.png in Resources */,
 				27C79CD8192FDF4C003681BE /* j3.png in Resources */,
+				27B2F608195D984E00E17939 /* banner2@2x.png in Resources */,
 				27C79C77192E73CE003681BE /* InfoPlist.strings in Resources */,
+				27B2F605195D984E00E17939 /* banner1.png in Resources */,
 				27C79CD4192FDF4C003681BE /* j1.png in Resources */,
 				27C79CDF192FDF4C003681BE /* j6@2x.png in Resources */,
 				27CC4DC7194259B700DC2034 /* HomeBg@2x.png in Resources */,
@@ -788,6 +843,7 @@
 				27873A1C19410BA500973989 /* g20.png in Resources */,
 				ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */,
 				27C96A86195B698A00B08F4F /* goldTab@2x.png in Resources */,
+				27B2F60E195D984E00E17939 /* banner5@2x.png in Resources */,
 				ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */,
 				27C79CD9192FDF4C003681BE /* j3@2x.png in Resources */,
 				2782592A193F9463000F944A /* mod.png in Resources */,

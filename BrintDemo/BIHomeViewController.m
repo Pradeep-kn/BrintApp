@@ -13,6 +13,9 @@
 
 @interface BIHomeViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *collectionsScrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *collectionsImageView;
+@property (weak, nonatomic) IBOutlet UILabel *collectionLable;
 @property (strong, nonatomic) NSMutableArray *corouselDataSource;
 
 @end
@@ -25,8 +28,6 @@
 @synthesize homeInfoView;
 @synthesize offersInfoView;
 @synthesize collectionsInfoView;
-@synthesize costInfoView;
-@synthesize collectionsCarouselView;
 @synthesize corouselDataSource;
 
 
@@ -50,7 +51,6 @@
     self.containerView.backgroundColor = BLACK_COLOR;
     
     self.corouselDataSource = [NSMutableArray array];
-    self.collectionsCarouselView.type = iCarouselTypeCoverFlow2;
     
     for (int i = 0; i < 10; i++) {
         BDCollectionInfo *info = [[BDCollectionInfo alloc] init];
@@ -58,8 +58,26 @@
     }
     
     [self addGradientColourToInfoViews];
+    [self backgroundImageAnimation];
 }
 
+- (void)backgroundImageAnimation
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSMutableArray *emmaImagesArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"banner1.png"],[UIImage imageNamed:@"banner2.png"],[UIImage imageNamed:@"banner3.png"],[UIImage imageNamed:@"banner4.png"],[UIImage imageNamed:@"banner5.png"],[UIImage imageNamed:@"banner6.png"], nil];
+        self.collectionsImageView.animationImages = emmaImagesArray;
+        self.collectionsImageView.animationDuration = 10.0;
+        self.collectionsImageView.animationRepeatCount = 0;
+        
+        CATransition *transition = [CATransition animation];
+        transition.duration = 4.0f;
+        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+        transition.type = kCATransitionReveal;
+        
+        [self.collectionsScrollView.layer addAnimation:transition forKey:nil];
+        [self.collectionsImageView startAnimating];
+    });
+}
 
 - (void)addGradientColourToInfoViews
 {
@@ -69,25 +87,22 @@
     homeInfoLayer.colors = [NSArray arrayWithObjects:(id)[AUTUMN1 CGColor], (id)[AUTUMN2 CGColor], nil];
     [self.homeInfoView.layer insertSublayer:homeInfoLayer atIndex:0];
     
+//    self.homeInfoView.backgroundColor = [self.homeInfoView.backgroundColor colorWithAlphaComponent:0.6f];
+
     
     CAGradientLayer *offersLayer = [CAGradientLayer layer];
     offersLayer.frame = self.offersInfoView.bounds;
     
     offersLayer.colors = [NSArray arrayWithObjects:(id)[SUMMER1 CGColor], (id)[SUMMER2 CGColor], nil];
     [self.offersInfoView.layer insertSublayer:offersLayer atIndex:0];
+
+    self.collectionsInfoView.backgroundColor = [UIColor blackColor];
     
-    
-    CAGradientLayer *collectionsLayer = [CAGradientLayer layer];
-    collectionsLayer.frame = self.collectionsInfoView.bounds;
-    
-    collectionsLayer.colors = [NSArray arrayWithObjects:(id)[WINTER1 CGColor], (id)[WINTER2 CGColor], nil];
-    [self.collectionsInfoView.layer insertSublayer:collectionsLayer atIndex:0];
-    
-    
-    CAGradientLayer *costLayer = [CAGradientLayer layer];
-    costLayer.frame = self.costInfoView.bounds;
-    costLayer.colors = [NSArray arrayWithObjects:(id)[PINKPANTHER1 CGColor], (id)[PINKPANTHER2 CGColor], nil];
-    [self.costInfoView.layer insertSublayer:costLayer atIndex:0];
+//    CAGradientLayer *collectionsLayer = [CAGradientLayer layer];
+//    collectionsLayer.frame = self.collectionsInfoView.bounds;
+//    
+//    collectionsLayer.colors = [NSArray arrayWithObjects:(id)[WINTER1 CGColor], (id)[WINTER2 CGColor], nil];
+//    [self.collectionsInfoView.layer insertSublayer:collectionsLayer atIndex:0];
 }
 
 
@@ -364,9 +379,6 @@
 {
     //it's a good idea to set these to nil here to avoid
     //sending messages to a deallocated viewcontroller
-    collectionsCarouselView.delegate = nil;
-    collectionsCarouselView.dataSource = nil;
-    
 }
 
 
