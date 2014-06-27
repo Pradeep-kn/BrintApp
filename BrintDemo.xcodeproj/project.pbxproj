@@ -46,10 +46,6 @@
 		27C79C9B192E73CE003681BE /* BrintDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79C9A192E73CE003681BE /* BrintDemoTests.m */; };
 		27C79CAE192E7AB9003681BE /* Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CAC192E7AB9003681BE /* Bg.png */; };
 		27C79CAF192E7AB9003681BE /* Bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CAD192E7AB9003681BE /* Bg@2x.png */; };
-		27C79CB2192E820F003681BE /* ClickHere.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CB0192E820F003681BE /* ClickHere.png */; };
-		27C79CB3192E820F003681BE /* ClickHere@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CB1192E820F003681BE /* ClickHere@2x.png */; };
-		27C79CB6192E8710003681BE /* gold-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CB4192E8710003681BE /* gold-btn@2x.png */; };
-		27C79CB7192E8710003681BE /* gold-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CB5192E8710003681BE /* gold-btn.png */; };
 		27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C79CB9192E8ACA003681BE /* BrinDemoLoginViewController.m */; };
 		27C79CD4192FDF4C003681BE /* j1.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC2192FDF4C003681BE /* j1.png */; };
 		27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C79CC3192FDF4C003681BE /* j1@2x.png */; };
@@ -175,10 +171,6 @@
 		27C79C9A192E73CE003681BE /* BrintDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrintDemoTests.m; sourceTree = "<group>"; };
 		27C79CAC192E7AB9003681BE /* Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg.png; sourceTree = "<group>"; };
 		27C79CAD192E7AB9003681BE /* Bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bg@2x.png"; sourceTree = "<group>"; };
-		27C79CB0192E820F003681BE /* ClickHere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClickHere.png; sourceTree = "<group>"; };
-		27C79CB1192E820F003681BE /* ClickHere@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClickHere@2x.png"; sourceTree = "<group>"; };
-		27C79CB4192E8710003681BE /* gold-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-btn@2x.png"; sourceTree = "<group>"; };
-		27C79CB5192E8710003681BE /* gold-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold-btn.png"; sourceTree = "<group>"; };
 		27C79CB8192E8ACA003681BE /* BrinDemoLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoLoginViewController.h; sourceTree = "<group>"; };
 		27C79CB9192E8ACA003681BE /* BrinDemoLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoLoginViewController.m; sourceTree = "<group>"; };
 		27C79CC2192FDF4C003681BE /* j1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j1.png; sourceTree = "<group>"; };
@@ -493,10 +485,6 @@
 				27C79CC1192FDF4C003681BE /* Jewlelleries */,
 				27C79CAC192E7AB9003681BE /* Bg.png */,
 				27C79CAD192E7AB9003681BE /* Bg@2x.png */,
-				27C79CB0192E820F003681BE /* ClickHere.png */,
-				27C79CB1192E820F003681BE /* ClickHere@2x.png */,
-				27C79CB4192E8710003681BE /* gold-btn@2x.png */,
-				27C79CB5192E8710003681BE /* gold-btn.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -740,7 +728,6 @@
 				27C79CDB192FDF4C003681BE /* j4@2x.png in Resources */,
 				27C79CAF192E7AB9003681BE /* Bg@2x.png in Resources */,
 				27CC4DBF1942512000DC2034 /* buttonFollow@2x.png in Resources */,
-				27C79CB6192E8710003681BE /* gold-btn@2x.png in Resources */,
 				27CC4DC6194259B700DC2034 /* HomeBg.png in Resources */,
 				27CC4DBE1942512000DC2034 /* buttonFollow.png in Resources */,
 				27C79CE2192FDF4C003681BE /* j8.png in Resources */,
@@ -753,7 +740,6 @@
 				ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */,
 				2782592E193F9686000F944A /* model2.png in Resources */,
 				27C79CDC192FDF4C003681BE /* j5.png in Resources */,
-				27C79CB7192E8710003681BE /* gold-btn.png in Resources */,
 				27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */,
 				27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */,
 				2782592F193F9686000F944A /* model2@2x.png in Resources */,
@@ -761,7 +747,6 @@
 				27C79CDE192FDF4C003681BE /* j6.png in Resources */,
 				27C79CE1192FDF4C003681BE /* j7@2x.png in Resources */,
 				27C79C88192E73CE003681BE /* Images.xcassets in Resources */,
-				27C79CB2192E820F003681BE /* ClickHere.png in Resources */,
 				ED335474194A2B91004BDEC6 /* Platinum.storyboard in Resources */,
 				27C79CE0192FDF4C003681BE /* j7.png in Resources */,
 				27C79CE4192FDF4C003681BE /* j9.png in Resources */,
@@ -785,7 +770,6 @@
 				27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */,
 				27873A1C19410BA500973989 /* g20.png in Resources */,
 				ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */,
-				27C79CB3192E820F003681BE /* ClickHere@2x.png in Resources */,
 				27C96A86195B698A00B08F4F /* goldTab@2x.png in Resources */,
 				ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */,
 				27C79CD9192FDF4C003681BE /* j3@2x.png in Resources */,
