@@ -29,8 +29,8 @@
     [super viewDidLoad];
     self.backGroundView.layer.borderWidth = 2.0f;
     self.backGroundView.layer.borderColor = [UIColor blackColor].CGColor;
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
-    self.backGroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
+//    self.backGroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg3.png"]];
 
 	// Do any additional setup after loading the view.
 }

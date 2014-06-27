@@ -69,11 +69,11 @@
     [platinumSplitVC setTabBarItem:tab4];
     
     UITabBarItem *tab5 = [[UITabBarItem alloc] initWithTitle:@"Silver"
-                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:4];
+                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:5];
     [silverSplitVC setTabBarItem:tab5];
 
     UITabBarItem *tab6 = [[UITabBarItem alloc] initWithTitle:@"Settings"
-                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:4];
+                                                       image:[UIImage imageNamed:@"goldTab.png"] tag:6];
     [settingsVC setTabBarItem:tab6];
     
     self.viewControllers = [NSArray arrayWithObjects:homeVC,

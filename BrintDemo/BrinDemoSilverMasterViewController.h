@@ -10,4 +10,6 @@
 
 @interface BrinDemoSilverMasterViewController : UITableViewController
 
+@property (strong, nonatomic) NSIndexPath *selectedRow;
+
 @end

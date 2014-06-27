@@ -7,17 +7,17 @@
 //
 
 #import "BrinDemoDiamondMasterViewController.h"
+#import "BrinDemoDiamondListViewController.h"
 
 @interface BrinDemoDiamondMasterViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic, retain) NSMutableArray *diamondCategoryListArray;
 @end
 
 @implementation BrinDemoDiamondMasterViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -27,23 +27,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.diamondCategoryListArray = [[NSMutableArray alloc] initWithObjects:@"Women",@"Men",@"Occasion",@"Collection", nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
-    //    CGFloat topLayoutGuide = self.topLayoutGuide.length + self.tabBarController.navigationController.navigationBar.frame.size.height;
-    //    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
-    self.tableView.layer.borderWidth = 2.0f;
-    self.tableView.layer.borderColor = [UIColor blackColor].CGColor;
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +53,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return [self.diamondCategoryListArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -75,16 +65,14 @@
         cell = [[NSBundle mainBundle] loadNibNamed:@"BrinDemoMasterCell" owner:self options:nil][0];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"HomeBg.png"]];
+    
     //For transparent background view//
     //    cell.contentView.backgroundColor = [cell.contentView.backgroundColor colorWithAlphaComponent:0.6f];
-    
-//    cell.titleLable.text = [NSString stringWithFormat:@"Gold Item = %d", indexPath.row];
-//    cell.subTitleLable.text = [NSString stringWithFormat:@"22 kr"];
-//    cell.descriptionLable.text = [NSString stringWithFormat:@"Making charge = %d%%, wastage = 2.3%%", indexPath.row];
-//    cell.descriptionLable.numberOfLines = 0;
-//    [cell.descriptionLable sizeToFit];
+    cell.contentView.backgroundColor = [UIColor colorWithRed:251.0f/255.0f green:221.0f/255.0f blue:157.0f/255.0f alpha:0.5f];
+    [cell.bgImageView setImage:[[UIImage imageNamed:@"closest-store-active.png"] stretchableImageWithLeftCapWidth:30 topCapHeight:30]];
+    cell.goldItemLable.text = [self.diamondCategoryListArray objectAtIndex:indexPath.row];
     return cell;
+
 }
 
 /*
@@ -126,7 +114,6 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -134,8 +121,15 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    BrinDemoDiamondListViewController *goldListViewController = (BrinDemoDiamondListViewController*)segue.destinationViewController;
+    goldListViewController.selectedIndex = self.selectedRow.row;
 }
 
- */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedRow = indexPath;
+    [self performSegueWithIdentifier: @"DiamondList" sender: self];
+}
+
 
 @end
