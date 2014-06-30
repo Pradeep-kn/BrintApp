@@ -27,6 +27,7 @@
 		27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A181940F78800973989 /* UIImage+animatedGIF.m */; };
 		27873A1C19410BA500973989 /* g20.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1A19410BA500973989 /* g20.png */; };
 		27873A1D19410BA500973989 /* g20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1B19410BA500973989 /* g20@2x.png */; };
+		27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */; };
 		27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */; };
 		27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F1195D83D500E17939 /* BrinDemoPlatinumViewController.m */; };
 		27B2F5F6195D83D500E17939 /* BrinDemoSilverListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F3195D83D500E17939 /* BrinDemoSilverListViewController.m */; };
@@ -162,6 +163,8 @@
 		27873A181940F78800973989 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		27873A1A19410BA500973989 /* g20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g20.png; sourceTree = "<group>"; };
 		27873A1B19410BA500973989 /* g20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g20@2x.png"; sourceTree = "<group>"; };
+		27B2B9811961E85C00731835 /* BrinDemoGoldDetailsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoGoldDetailsListViewController.h; sourceTree = "<group>"; };
+		27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoGoldDetailsListViewController.m; sourceTree = "<group>"; };
 		27B2F5EE195D83BC00E17939 /* BrinDemoDiamondListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoDiamondListViewController.h; sourceTree = "<group>"; };
 		27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoDiamondListViewController.m; sourceTree = "<group>"; };
 		27B2F5F0195D83D500E17939 /* BrinDemoPlatinumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoPlatinumViewController.h; sourceTree = "<group>"; };
@@ -355,6 +358,8 @@
 				27873A011940E9DC00973989 /* BrinDemoGoldDetailViewController.m */,
 				27C96A87195B6EB800B08F4F /* BrinDemoGoldListViewController.h */,
 				27C96A88195B6EB800B08F4F /* BrinDemoGoldListViewController.m */,
+				27B2B9811961E85C00731835 /* BrinDemoGoldDetailsListViewController.h */,
+				27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -891,6 +896,7 @@
 				27C96A89195B6EB800B08F4F /* BrinDemoGoldListViewController.m in Sources */,
 				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
+				27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */,
 				278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */,
 				278739F61940E96D00973989 /* BrinDemoPlatinumSplitViewController.m in Sources */,
 				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,

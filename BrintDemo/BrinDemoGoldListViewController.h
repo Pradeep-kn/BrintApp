@@ -11,5 +11,6 @@
 @interface BrinDemoGoldListViewController : UITableViewController
 
 @property (nonatomic) int selectedIndex;
+@property (strong, nonatomic) NSIndexPath *selectedRow;
 
 @end
