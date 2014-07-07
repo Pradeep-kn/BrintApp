@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2723606D196ACA8100CA26B4 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236061196ACA8100CA26B4 /* bg1.png */; };
+		2723606E196ACA8100CA26B4 /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236062196ACA8100CA26B4 /* bg1@2x.png */; };
+		2723606F196ACA8100CA26B4 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236063196ACA8100CA26B4 /* bg2.png */; };
+		27236070196ACA8100CA26B4 /* bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236064196ACA8100CA26B4 /* bg2@2x.png */; };
+		27236071196ACA8100CA26B4 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236065196ACA8100CA26B4 /* bg3.png */; };
+		27236072196ACA8100CA26B4 /* bg3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236066196ACA8100CA26B4 /* bg3@2x.png */; };
+		27236073196ACA8100CA26B4 /* bg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236067196ACA8100CA26B4 /* bg4.png */; };
+		27236074196ACA8100CA26B4 /* bg4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236068196ACA8100CA26B4 /* bg4@2x.png */; };
+		27236075196ACA8100CA26B4 /* closest-store-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236069196ACA8100CA26B4 /* closest-store-active.png */; };
+		27236076196ACA8100CA26B4 /* closest-store-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723606A196ACA8100CA26B4 /* closest-store-active@2x.png */; };
+		27236077196ACA8100CA26B4 /* closest-store.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723606B196ACA8100CA26B4 /* closest-store.png */; };
+		27236078196ACA8100CA26B4 /* closest-store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723606C196ACA8100CA26B4 /* closest-store@2x.png */; };
+		27470E471965E9F100EF4D06 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E441965E9F100EF4D06 /* Flickr.m */; };
+		27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E461965E9F100EF4D06 /* FlickrPhoto.m */; };
+		27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */; };
+		27470E5C1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27470E5A1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib */; };
 		2782592A193F9463000F944A /* mod.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825928193F9463000F944A /* mod.png */; };
 		2782592B193F9463000F944A /* mod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825929193F9463000F944A /* mod@2x.png */; };
 		2782592E193F9686000F944A /* model2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2782592C193F9686000F944A /* model2.png */; };
@@ -129,6 +145,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27236061196ACA8100CA26B4 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		27236062196ACA8100CA26B4 /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
+		27236063196ACA8100CA26B4 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		27236064196ACA8100CA26B4 /* bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg2@2x.png"; sourceTree = "<group>"; };
+		27236065196ACA8100CA26B4 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg3.png; sourceTree = "<group>"; };
+		27236066196ACA8100CA26B4 /* bg3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg3@2x.png"; sourceTree = "<group>"; };
+		27236067196ACA8100CA26B4 /* bg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg4.png; sourceTree = "<group>"; };
+		27236068196ACA8100CA26B4 /* bg4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg4@2x.png"; sourceTree = "<group>"; };
+		27236069196ACA8100CA26B4 /* closest-store-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closest-store-active.png"; sourceTree = "<group>"; };
+		2723606A196ACA8100CA26B4 /* closest-store-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closest-store-active@2x.png"; sourceTree = "<group>"; };
+		2723606B196ACA8100CA26B4 /* closest-store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closest-store.png"; sourceTree = "<group>"; };
+		2723606C196ACA8100CA26B4 /* closest-store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closest-store@2x.png"; sourceTree = "<group>"; };
+		27470E431965E9F100EF4D06 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flickr.h; path = ../Flickr.h; sourceTree = "<group>"; };
+		27470E441965E9F100EF4D06 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Flickr.m; path = ../Flickr.m; sourceTree = "<group>"; };
+		27470E451965E9F100EF4D06 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrPhoto.h; path = ../FlickrPhoto.h; sourceTree = "<group>"; };
+		27470E461965E9F100EF4D06 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrPhoto.m; path = ../FlickrPhoto.m; sourceTree = "<group>"; };
+		27470E581965FE6800EF4D06 /* BrinDemoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoCollectionViewController.h; sourceTree = "<group>"; };
+		27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoCollectionViewController.m; sourceTree = "<group>"; };
+		27470E5A1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrinDemoCollectionViewController.xib; sourceTree = "<group>"; };
 		27825928193F9463000F944A /* mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mod.png; sourceTree = "<group>"; };
 		27825929193F9463000F944A /* mod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mod@2x.png"; sourceTree = "<group>"; };
 		2782592C193F9686000F944A /* model2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model2.png; sourceTree = "<group>"; };
@@ -302,9 +337,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27470E491965EA2500EF4D06 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				27470E431965E9F100EF4D06 /* Flickr.h */,
+				27470E441965E9F100EF4D06 /* Flickr.m */,
+				27470E451965E9F100EF4D06 /* FlickrPhoto.h */,
+				27470E461965E9F100EF4D06 /* FlickrPhoto.m */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
 		278739E11940E73900973989 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				27470E491965EA2500EF4D06 /* ThirdParty */,
 				ED33547D194A2FA9004BDEC6 /* Tabbar */,
 				ED33546E194A2923004BDEC6 /* Gold VC */,
 				27CC4DB9194249CD00DC2034 /* BrinDemoMasterCell.h */,
@@ -354,12 +401,15 @@
 				278739E81940E7D100973989 /* BrinDemoGoldSplitViewController.m */,
 				278739FD1940E9CE00973989 /* BrinDemoGoldMasterViewController.h */,
 				278739FE1940E9CE00973989 /* BrinDemoGoldMasterViewController.m */,
-				27873A001940E9DC00973989 /* BrinDemoGoldDetailViewController.h */,
-				27873A011940E9DC00973989 /* BrinDemoGoldDetailViewController.m */,
 				27C96A87195B6EB800B08F4F /* BrinDemoGoldListViewController.h */,
 				27C96A88195B6EB800B08F4F /* BrinDemoGoldListViewController.m */,
 				27B2B9811961E85C00731835 /* BrinDemoGoldDetailsListViewController.h */,
 				27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */,
+				27873A001940E9DC00973989 /* BrinDemoGoldDetailViewController.h */,
+				27873A011940E9DC00973989 /* BrinDemoGoldDetailViewController.m */,
+				27470E581965FE6800EF4D06 /* BrinDemoCollectionViewController.h */,
+				27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */,
+				27470E5A1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -535,6 +585,18 @@
 		27C79CAB192E7AB9003681BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				27236061196ACA8100CA26B4 /* bg1.png */,
+				27236062196ACA8100CA26B4 /* bg1@2x.png */,
+				27236063196ACA8100CA26B4 /* bg2.png */,
+				27236064196ACA8100CA26B4 /* bg2@2x.png */,
+				27236065196ACA8100CA26B4 /* bg3.png */,
+				27236066196ACA8100CA26B4 /* bg3@2x.png */,
+				27236067196ACA8100CA26B4 /* bg4.png */,
+				27236068196ACA8100CA26B4 /* bg4@2x.png */,
+				27236069196ACA8100CA26B4 /* closest-store-active.png */,
+				2723606A196ACA8100CA26B4 /* closest-store-active@2x.png */,
+				2723606B196ACA8100CA26B4 /* closest-store.png */,
+				2723606C196ACA8100CA26B4 /* closest-store@2x.png */,
 				27B2F5F8195D984E00E17939 /* Banners */,
 				27CC4DD0194261DD00DC2034 /* RingBg.png */,
 				27CC4DD1194261DD00DC2034 /* RingBg@2x.png */,
@@ -789,25 +851,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				27873A1D19410BA500973989 /* g20@2x.png in Resources */,
+				27236071196ACA8100CA26B4 /* bg3.png in Resources */,
 				27C79CD6192FDF4C003681BE /* j2.png in Resources */,
 				27C79CAE192E7AB9003681BE /* Bg.png in Resources */,
 				27C79CDB192FDF4C003681BE /* j4@2x.png in Resources */,
 				27B2F60F195D984E00E17939 /* banner6.png in Resources */,
 				27C79CAF192E7AB9003681BE /* Bg@2x.png in Resources */,
 				27CC4DBF1942512000DC2034 /* buttonFollow@2x.png in Resources */,
+				27236078196ACA8100CA26B4 /* closest-store@2x.png in Resources */,
 				27CC4DC6194259B700DC2034 /* HomeBg.png in Resources */,
+				27236077196ACA8100CA26B4 /* closest-store.png in Resources */,
 				27CC4DBE1942512000DC2034 /* buttonFollow.png in Resources */,
 				27B2F610195D984E00E17939 /* banner6@2x.png in Resources */,
+				27236070196ACA8100CA26B4 /* bg2@2x.png in Resources */,
 				27C79CE2192FDF4C003681BE /* j8.png in Resources */,
 				27C79CDD192FDF4C003681BE /* j5@2x.png in Resources */,
 				27C96A84195B698100B08F4F /* goldTab.png in Resources */,
 				ED335476194A2BFC004BDEC6 /* Settings.storyboard in Resources */,
 				27CC4DC31942527F00DC2034 /* g37@2x.png in Resources */,
 				2782592B193F9463000F944A /* mod@2x.png in Resources */,
+				2723606F196ACA8100CA26B4 /* bg2.png in Resources */,
 				27B2F607195D984E00E17939 /* banner2.png in Resources */,
+				27236074196ACA8100CA26B4 /* bg4@2x.png in Resources */,
 				27C79C83192E73CE003681BE /* Main_iPad.storyboard in Resources */,
 				ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */,
 				2782592E193F9686000F944A /* model2.png in Resources */,
+				27236072196ACA8100CA26B4 /* bg3@2x.png in Resources */,
 				27C79CDC192FDF4C003681BE /* j5.png in Resources */,
 				27B2F609195D984E00E17939 /* banner3.png in Resources */,
 				27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */,
@@ -815,6 +884,7 @@
 				27B2F606195D984E00E17939 /* banner1@2x.png in Resources */,
 				2782592F193F9686000F944A /* model2@2x.png in Resources */,
 				ED335470194A2AEE004BDEC6 /* Silver.storyboard in Resources */,
+				2723606D196ACA8100CA26B4 /* bg1.png in Resources */,
 				27C79CDE192FDF4C003681BE /* j6.png in Resources */,
 				27B2F60B195D984E00E17939 /* banner4.png in Resources */,
 				27C79CE1192FDF4C003681BE /* j7@2x.png in Resources */,
@@ -822,10 +892,12 @@
 				27C79C88192E73CE003681BE /* Images.xcassets in Resources */,
 				ED335474194A2B91004BDEC6 /* Platinum.storyboard in Resources */,
 				27C79CE0192FDF4C003681BE /* j7.png in Resources */,
+				27236076196ACA8100CA26B4 /* closest-store-active@2x.png in Resources */,
 				27B2F60C195D984E00E17939 /* banner4@2x.png in Resources */,
 				27C79CE4192FDF4C003681BE /* j9.png in Resources */,
 				27CC4DC21942527F00DC2034 /* g37.jpeg in Resources */,
 				27C79CE5192FDF4C003681BE /* j9@2x.png in Resources */,
+				2723606E196ACA8100CA26B4 /* bg1@2x.png in Resources */,
 				27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */,
 				27C79C80192E73CE003681BE /* Main_iPhone.storyboard in Resources */,
 				ED335465194A259D004BDEC6 /* Gold.storyboard in Resources */,
@@ -833,6 +905,7 @@
 				27CC4DCE194260DB00DC2034 /* Pattren@2x.png in Resources */,
 				27B2F60D195D984E00E17939 /* banner5.png in Resources */,
 				27C79CD8192FDF4C003681BE /* j3.png in Resources */,
+				27236073196ACA8100CA26B4 /* bg4.png in Resources */,
 				27B2F608195D984E00E17939 /* banner2@2x.png in Resources */,
 				27C79C77192E73CE003681BE /* InfoPlist.strings in Resources */,
 				27B2F605195D984E00E17939 /* banner1.png in Resources */,
@@ -840,10 +913,12 @@
 				27C79CDF192FDF4C003681BE /* j6@2x.png in Resources */,
 				27CC4DC7194259B700DC2034 /* HomeBg@2x.png in Resources */,
 				27C79CE3192FDF4C003681BE /* j8@2x.png in Resources */,
+				27236075196ACA8100CA26B4 /* closest-store-active.png in Resources */,
 				27C79CD7192FDF4C003681BE /* j2@2x.png in Resources */,
 				ED7A591B1959F1870068A83F /* HomePageController.xib in Resources */,
 				27CC4DD2194261DD00DC2034 /* RingBg.png in Resources */,
 				27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */,
+				27470E5C1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib in Resources */,
 				27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */,
 				27873A1C19410BA500973989 /* g20.png in Resources */,
 				ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */,
@@ -882,7 +957,9 @@
 				ED7A1C71195C978600679B47 /* iCarousel.m in Sources */,
 				278739E61940E7AB00973989 /* BrinDemoHomeViewController.m in Sources */,
 				27C79C86192E73CE003681BE /* BrinDemoViewController.m in Sources */,
+				27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */,
 				27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */,
+				27470E471965E9F100EF4D06 /* Flickr.m in Sources */,
 				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
 				27873A081940EA1100973989 /* BrinDemoPlatinumMasterViewController.m in Sources */,
 				27CC4DBB194249CD00DC2034 /* BrinDemoMasterCell.m in Sources */,
@@ -905,6 +982,7 @@
 				27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */,
 				278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */,
 				27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */,
+				27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */,
 				ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */,
 				27C79C79192E73CE003681BE /* main.m in Sources */,
 			);
