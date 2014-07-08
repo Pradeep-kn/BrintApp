@@ -127,6 +127,11 @@
 		ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7A1C7A195CADBE00679B47 /* BDCollectionView.xib */; };
 		ED7A591A1959F1870068A83F /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A59181959F1870068A83F /* HomePageController.m */; };
 		ED7A591B1959F1870068A83F /* HomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7A59191959F1870068A83F /* HomePageController.xib */; };
+		EDA8C697196AFC2E004DD093 /* BDCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C696196AFC2E004DD093 /* BDCollectionHeaderView.m */; };
+		EDA8C699196AFC4C004DD093 /* BDCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA8C698196AFC4C004DD093 /* BDCollectionHeaderView.xib */; };
+		EDA8C69C196AFD10004DD093 /* BDCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C69B196AFD10004DD093 /* BDCollectionCell.m */; };
+		EDA8C69E196AFD22004DD093 /* BDCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA8C69D196AFD22004DD093 /* BDCollectionCell.xib */; };
+		EDA8C6A1196AFEAF004DD093 /* BDCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C6A0196AFEAF004DD093 /* BDCollectionFlowLayout.m */; };
 		EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B8919477ED100D68A33 /* BIHomeViewController.m */; };
 		EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE56B8C19477EFC00D68A33 /* Home.storyboard */; };
 		EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */; };
@@ -302,6 +307,14 @@
 		ED7A59171959F1870068A83F /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
 		ED7A59181959F1870068A83F /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		ED7A59191959F1870068A83F /* HomePageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageController.xib; sourceTree = "<group>"; };
+		EDA8C695196AFC2E004DD093 /* BDCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionHeaderView.h; sourceTree = "<group>"; };
+		EDA8C696196AFC2E004DD093 /* BDCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionHeaderView.m; sourceTree = "<group>"; };
+		EDA8C698196AFC4C004DD093 /* BDCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionHeaderView.xib; sourceTree = "<group>"; };
+		EDA8C69A196AFD10004DD093 /* BDCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionCell.h; sourceTree = "<group>"; };
+		EDA8C69B196AFD10004DD093 /* BDCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionCell.m; sourceTree = "<group>"; };
+		EDA8C69D196AFD22004DD093 /* BDCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionCell.xib; sourceTree = "<group>"; };
+		EDA8C69F196AFEAF004DD093 /* BDCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionFlowLayout.h; sourceTree = "<group>"; };
+		EDA8C6A0196AFEAF004DD093 /* BDCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionFlowLayout.m; sourceTree = "<group>"; };
 		EDE56B8819477ED100D68A33 /* BIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeViewController.h; sourceTree = "<group>"; };
 		EDE56B8919477ED100D68A33 /* BIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeViewController.m; sourceTree = "<group>"; };
 		EDE56B8C19477EFC00D68A33 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -410,6 +423,14 @@
 				27470E581965FE6800EF4D06 /* BrinDemoCollectionViewController.h */,
 				27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */,
 				27470E5A1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib */,
+				EDA8C695196AFC2E004DD093 /* BDCollectionHeaderView.h */,
+				EDA8C696196AFC2E004DD093 /* BDCollectionHeaderView.m */,
+				EDA8C698196AFC4C004DD093 /* BDCollectionHeaderView.xib */,
+				EDA8C69A196AFD10004DD093 /* BDCollectionCell.h */,
+				EDA8C69B196AFD10004DD093 /* BDCollectionCell.m */,
+				EDA8C69D196AFD22004DD093 /* BDCollectionCell.xib */,
+				EDA8C69F196AFEAF004DD093 /* BDCollectionFlowLayout.h */,
+				EDA8C6A0196AFEAF004DD093 /* BDCollectionFlowLayout.m */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -907,9 +928,11 @@
 				27C79CD8192FDF4C003681BE /* j3.png in Resources */,
 				27236073196ACA8100CA26B4 /* bg4.png in Resources */,
 				27B2F608195D984E00E17939 /* banner2@2x.png in Resources */,
+				EDA8C699196AFC4C004DD093 /* BDCollectionHeaderView.xib in Resources */,
 				27C79C77192E73CE003681BE /* InfoPlist.strings in Resources */,
 				27B2F605195D984E00E17939 /* banner1.png in Resources */,
 				27C79CD4192FDF4C003681BE /* j1.png in Resources */,
+				EDA8C69E196AFD22004DD093 /* BDCollectionCell.xib in Resources */,
 				27C79CDF192FDF4C003681BE /* j6@2x.png in Resources */,
 				27CC4DC7194259B700DC2034 /* HomeBg@2x.png in Resources */,
 				27C79CE3192FDF4C003681BE /* j8@2x.png in Resources */,
@@ -954,10 +977,12 @@
 				27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */,
 				27B2F5F6195D83D500E17939 /* BrinDemoSilverListViewController.m in Sources */,
 				27873A051940E9F100973989 /* BrinDemoDiamondMasterViewController.m in Sources */,
+				EDA8C69C196AFD10004DD093 /* BDCollectionCell.m in Sources */,
 				ED7A1C71195C978600679B47 /* iCarousel.m in Sources */,
 				278739E61940E7AB00973989 /* BrinDemoHomeViewController.m in Sources */,
 				27C79C86192E73CE003681BE /* BrinDemoViewController.m in Sources */,
 				27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */,
+				EDA8C6A1196AFEAF004DD093 /* BDCollectionFlowLayout.m in Sources */,
 				27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */,
 				27470E471965E9F100EF4D06 /* Flickr.m in Sources */,
 				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
@@ -975,6 +1000,7 @@
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
 				27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */,
 				278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */,
+				EDA8C697196AFC2E004DD093 /* BDCollectionHeaderView.m in Sources */,
 				278739F61940E96D00973989 /* BrinDemoPlatinumSplitViewController.m in Sources */,
 				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,
 				ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */,

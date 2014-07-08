@@ -61,6 +61,7 @@
     [self backgroundImageAnimation];
 }
 
+
 - (void)backgroundImageAnimation
 {
     dispatch_async(dispatch_get_main_queue(), ^{
