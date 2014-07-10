@@ -7,6 +7,7 @@
 //
 
 #import "BrinDemoGoldDetailViewController.h"
+#import "BrinDemoCollectionViewController.h"
 
 @interface BrinDemoGoldDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIView *backGroundView;
@@ -14,6 +15,7 @@
 @end
 
 @implementation BrinDemoGoldDetailViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,6 +25,7 @@
     }
     return self;
 }
+
 
 - (void)viewDidLoad
 {
@@ -35,10 +38,28 @@
 	// Do any additional setup after loading the view.
 }
 
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self pushCollectionView];
+}
+
+
+- (void)pushCollectionView
+{
+    BrinDemoCollectionViewController *collectionVC = [[BrinDemoCollectionViewController alloc] init];
+    [self.navigationController pushViewController:collectionVC animated:YES];
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

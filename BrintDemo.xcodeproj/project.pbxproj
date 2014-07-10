@@ -22,7 +22,6 @@
 		27470E471965E9F100EF4D06 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E441965E9F100EF4D06 /* Flickr.m */; };
 		27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E461965E9F100EF4D06 /* FlickrPhoto.m */; };
 		27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */; };
-		27470E5C1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27470E5A1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib */; };
 		2782592A193F9463000F944A /* mod.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825928193F9463000F944A /* mod.png */; };
 		2782592B193F9463000F944A /* mod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825929193F9463000F944A /* mod@2x.png */; };
 		2782592E193F9686000F944A /* model2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2782592C193F9686000F944A /* model2.png */; };
@@ -114,6 +113,7 @@
 		27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DCD194260DB00DC2034 /* Pattren.png */; };
 		27CC4DD2194261DD00DC2034 /* RingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DD0194261DD00DC2034 /* RingBg.png */; };
 		27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DD1194261DD00DC2034 /* RingBg@2x.png */; };
+		ED2AFBE4196EA6AA008DB914 /* BrinDemoCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2AFBE3196EA6AA008DB914 /* BrinDemoCollectionViewController.xib */; };
 		ED335465194A259D004BDEC6 /* Gold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335464194A259D004BDEC6 /* Gold.storyboard */; };
 		ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED33546C194A27E5004BDEC6 /* Diamond.storyboard */; };
 		ED335470194A2AEE004BDEC6 /* Silver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED33546F194A2AEE004BDEC6 /* Silver.storyboard */; };
@@ -168,7 +168,6 @@
 		27470E461965E9F100EF4D06 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrPhoto.m; path = ../FlickrPhoto.m; sourceTree = "<group>"; };
 		27470E581965FE6800EF4D06 /* BrinDemoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoCollectionViewController.h; sourceTree = "<group>"; };
 		27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoCollectionViewController.m; sourceTree = "<group>"; };
-		27470E5A1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrinDemoCollectionViewController.xib; sourceTree = "<group>"; };
 		27825928193F9463000F944A /* mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mod.png; sourceTree = "<group>"; };
 		27825929193F9463000F944A /* mod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mod@2x.png"; sourceTree = "<group>"; };
 		2782592C193F9686000F944A /* model2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model2.png; sourceTree = "<group>"; };
@@ -288,6 +287,7 @@
 		27CC4DCD194260DB00DC2034 /* Pattren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pattren.png; sourceTree = "<group>"; };
 		27CC4DD0194261DD00DC2034 /* RingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RingBg.png; sourceTree = "<group>"; };
 		27CC4DD1194261DD00DC2034 /* RingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RingBg@2x.png"; sourceTree = "<group>"; };
+		ED2AFBE3196EA6AA008DB914 /* BrinDemoCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrinDemoCollectionViewController.xib; sourceTree = "<group>"; };
 		ED335464194A259D004BDEC6 /* Gold.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Gold.storyboard; sourceTree = "<group>"; };
 		ED33546C194A27E5004BDEC6 /* Diamond.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diamond.storyboard; sourceTree = "<group>"; };
 		ED33546F194A2AEE004BDEC6 /* Silver.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Silver.storyboard; sourceTree = "<group>"; };
@@ -422,7 +422,7 @@
 				27873A011940E9DC00973989 /* BrinDemoGoldDetailViewController.m */,
 				27470E581965FE6800EF4D06 /* BrinDemoCollectionViewController.h */,
 				27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */,
-				27470E5A1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib */,
+				ED2AFBE3196EA6AA008DB914 /* BrinDemoCollectionViewController.xib */,
 				EDA8C695196AFC2E004DD093 /* BDCollectionHeaderView.h */,
 				EDA8C696196AFC2E004DD093 /* BDCollectionHeaderView.m */,
 				EDA8C698196AFC4C004DD093 /* BDCollectionHeaderView.xib */,
@@ -937,11 +937,11 @@
 				27CC4DC7194259B700DC2034 /* HomeBg@2x.png in Resources */,
 				27C79CE3192FDF4C003681BE /* j8@2x.png in Resources */,
 				27236075196ACA8100CA26B4 /* closest-store-active.png in Resources */,
+				ED2AFBE4196EA6AA008DB914 /* BrinDemoCollectionViewController.xib in Resources */,
 				27C79CD7192FDF4C003681BE /* j2@2x.png in Resources */,
 				ED7A591B1959F1870068A83F /* HomePageController.xib in Resources */,
 				27CC4DD2194261DD00DC2034 /* RingBg.png in Resources */,
 				27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */,
-				27470E5C1965FE6800EF4D06 /* BrinDemoCollectionViewController.xib in Resources */,
 				27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */,
 				27873A1C19410BA500973989 /* g20.png in Resources */,
 				ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */,

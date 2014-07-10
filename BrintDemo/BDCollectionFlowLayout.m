@@ -67,7 +67,8 @@
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         [self updateHeaderAttributes:attributes];
-    } else {
+    }
+    else {
         [self updateFooterAttributes:attributes];
     }
     

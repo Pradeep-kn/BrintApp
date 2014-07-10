@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BrinDemoCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface BrinDemoCollectionViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+//@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
