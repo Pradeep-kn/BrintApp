@@ -10,4 +10,6 @@
 
 @interface BDCollectionHeaderView : UICollectionReusableView
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @end

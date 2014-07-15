@@ -10,11 +10,16 @@
 #import "BDCollectionCell.h"
 #import "BDCollectionFlowLayout.h"
 #import "BDCollectionHeaderView.h"
+#import "CSStickyHeaderFlowLayout.h"
+#import "CSSearchBarHeader.h"
 
 
 @interface BrinDemoCollectionViewController ()
 
 @end
+
+
+NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 
 
 @implementation BrinDemoCollectionViewController
@@ -45,38 +50,20 @@
 {
     // Allocate and configure the layout.
     
-    BDCollectionFlowLayout *layout = [[BDCollectionFlowLayout alloc] init];
-    layout.minimumInteritemSpacing = 20.f;
-    layout.minimumLineSpacing = 20.f;
-    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    layout.sectionInset = UIEdgeInsetsMake(10.f, 20.f, 10.f, 20.f);
-    
-    // Bigger items for iPad
-    layout.itemSize = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? CGSizeMake(120, 120) : CGSizeMake(80, 80);
-    
-    // uncomment this to see the default flow layout behavior
-    //[layout makeBoring];
-    
-    
-    // Allocate and configure a collection view
-    
-    UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
-    collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    collectionView.backgroundColor = [UIColor whiteColor];
-    collectionView.bounces = YES;
-    collectionView.alwaysBounceVertical = YES;
-    collectionView.dataSource = self;
-    collectionView.delegate = self;
-    
-    
-    
     // Register reusable items
+    
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([BDCollectionCell class]) bundle:nil]
      forCellWithReuseIdentifier:NSStringFromClass([BDCollectionCell class])];
     
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([BDCollectionHeaderView class]) bundle:nil]
      forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
             withReuseIdentifier:NSStringFromClass([BDCollectionHeaderView class])];
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CSSearchBarHeader class]) bundle:nil]
+          forSupplementaryViewOfKind:CSSearchBarHeaderIdentifier
+                 withReuseIdentifier:NSStringFromClass([CSSearchBarHeader class])];
+    
+    self.collectionView.backgroundColor = [UIColor purpleColor];
     
     [self reloadCollectionView];
 }
@@ -95,67 +82,29 @@
 }
 
 
-//- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-//{
-//    return 100;
-//}
-//
-//
-//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    BDCollectionCell *cell = (BDCollectionCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"BDCollectionCell" forIndexPath:indexPath];
-//    
-//    if (nil == cell) {
-//        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"BDCollectionCell" owner:nil options:nil];
-//        cell = (BDCollectionCell *)[nib objectAtIndex:0];
-//    }
-//    
-//    cell.backgroundColor = [UIColor redColor];
-//    
-//    return cell;
-//}
-//
-//
-//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-//{
-//    UICollectionReusableView *view;
-//    
-//    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-//        view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"Header" forIndexPath:indexPath];
-//        view.backgroundColor = [UIColor orangeColor];
-//    }
-//    else {
-//        view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"Footer" forIndexPath:indexPath];
-//        view.backgroundColor = [UIColor blueColor];
-//    }
-//    return view;
-//}
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    BDCollectionHeaderView *view = nil;
+    CSSearchBarHeader *searchHeaderView = nil;
+    
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        view = (BDCollectionHeaderView *)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"BDCollectionHeaderView" forIndexPath:indexPath];
+        
+        view.backgroundColor = [UIColor orangeColor];
+        
+        view.titleLabel.text = [NSString stringWithFormat:@"Section = %d", indexPath.section];
+        
+        return view;
+    }
+    else if ([kind isEqualToString:CSSearchBarHeaderIdentifier]) {
+        searchHeaderView = (CSSearchBarHeader *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:CSSearchBarHeaderIdentifier forIndexPath:indexPath];
+        
+        return searchHeaderView;
+    }
 
+    return nil;
+}
 
-
-#pragma mark - UICollectionView Delegate
-
-
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
-//{
-//    // only the height component is used
-//    return CGSizeMake(50, 50);
-//}
-//
-//
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
-//{
-//    // only the height component is used
-//    return CGSizeMake(50, 50);
-//}
-//
-//
-//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-//    
-//    // Upon tapping an item, delete it. If it's the last item (the add cell), add a new one
-//}
 
 
 #pragma mark -
@@ -165,17 +114,22 @@
     static NSString *cellIdentifier = @"BDCollectionCell";
     
     BDCollectionCell *cell = (BDCollectionCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.backgroundColor = BLACK_HALF_TRANSPARENT;
     
-    UIColor *color = nil;
+//    UIColor *color = nil;
+//    
+//    if (indexPath.row % 2) {
+//        color = [UIColor redColor];
+//    }
+//    else {
+//        color = [UIColor greenColor];
+//    }
+//    
+//    cell.imageView.backgroundColor = color;
     
-    if (indexPath.row % 2) {
-        color = [UIColor redColor];
-    }
-    else {
-        color = [UIColor greenColor];
-    }
+    cell.imageView.backgroundColor = WHITE_LIGHT;
     
-    cell.imageView.backgroundColor = color;
+    cell.imageView.image = [UIImage imageNamed:@"j6.png"];
     
    
     return cell;
@@ -184,20 +138,20 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 50;
+    return 5;
 }
 
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 1;
+    return 50;
 }
 
 
--(UICollectionViewController*)nextViewControllerAtPoint:(CGPoint)p
-{
-    return nil;
-}
+//-(UICollectionViewController*)nextViewControllerAtPoint:(CGPoint)p
+//{
+//    return nil;
+//}
 
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -222,14 +176,12 @@
 }
 
 
-- (UICollectionViewTransitionLayout *)collectionView:(UICollectionView *)collectionView
-                        transitionLayoutForOldLayout:(UICollectionViewLayout *)fromLayout newLayout:(UICollectionViewLayout *)toLayout
-{
-    UICollectionViewTransitionLayout *transitionLayout = [[UICollectionViewTransitionLayout alloc] initWithCurrentLayout:fromLayout nextLayout:toLayout];
-    return transitionLayout;
-}
-
-
+//- (UICollectionViewTransitionLayout *)collectionView:(UICollectionView *)collectionView
+//                        transitionLayoutForOldLayout:(UICollectionViewLayout *)fromLayout newLayout:(UICollectionViewLayout *)toLayout
+//{
+//    UICollectionViewTransitionLayout *transitionLayout = [[UICollectionViewTransitionLayout alloc] initWithCurrentLayout:fromLayout nextLayout:toLayout];
+//    return transitionLayout;
+//}
 
 
 
