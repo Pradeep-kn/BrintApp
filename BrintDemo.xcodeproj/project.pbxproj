@@ -113,6 +113,10 @@
 		27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DCD194260DB00DC2034 /* Pattren.png */; };
 		27CC4DD2194261DD00DC2034 /* RingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DD0194261DD00DC2034 /* RingBg.png */; };
 		27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DD1194261DD00DC2034 /* RingBg@2x.png */; };
+		ED1FF1FA197435D5000779E5 /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF1F7197435D5000779E5 /* CSStickyHeaderFlowLayout.m */; };
+		ED1FF1FB197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF1F9197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m */; };
+		ED1FF1FD1974423C000779E5 /* CSSearchBarHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1FF1FC1974423C000779E5 /* CSSearchBarHeader.xib */; };
+		ED1FF20019744271000779E5 /* CSSearchBarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF1FF19744271000779E5 /* CSSearchBarHeader.m */; };
 		ED2AFBE4196EA6AA008DB914 /* BrinDemoCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2AFBE3196EA6AA008DB914 /* BrinDemoCollectionViewController.xib */; };
 		ED335465194A259D004BDEC6 /* Gold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335464194A259D004BDEC6 /* Gold.storyboard */; };
 		ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED33546C194A27E5004BDEC6 /* Diamond.storyboard */; };
@@ -287,6 +291,13 @@
 		27CC4DCD194260DB00DC2034 /* Pattren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pattren.png; sourceTree = "<group>"; };
 		27CC4DD0194261DD00DC2034 /* RingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RingBg.png; sourceTree = "<group>"; };
 		27CC4DD1194261DD00DC2034 /* RingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RingBg@2x.png"; sourceTree = "<group>"; };
+		ED1FF1F6197435D5000779E5 /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
+		ED1FF1F7197435D5000779E5 /* CSStickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayout.m; sourceTree = "<group>"; };
+		ED1FF1F8197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayoutAttributes.h; sourceTree = "<group>"; };
+		ED1FF1F9197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayoutAttributes.m; sourceTree = "<group>"; };
+		ED1FF1FC1974423C000779E5 /* CSSearchBarHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSSearchBarHeader.xib; sourceTree = "<group>"; };
+		ED1FF1FE19744271000779E5 /* CSSearchBarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSearchBarHeader.h; sourceTree = "<group>"; };
+		ED1FF1FF19744271000779E5 /* CSSearchBarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSearchBarHeader.m; sourceTree = "<group>"; };
 		ED2AFBE3196EA6AA008DB914 /* BrinDemoCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrinDemoCollectionViewController.xib; sourceTree = "<group>"; };
 		ED335464194A259D004BDEC6 /* Gold.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Gold.storyboard; sourceTree = "<group>"; };
 		ED33546C194A27E5004BDEC6 /* Diamond.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diamond.storyboard; sourceTree = "<group>"; };
@@ -431,6 +442,13 @@
 				EDA8C69D196AFD22004DD093 /* BDCollectionCell.xib */,
 				EDA8C69F196AFEAF004DD093 /* BDCollectionFlowLayout.h */,
 				EDA8C6A0196AFEAF004DD093 /* BDCollectionFlowLayout.m */,
+				ED1FF1F6197435D5000779E5 /* CSStickyHeaderFlowLayout.h */,
+				ED1FF1F7197435D5000779E5 /* CSStickyHeaderFlowLayout.m */,
+				ED1FF1F8197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.h */,
+				ED1FF1F9197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m */,
+				ED1FF1FC1974423C000779E5 /* CSSearchBarHeader.xib */,
+				ED1FF1FE19744271000779E5 /* CSSearchBarHeader.h */,
+				ED1FF1FF19744271000779E5 /* CSSearchBarHeader.m */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -942,6 +960,7 @@
 				ED7A591B1959F1870068A83F /* HomePageController.xib in Resources */,
 				27CC4DD2194261DD00DC2034 /* RingBg.png in Resources */,
 				27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */,
+				ED1FF1FD1974423C000779E5 /* CSSearchBarHeader.xib in Resources */,
 				27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */,
 				27873A1C19410BA500973989 /* g20.png in Resources */,
 				ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */,
@@ -973,10 +992,12 @@
 			files = (
 				278739F91940E98100973989 /* BrinDemoSilverSplitViewController.m in Sources */,
 				EDE56BA1194793D900D68A33 /* BICollectionsViewController.m in Sources */,
+				ED1FF1FB197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */,
 				27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */,
 				27B2F5F6195D83D500E17939 /* BrinDemoSilverListViewController.m in Sources */,
 				27873A051940E9F100973989 /* BrinDemoDiamondMasterViewController.m in Sources */,
+				ED1FF20019744271000779E5 /* CSSearchBarHeader.m in Sources */,
 				EDA8C69C196AFD10004DD093 /* BDCollectionCell.m in Sources */,
 				ED7A1C71195C978600679B47 /* iCarousel.m in Sources */,
 				278739E61940E7AB00973989 /* BrinDemoHomeViewController.m in Sources */,
@@ -995,6 +1016,7 @@
 				EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */,
 				ED7A591A1959F1870068A83F /* HomePageController.m in Sources */,
 				ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */,
+				ED1FF1FA197435D5000779E5 /* CSStickyHeaderFlowLayout.m in Sources */,
 				27C96A89195B6EB800B08F4F /* BrinDemoGoldListViewController.m in Sources */,
 				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
