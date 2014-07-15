@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="ykv-ui-ObG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="ykv-ui-ObG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -83,33 +83,88 @@
                         <outlet property="containerView" destination="ocv-um-YIF" id="Iga-gi-tfp"/>
                         <outlet property="homeInfoView" destination="Rxy-Jw-kyq" id="ELZ-Od-YBm"/>
                         <outlet property="offersInfoView" destination="pSQ-5C-HQA" id="c1i-OJ-glf"/>
-                        <segue destination="7gh-lU-viF" kind="push" identifier="collectionsSegue" id="1a1-4h-soJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRv-lR-wvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="-784"/>
+            <point key="canvasLocation" x="1512" y="-1372"/>
         </scene>
-        <!--Collections View Controller-->
-        <scene sceneID="n8w-Mm-23l">
+        <!--Home View Controller-->
+        <scene sceneID="DIU-8q-0ST">
             <objects>
-                <viewController id="7gh-lU-viF" customClass="BICollectionsViewController" sceneMemberID="viewController">
+                <viewController id="DiB-ez-asf" customClass="BIHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WnX-Sj-BWT"/>
-                        <viewControllerLayoutGuide type="bottom" id="yvu-JY-7xU"/>
+                        <viewControllerLayoutGuide type="top" id="LEZ-kJ-FXy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mev-Zc-WfI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Giy-LX-vYh">
+                    <view key="view" contentMode="scaleToFill" id="uD5-zS-cqr">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvM-IV-wrL">
+                                <rect key="frame" x="62" y="387" width="900" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXE-23-isD">
+                                <rect key="frame" x="62" y="73" width="484" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="444" translatesAutoresizingMaskIntoConstraints="NO" id="KiR-rc-cQN">
+                                        <rect key="frame" x="20" y="20" width="444" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="444" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-8H-vv6">
+                                        <rect key="frame" x="20" y="68" width="444" height="218"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ywJ-mO-Iyg">
+                                <rect key="frame" x="554" y="73" width="408" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-p1-4jY">
+                                <rect key="frame" x="20" y="522" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftArrowBtnCliked:" destination="DiB-ez-asf" eventType="touchUpInside" id="k55-LK-hz8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoW-0Z-IGG">
+                                <rect key="frame" x="974" y="522" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=">">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightArrowButtonClicked:" destination="DiB-ez-asf" eventType="touchUpInside" id="ub4-Hu-VRk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="62Z-0D-N06"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationItem key="navigationItem" id="09a-UQ-Lzq"/>
+                    <connections>
+                        <outlet property="homeDescriptionLable" destination="gXf-8H-vv6" id="i8R-Nk-tgd"/>
+                        <outlet property="homeTitleLable" destination="KiR-rc-cQN" id="XR9-kI-Tsc"/>
+                        <outlet property="imagesScrollView" destination="ZvM-IV-wrL" id="bKF-Vw-S8Z"/>
+                        <outlet property="informationScrollView" destination="dXE-23-isD" id="MH6-du-DUr"/>
+                        <outlet property="offersScrollView" destination="ywJ-mO-Iyg" id="C6O-24-WWb"/>
+                        <outlet property="rightArrow" destination="xoW-0Z-IGG" id="UDa-KU-Lvb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V4D-hC-d07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHr-TN-xt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2518" y="-747"/>
+            <point key="canvasLocation" x="1512" y="-478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UCY-cl-Yfi">
@@ -123,12 +178,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hNv-9a-OSM" kind="relationship" relationship="rootViewController" id="juY-Kk-e3c"/>
+                        <segue destination="DiB-ez-asf" kind="relationship" relationship="rootViewController" id="7zf-qN-2oJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WtL-vW-5KP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="-711"/>
+            <point key="canvasLocation" x="169" y="-784"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

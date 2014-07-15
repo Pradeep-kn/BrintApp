@@ -47,20 +47,74 @@
 	// Do any additional setup after loading the view.
     
     [self.navigationController.tabBarItem setTitle:@"HOME"];
-    
-    self.containerView.backgroundColor = BLACK_COLOR;
-    
-    self.corouselDataSource = [NSMutableArray array];
-    
-    for (int i = 0; i < 10; i++) {
-        BDCollectionInfo *info = [[BDCollectionInfo alloc] init];
-        [self.corouselDataSource addObject:info];
-    }
-    
-    [self addGradientColourToInfoViews];
-    [self backgroundImageAnimation];
+    self.imagesScrollView.scrollsToTop = NO;
+    [self loadImages];
+    [self loadHomeDetails];
+    [self loadOffersDetails];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
+//    self.containerView.backgroundColor = BLACK_COLOR;
+//    
+//    self.corouselDataSource = [NSMutableArray array];
+//    
+//    for (int i = 0; i < 10; i++) {
+//        BDCollectionInfo *info = [[BDCollectionInfo alloc] init];
+//        [self.corouselDataSource addObject:info];
+//    }
+//    
+//    [self addGradientColourToInfoViews];
+//    [self backgroundImageAnimation];
 }
 
+- (void)loadImages
+{
+    NSMutableArray *emmaImagesArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"banner1.png"],[UIImage imageNamed:@"banner2.png"],[UIImage imageNamed:@"banner3.png"],[UIImage imageNamed:@"banner4.png"],[UIImage imageNamed:@"banner5.png"],[UIImage imageNamed:@"banner6.png"], nil];
+    
+    for (int index = 0; index < [emmaImagesArray count]; index++) {
+        
+        UIImage *image =  (UIImage *)[emmaImagesArray objectAtIndex:index];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        
+        CGRect frame = CGRectMake(index * self.imagesScrollView.frame.size.width, 0, self.imagesScrollView.frame.size.width, self.imagesScrollView.frame.size.height);
+        imageView.frame = frame;
+        
+        self.imagesScrollView.contentSize = CGSizeMake(index*self.imagesScrollView.frame.size.width, self.imagesScrollView.frame.size.height);
+        
+        //[self.imagesScrollView setContentMode:UIViewContentModeScaleAspectFill];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [imageView sizeToFit];
+        [self.imagesScrollView addSubview:imageView];
+    }
+}
+
+- (void)loadHomeDetails
+{
+    self.homeDescriptionLable.text = [NSString stringWithFormat:@"Price of the gold ornament is  =  Price of 22K gold * ( Weight in Grams + Wastage charges) + ( Making Charges)  + VAT"];
+}
+
+- (void)loadOffersDetails
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSMutableArray *offersArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"j5.png"],[UIImage imageNamed:@"j6.png"],[UIImage imageNamed:@"j7.png"],[UIImage imageNamed:@"j8.png"],[UIImage imageNamed:@"j9.png"],[UIImage imageNamed:@"j10.png"], nil];
+//        self.collectionsImageView.animationImages = offersArray;
+//        self.collectionsImageView.animationDuration = 10.0;
+//        self.collectionsImageView.animationRepeatCount = 0;
+        
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.offersScrollView.frame];
+        imageView.animationImages = offersArray;
+        imageView.animationDuration = 20.0f;
+        imageView.animationRepeatCount = 0.0f;
+
+
+        CATransition *transition = [CATransition animation];
+        transition.duration = 4.0f;
+        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+        transition.type = kCATransitionReveal;
+        
+        [self.offersScrollView.layer addAnimation:transition forKey:nil];
+        [imageView startAnimating];
+    });
+
+}
 
 - (void)backgroundImageAnimation
 {
@@ -384,4 +438,8 @@
 
 
 
+- (IBAction)leftArrowBtnCliked:(id)sender {
+}
+- (IBAction)rightArrowButtonClicked:(id)sender {
+}
 @end

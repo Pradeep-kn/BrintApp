@@ -17,4 +17,16 @@
 @property (weak, nonatomic) IBOutlet UIView *offersInfoView;
 @property (weak, nonatomic) IBOutlet UIView *collectionsInfoView;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *imagesScrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *informationScrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *offersScrollView;
+
+@property (weak, nonatomic) IBOutlet UIButton *rightArrow;
+@property (weak, nonatomic) IBOutlet UILabel *homeTitleLable;
+@property (weak, nonatomic) IBOutlet UILabel *homeDescriptionLable;
+
+- (IBAction)leftArrowBtnCliked:(id)sender;
+- (IBAction)rightArrowButtonClicked:(id)sender;
+
+
 @end
