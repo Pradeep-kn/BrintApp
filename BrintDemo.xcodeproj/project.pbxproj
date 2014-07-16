@@ -42,6 +42,10 @@
 		27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 27873A181940F78800973989 /* UIImage+animatedGIF.m */; };
 		27873A1C19410BA500973989 /* g20.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1A19410BA500973989 /* g20.png */; };
 		27873A1D19410BA500973989 /* g20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27873A1B19410BA500973989 /* g20@2x.png */; };
+		27AE5FA41976FC6E00A399B4 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5FA11976FC6E00A399B4 /* FXImageView.m */; };
+		27AE5FA51976FC6E00A399B4 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5FA31976FC6E00A399B4 /* UIImage+FX.m */; };
+		27AE5FA71977099000A399B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AE5FA61977099000A399B4 /* QuartzCore.framework */; };
+		27AE5FAA1977186300A399B4 /* BrinDemoHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5FA91977186300A399B4 /* BrinDemoHomePageViewController.m */; };
 		27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */; };
 		27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */; };
 		27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F1195D83D500E17939 /* BrinDemoPlatinumViewController.m */; };
@@ -206,6 +210,13 @@
 		27873A181940F78800973989 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		27873A1A19410BA500973989 /* g20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g20.png; sourceTree = "<group>"; };
 		27873A1B19410BA500973989 /* g20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g20@2x.png"; sourceTree = "<group>"; };
+		27AE5FA01976FC6E00A399B4 /* FXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXImageView.h; sourceTree = "<group>"; };
+		27AE5FA11976FC6E00A399B4 /* FXImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXImageView.m; sourceTree = "<group>"; };
+		27AE5FA21976FC6E00A399B4 /* UIImage+FX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FX.h"; sourceTree = "<group>"; };
+		27AE5FA31976FC6E00A399B4 /* UIImage+FX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FX.m"; sourceTree = "<group>"; };
+		27AE5FA61977099000A399B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		27AE5FA81977186300A399B4 /* BrinDemoHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoHomePageViewController.h; sourceTree = "<group>"; };
+		27AE5FA91977186300A399B4 /* BrinDemoHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoHomePageViewController.m; sourceTree = "<group>"; };
 		27B2B9811961E85C00731835 /* BrinDemoGoldDetailsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoGoldDetailsListViewController.h; sourceTree = "<group>"; };
 		27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoGoldDetailsListViewController.m; sourceTree = "<group>"; };
 		27B2F5EE195D83BC00E17939 /* BrinDemoDiamondListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoDiamondListViewController.h; sourceTree = "<group>"; };
@@ -342,6 +353,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AE5FA71977099000A399B4 /* QuartzCore.framework in Frameworks */,
 				27C79C6F192E73CE003681BE /* CoreGraphics.framework in Frameworks */,
 				27C79C71192E73CE003681BE /* UIKit.framework in Frameworks */,
 				27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */,
@@ -364,6 +376,10 @@
 		27470E491965EA2500EF4D06 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				27AE5FA01976FC6E00A399B4 /* FXImageView.h */,
+				27AE5FA11976FC6E00A399B4 /* FXImageView.m */,
+				27AE5FA21976FC6E00A399B4 /* UIImage+FX.h */,
+				27AE5FA31976FC6E00A399B4 /* UIImage+FX.m */,
 				27470E431965E9F100EF4D06 /* Flickr.h */,
 				27470E441965E9F100EF4D06 /* Flickr.m */,
 				27470E451965E9F100EF4D06 /* FlickrPhoto.h */,
@@ -569,6 +585,7 @@
 		27C79C6B192E73CE003681BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27AE5FA61977099000A399B4 /* QuartzCore.framework */,
 				27C79C6C192E73CE003681BE /* Foundation.framework */,
 				27C79C6E192E73CE003681BE /* CoreGraphics.framework */,
 				27C79C70192E73CE003681BE /* UIKit.framework */,
@@ -808,6 +825,8 @@
 				ED7A1C75195CAD6F00679B47 /* BDCollectionView.h */,
 				ED7A1C76195CAD6F00679B47 /* BDCollectionView.m */,
 				ED7A1C7A195CADBE00679B47 /* BDCollectionView.xib */,
+				27AE5FA81977186300A399B4 /* BrinDemoHomePageViewController.h */,
+				27AE5FA91977186300A399B4 /* BrinDemoHomePageViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -1015,15 +1034,18 @@
 				27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */,
 				EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */,
 				ED7A591A1959F1870068A83F /* HomePageController.m in Sources */,
+				27AE5FA51976FC6E00A399B4 /* UIImage+FX.m in Sources */,
 				ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */,
 				ED1FF1FA197435D5000779E5 /* CSStickyHeaderFlowLayout.m in Sources */,
 				27C96A89195B6EB800B08F4F /* BrinDemoGoldListViewController.m in Sources */,
+				27AE5FA41976FC6E00A399B4 /* FXImageView.m in Sources */,
 				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
 				27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */,
 				278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */,
 				EDA8C697196AFC2E004DD093 /* BDCollectionHeaderView.m in Sources */,
 				278739F61940E96D00973989 /* BrinDemoPlatinumSplitViewController.m in Sources */,
+				27AE5FAA1977186300A399B4 /* BrinDemoHomePageViewController.m in Sources */,
 				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,
 				ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */,
 				27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */,

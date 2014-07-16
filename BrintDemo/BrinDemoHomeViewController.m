@@ -8,6 +8,7 @@
 
 #import "BrinDemoHomeViewController.h"
 #import "BIHomeViewController.h"
+#import "BrinDemoHomePageViewController.h"
 
 @interface BrinDemoHomeViewController ()
 
@@ -44,7 +45,8 @@
 
 - (void)showNewHome
 {
-    BIHomeViewController *homeVC = (BIHomeViewController *)[[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateInitialViewController];
+//    BIHomeViewController *homeVC = (BIHomeViewController *)[[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateInitialViewController];
+    BrinDemoHomePageViewController *homeVC = (BrinDemoHomePageViewController *)[[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateInitialViewController];
     [self.navigationController pushViewController:homeVC animated:YES];
 }
 
