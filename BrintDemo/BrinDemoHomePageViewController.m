@@ -36,9 +36,29 @@
     self.offersView.layer.cornerRadius = 6.0f;
 
     self.carousel.type = iCarouselTypeCylinder;
-
+    [self offersImageAnimation];
 	// Do any additional setup after loading the view.
 }
+
+- (void)offersImageAnimation
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSMutableArray *emmaImagesArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"offers1.png"],[UIImage imageNamed:@"offers2.png"],[UIImage imageNamed:@"offers3.png"],[UIImage imageNamed:@"offers4.png"],[UIImage imageNamed:@"offers5.png"], nil];
+        self.offersImageView.animationImages = emmaImagesArray;
+        self.offersImageView.animationDuration = 10.0;
+        self.offersImageView.animationRepeatCount = 0;
+        self.offersImageView.contentMode = UIViewContentModeScaleAspectFit;
+
+        CATransition *transition = [CATransition animation];
+        transition.duration = 4.0f;
+        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+        transition.type = kCATransitionReveal;
+        
+        [self.offersView.layer addAnimation:transition forKey:nil];
+        [self.offersImageView startAnimating];
+    });
+}
+
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {

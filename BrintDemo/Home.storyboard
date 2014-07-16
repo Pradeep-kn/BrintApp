@@ -207,6 +207,12 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eD8-hd-rI9">
                                 <rect key="frame" x="640" y="90" width="364" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBH-II-2xl">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="321"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.82445790816326525" green="0.70983815217051038" blue="0.22434028264211123" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -217,6 +223,7 @@
                     <connections>
                         <outlet property="carousel" destination="Nhz-Mh-k65" id="dgf-nU-2wy"/>
                         <outlet property="homeDetailView" destination="cor-Sy-iz8" id="jfi-QZ-M6T"/>
+                        <outlet property="offersImageView" destination="pBH-II-2xl" id="9RQ-Cn-HpQ"/>
                         <outlet property="offersView" destination="eD8-hd-rI9" id="dwG-tz-9xC"/>
                     </connections>
                 </viewController>

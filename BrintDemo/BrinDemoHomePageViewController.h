@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIView *homeDetailView;
 @property (weak, nonatomic) IBOutlet UIView *offersView;
 @property (strong, nonatomic) NSMutableArray *arrayOfImages;
+@property (weak, nonatomic) IBOutlet UIImageView *offersImageView;
 
 @end

@@ -46,6 +46,16 @@
 		27AE5FA51976FC6E00A399B4 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5FA31976FC6E00A399B4 /* UIImage+FX.m */; };
 		27AE5FA71977099000A399B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AE5FA61977099000A399B4 /* QuartzCore.framework */; };
 		27AE5FAA1977186300A399B4 /* BrinDemoHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5FA91977186300A399B4 /* BrinDemoHomePageViewController.m */; };
+		27AE5FB81977294B00A399B4 /* offers2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FAE1977294B00A399B4 /* offers2.png */; };
+		27AE5FB91977294B00A399B4 /* offers2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FAF1977294B00A399B4 /* offers2@2x.png */; };
+		27AE5FBA1977294B00A399B4 /* offers5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FB01977294B00A399B4 /* offers5@2x.png */; };
+		27AE5FBB1977294B00A399B4 /* offers5.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FB11977294B00A399B4 /* offers5.png */; };
+		27AE5FBC1977294B00A399B4 /* offers4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FB21977294B00A399B4 /* offers4@2x.png */; };
+		27AE5FBD1977294B00A399B4 /* offers4.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FB31977294B00A399B4 /* offers4.png */; };
+		27AE5FBE1977294B00A399B4 /* offers3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FB41977294B00A399B4 /* offers3@2x.png */; };
+		27AE5FBF1977294B00A399B4 /* offers3.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FB51977294B00A399B4 /* offers3.png */; };
+		27AE5FC219772AA900A399B4 /* offers1.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FC019772AA900A399B4 /* offers1.png */; };
+		27AE5FC319772AA900A399B4 /* offers1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FC119772AA900A399B4 /* offers1@2x.png */; };
 		27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */; };
 		27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */; };
 		27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F1195D83D500E17939 /* BrinDemoPlatinumViewController.m */; };
@@ -217,6 +227,16 @@
 		27AE5FA61977099000A399B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		27AE5FA81977186300A399B4 /* BrinDemoHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoHomePageViewController.h; sourceTree = "<group>"; };
 		27AE5FA91977186300A399B4 /* BrinDemoHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoHomePageViewController.m; sourceTree = "<group>"; };
+		27AE5FAE1977294B00A399B4 /* offers2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offers2.png; sourceTree = "<group>"; };
+		27AE5FAF1977294B00A399B4 /* offers2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offers2@2x.png"; sourceTree = "<group>"; };
+		27AE5FB01977294B00A399B4 /* offers5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offers5@2x.png"; sourceTree = "<group>"; };
+		27AE5FB11977294B00A399B4 /* offers5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offers5.png; sourceTree = "<group>"; };
+		27AE5FB21977294B00A399B4 /* offers4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offers4@2x.png"; sourceTree = "<group>"; };
+		27AE5FB31977294B00A399B4 /* offers4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offers4.png; sourceTree = "<group>"; };
+		27AE5FB41977294B00A399B4 /* offers3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offers3@2x.png"; sourceTree = "<group>"; };
+		27AE5FB51977294B00A399B4 /* offers3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offers3.png; sourceTree = "<group>"; };
+		27AE5FC019772AA900A399B4 /* offers1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offers1.png; sourceTree = "<group>"; };
+		27AE5FC119772AA900A399B4 /* offers1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offers1@2x.png"; sourceTree = "<group>"; };
 		27B2B9811961E85C00731835 /* BrinDemoGoldDetailsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoGoldDetailsListViewController.h; sourceTree = "<group>"; };
 		27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoGoldDetailsListViewController.m; sourceTree = "<group>"; };
 		27B2F5EE195D83BC00E17939 /* BrinDemoDiamondListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoDiamondListViewController.h; sourceTree = "<group>"; };
@@ -544,6 +564,24 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		27AE5FAB1977293500A399B4 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				27AE5FC019772AA900A399B4 /* offers1.png */,
+				27AE5FC119772AA900A399B4 /* offers1@2x.png */,
+				27AE5FAE1977294B00A399B4 /* offers2.png */,
+				27AE5FAF1977294B00A399B4 /* offers2@2x.png */,
+				27AE5FB01977294B00A399B4 /* offers5@2x.png */,
+				27AE5FB11977294B00A399B4 /* offers5.png */,
+				27AE5FB21977294B00A399B4 /* offers4@2x.png */,
+				27AE5FB31977294B00A399B4 /* offers4.png */,
+				27AE5FB41977294B00A399B4 /* offers3@2x.png */,
+				27AE5FB51977294B00A399B4 /* offers3.png */,
+			);
+			name = Offers;
+			path = BrintDemo/Offers;
+			sourceTree = SOURCE_ROOT;
+		};
 		27B2F5F8195D984E00E17939 /* Banners */ = {
 			isa = PBXGroup;
 			children = (
@@ -641,6 +679,7 @@
 		27C79CAB192E7AB9003681BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				27AE5FAB1977293500A399B4 /* Offers */,
 				27236061196ACA8100CA26B4 /* bg1.png */,
 				27236062196ACA8100CA26B4 /* bg1@2x.png */,
 				27236063196ACA8100CA26B4 /* bg2.png */,
@@ -911,6 +950,7 @@
 				27873A1D19410BA500973989 /* g20@2x.png in Resources */,
 				27236071196ACA8100CA26B4 /* bg3.png in Resources */,
 				27C79CD6192FDF4C003681BE /* j2.png in Resources */,
+				27AE5FB81977294B00A399B4 /* offers2.png in Resources */,
 				27C79CAE192E7AB9003681BE /* Bg.png in Resources */,
 				27C79CDB192FDF4C003681BE /* j4@2x.png in Resources */,
 				27B2F60F195D984E00E17939 /* banner6.png in Resources */,
@@ -926,12 +966,14 @@
 				27C79CDD192FDF4C003681BE /* j5@2x.png in Resources */,
 				27C96A84195B698100B08F4F /* goldTab.png in Resources */,
 				ED335476194A2BFC004BDEC6 /* Settings.storyboard in Resources */,
+				27AE5FBD1977294B00A399B4 /* offers4.png in Resources */,
 				27CC4DC31942527F00DC2034 /* g37@2x.png in Resources */,
 				2782592B193F9463000F944A /* mod@2x.png in Resources */,
 				2723606F196ACA8100CA26B4 /* bg2.png in Resources */,
 				27B2F607195D984E00E17939 /* banner2.png in Resources */,
 				27236074196ACA8100CA26B4 /* bg4@2x.png in Resources */,
 				27C79C83192E73CE003681BE /* Main_iPad.storyboard in Resources */,
+				27AE5FBE1977294B00A399B4 /* offers3@2x.png in Resources */,
 				ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */,
 				2782592E193F9686000F944A /* model2.png in Resources */,
 				27236072196ACA8100CA26B4 /* bg3@2x.png in Resources */,
@@ -940,6 +982,7 @@
 				27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */,
 				27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */,
 				27B2F606195D984E00E17939 /* banner1@2x.png in Resources */,
+				27AE5FB91977294B00A399B4 /* offers2@2x.png in Resources */,
 				2782592F193F9686000F944A /* model2@2x.png in Resources */,
 				ED335470194A2AEE004BDEC6 /* Silver.storyboard in Resources */,
 				2723606D196ACA8100CA26B4 /* bg1.png in Resources */,
@@ -962,6 +1005,7 @@
 				27C79CDA192FDF4C003681BE /* j4.png in Resources */,
 				27CC4DCE194260DB00DC2034 /* Pattren@2x.png in Resources */,
 				27B2F60D195D984E00E17939 /* banner5.png in Resources */,
+				27AE5FBF1977294B00A399B4 /* offers3.png in Resources */,
 				27C79CD8192FDF4C003681BE /* j3.png in Resources */,
 				27236073196ACA8100CA26B4 /* bg4.png in Resources */,
 				27B2F608195D984E00E17939 /* banner2@2x.png in Resources */,
@@ -972,6 +1016,8 @@
 				EDA8C69E196AFD22004DD093 /* BDCollectionCell.xib in Resources */,
 				27C79CDF192FDF4C003681BE /* j6@2x.png in Resources */,
 				27CC4DC7194259B700DC2034 /* HomeBg@2x.png in Resources */,
+				27AE5FBC1977294B00A399B4 /* offers4@2x.png in Resources */,
+				27AE5FBB1977294B00A399B4 /* offers5.png in Resources */,
 				27C79CE3192FDF4C003681BE /* j8@2x.png in Resources */,
 				27236075196ACA8100CA26B4 /* closest-store-active.png in Resources */,
 				ED2AFBE4196EA6AA008DB914 /* BrinDemoCollectionViewController.xib in Resources */,
@@ -981,14 +1027,17 @@
 				27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */,
 				ED1FF1FD1974423C000779E5 /* CSSearchBarHeader.xib in Resources */,
 				27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */,
+				27AE5FC219772AA900A399B4 /* offers1.png in Resources */,
 				27873A1C19410BA500973989 /* g20.png in Resources */,
 				ED33546D194A27E5004BDEC6 /* Diamond.storyboard in Resources */,
 				27C96A86195B698A00B08F4F /* goldTab@2x.png in Resources */,
 				27B2F60E195D984E00E17939 /* banner5@2x.png in Resources */,
 				ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */,
+				27AE5FC319772AA900A399B4 /* offers1@2x.png in Resources */,
 				27C79CD9192FDF4C003681BE /* j3@2x.png in Resources */,
 				2782592A193F9463000F944A /* mod.png in Resources */,
 				27CC4DCB19425A6C00DC2034 /* LaunchBg@2x.png in Resources */,
+				27AE5FBA1977294B00A399B4 /* offers5@2x.png in Resources */,
 				27CC4DCA19425A6C00DC2034 /* LaunchBg.png in Resources */,
 				EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */,
 			);
