@@ -30,6 +30,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
+    self.navigationController.navigationBarHidden = YES;
     self.homeDetailView.backgroundColor = [self.homeDetailView.backgroundColor colorWithAlphaComponent:0.6f];
     self.homeDetailView.layer.cornerRadius = 6.0f;
     self.offersView.backgroundColor = [self.offersView.backgroundColor colorWithAlphaComponent:0.6f];
@@ -110,4 +111,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)calculateBtnClicked:(id)sender {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Gold price" message:[NSString stringWithFormat:@"Selected gold price is"] delegate:self cancelButtonTitle:[NSString stringWithFormat:@"OK"] otherButtonTitles: nil];
+    [alertView show];
+}
 @end

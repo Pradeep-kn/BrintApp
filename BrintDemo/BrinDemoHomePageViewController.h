@@ -16,5 +16,12 @@
 @property (weak, nonatomic) IBOutlet UIView *offersView;
 @property (strong, nonatomic) NSMutableArray *arrayOfImages;
 @property (weak, nonatomic) IBOutlet UIImageView *offersImageView;
+- (IBAction)calculateBtnClicked:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *goldPriceTxtField;
+@property (weak, nonatomic) IBOutlet UITextField *goldWightInGrams;
+@property (weak, nonatomic) IBOutlet UITextField *wastageChargeTxtField;
+@property (weak, nonatomic) IBOutlet UITextField *makingChargesTxtField;
+@property (weak, nonatomic) IBOutlet UITextField *vatTxtField;
 
 @end

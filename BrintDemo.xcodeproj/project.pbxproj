@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271FE64719785777004FAD80 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 271FE64619785777004FAD80 /* close.png */; };
+		271FE6491978579E004FAD80 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 271FE6481978579E004FAD80 /* close@2x.png */; };
 		2723606D196ACA8100CA26B4 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236061196ACA8100CA26B4 /* bg1.png */; };
 		2723606E196ACA8100CA26B4 /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236062196ACA8100CA26B4 /* bg1@2x.png */; };
 		2723606F196ACA8100CA26B4 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27236063196ACA8100CA26B4 /* bg2.png */; };
@@ -160,6 +162,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271FE64619785777004FAD80 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		271FE6481978579E004FAD80 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
 		27236061196ACA8100CA26B4 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		27236062196ACA8100CA26B4 /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
 		27236063196ACA8100CA26B4 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
@@ -663,6 +667,8 @@
 		27C79CAB192E7AB9003681BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				271FE64619785777004FAD80 /* close.png */,
+				271FE6481978579E004FAD80 /* close@2x.png */,
 				27AE5FAB1977293500A399B4 /* Offers */,
 				27236061196ACA8100CA26B4 /* bg1.png */,
 				27236062196ACA8100CA26B4 /* bg1@2x.png */,
@@ -923,6 +929,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271FE64719785777004FAD80 /* close.png in Resources */,
 				27C79CD6192FDF4C003681BE /* j2.png in Resources */,
 				27AE5FB81977294B00A399B4 /* offers2.png in Resources */,
 				27C79CDB192FDF4C003681BE /* j4@2x.png in Resources */,
@@ -952,6 +959,7 @@
 				27B2F609195D984E00E17939 /* banner3.png in Resources */,
 				27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */,
 				27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */,
+				271FE6491978579E004FAD80 /* close@2x.png in Resources */,
 				27B2F606195D984E00E17939 /* banner1@2x.png in Resources */,
 				27AE5FB91977294B00A399B4 /* offers2@2x.png in Resources */,
 				2782592F193F9686000F944A /* model2@2x.png in Resources */,
