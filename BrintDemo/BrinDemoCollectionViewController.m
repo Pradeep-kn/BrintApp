@@ -12,7 +12,7 @@
 #import "BDCollectionHeaderView.h"
 #import "CSStickyHeaderFlowLayout.h"
 #import "CSSearchBarHeader.h"
-
+#import "SVSegmentedControl.h"
 
 @interface BrinDemoCollectionViewController ()
 
@@ -24,7 +24,15 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 
 @implementation BrinDemoCollectionViewController
 
+
 @synthesize collectionView;
+@synthesize searchView;
+@synthesize itemSearchBar;
+@synthesize rangeSlider;
+@synthesize sliderRangeValue;
+@synthesize searchFlags;
+@synthesize searchListArray;
+@synthesize selectedSearchOption;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -42,8 +50,86 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [self initializeSearchView];
     [self initializeCollectionView];
+    
+    [self searchResults];
 }
+
+
+- (void)initializeSearchView
+{
+    
+    itemSearchBar.placeholder = NSLocalizedString(@"Search", @"Search");
+    itemSearchBar.backgroundColor = CLEAR_COLOR;
+    for (UIView *subview in itemSearchBar.subviews) {
+        if ([subview isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
+            [subview removeFromSuperview];
+            break;
+        }
+    }
+    
+    self.rangeSlider.minimumValue = 1000;
+    self.rangeSlider.maximumValue = 1000 * 500;
+    self.sliderRangeValue = self.rangeSlider.minimumValue;
+    
+    [self updateSliderLabels];
+    
+    SVSegmentedControl *yellowRC = [[SVSegmentedControl alloc] initWithSectionTitles:[NSArray arrayWithObjects:@"Name", @"Value", @"Metal Type", nil]];
+    [yellowRC addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
+    
+    CGRect frame = CGRectMake(380, 82, 310, 40);
+    
+    yellowRC.frame = frame;
+    
+	yellowRC.crossFadeLabelsOnDrag = YES;
+	yellowRC.font = [UIFont fontWithName:@"Marker Felt" size:20];
+	yellowRC.titleEdgeInsets = UIEdgeInsetsMake(0, 14, 0, 14);
+	yellowRC.height = 45;
+    [yellowRC setSelectedSegmentIndex:0 animated:NO];
+	yellowRC.thumb.tintColor = [UIColor colorWithRed:0.999 green:0.889 blue:0.312 alpha:1.000];
+	yellowRC.thumb.textColor = [UIColor blackColor];
+	yellowRC.thumb.textShadowColor = [UIColor colorWithWhite:1 alpha:0.5];
+	yellowRC.thumb.textShadowOffset = CGSizeMake(0, 1);
+    
+	[self.searchView addSubview:yellowRC];
+}
+
+
+- (void)updateSliderLabels
+{
+    self.minValueLabel.text = [NSString stringWithFormat:@"%.0f",self.sliderRangeValue];
+    self.maxValueLabel.text = [NSString stringWithFormat:@"%.0f",self.rangeSlider.maximumValue];
+}
+
+
+- (void)segmentedControlChangedValue:(SVSegmentedControl *)segmentControl
+{
+    self.selectedSearchOption = segmentControl.selectedSegmentIndex;
+    
+    switch (selectedSearchOption) {
+        case SearchItemByName: {
+            
+            break;
+        }
+            
+        case SearchItemByValue: {
+            
+            break;
+        }
+            
+        case SearchItemByMetal: {
+            
+            break;
+        }
+            
+        default:
+            break;
+    }
+    
+    [self searchResults];
+}
+
 
 
 - (void)initializeCollectionView
@@ -64,14 +150,13 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
                  withReuseIdentifier:NSStringFromClass([CSSearchBarHeader class])];
     
     self.collectionView.backgroundColor = [UIColor purpleColor];
-    
-    [self reloadCollectionView];
 }
 
 
 - (void)reloadCollectionView
 {
     [self.collectionView reloadData];
+    [self.collectionView setContentOffset:CGPointZero];
 }
 
 
@@ -96,11 +181,11 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
         
         return view;
     }
-    else if ([kind isEqualToString:CSSearchBarHeaderIdentifier]) {
-        searchHeaderView = (CSSearchBarHeader *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:CSSearchBarHeaderIdentifier forIndexPath:indexPath];
-        
-        return searchHeaderView;
-    }
+//    else if ([kind isEqualToString:CSSearchBarHeaderIdentifier]) {
+//        searchHeaderView = (CSSearchBarHeader *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:CSSearchBarHeaderIdentifier forIndexPath:indexPath];
+//        
+//        return searchHeaderView;
+//    }
 
     return nil;
 }
@@ -109,6 +194,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 
 #pragma mark -
 
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"BDCollectionCell";
@@ -116,21 +202,9 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     BDCollectionCell *cell = (BDCollectionCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     cell.backgroundColor = BLACK_HALF_TRANSPARENT;
     
-//    UIColor *color = nil;
-//    
-//    if (indexPath.row % 2) {
-//        color = [UIColor redColor];
-//    }
-//    else {
-//        color = [UIColor greenColor];
-//    }
-//    
-//    cell.imageView.backgroundColor = color;
-    
     cell.imageView.backgroundColor = WHITE_LIGHT;
     
     cell.imageView.image = [UIImage imageNamed:@"j6.png"];
-    
    
     return cell;
 }
@@ -144,11 +218,11 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 50;
+    return 5;
 }
 
 
-//-(UICollectionViewController*)nextViewControllerAtPoint:(CGPoint)p
+//-(UICollectionViewController *)nextViewControllerAtPoint:(CGPoint)p
 //{
 //    return nil;
 //}
@@ -165,8 +239,8 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 //    id object = [pendingImages objectAtIndex:indexPath.row];
 //    if ([selectedArray containsObject:object]) {
 //        [selectedArray removeObject:object];
-//    }else
-//    {
+//    }
+//    else {
 //        [selectedArray addObject:object];
 //    }
 //    
@@ -182,6 +256,126 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 //    UICollectionViewTransitionLayout *transitionLayout = [[UICollectionViewTransitionLayout alloc] initWithCurrentLayout:fromLayout nextLayout:toLayout];
 //    return transitionLayout;
 //}
+
+
+
+- (IBAction)rangeSliderValueChanged:(id)sender
+{
+    self.sliderRangeValue = self.rangeSlider.value;
+    
+    [self updateSliderLabels];
+}
+
+
+- (IBAction)rangeSliderValueEditingDidEnd:(id)sender
+{
+    [self searchResults];
+    
+}
+
+
+#pragma mark -
+#pragma mark - search delegates.
+
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+	itemSearchBar.text = nil;
+	[itemSearchBar resignFirstResponder];
+	searchFlags.searching = NO;
+}
+
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar
+{
+	[itemSearchBar resignFirstResponder];
+	[self searchResults];
+}
+
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)theSearchBar
+{
+	if(searchFlags.searching)
+		return;
+	
+    searchFlags.searching = YES;
+    
+	if (searchFlags.doneClicked) {
+		searchFlags.doneClicked = NO;
+	}
+	if (searchFlags.clearClicked) {
+		[itemSearchBar resignFirstResponder];
+		//[self doneSearching_Clicked];
+		searchFlags.clearClicked = NO;
+        searchFlags.doneClicked = YES;
+        searchFlags.searching = NO;
+        //[self fetchBookForBookCase];
+	}
+}
+
+- (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText
+{
+    if([searchText length] > 0) {
+        searchFlags.searching = YES;
+        [self searchResults];
+    }
+    else {
+//        //[self.mp_searchList removeAllObjects];
+        searchFlags.clearClicked = YES;
+        searchFlags.searching = NO;
+        [itemSearchBar resignFirstResponder];
+        if (searchFlags.doneClicked) {
+            searchFlags.doneClicked = NO;
+        }
+        if (searchFlags.clearClicked) {
+            [itemSearchBar resignFirstResponder];
+            [self doneSearching_Clicked];
+            //[self fetchBookForBookCase];
+        }
+    }
+}
+
+- (void)searchResults
+{
+    // search according to selected search option..
+    
+    // use combination of selectedSearchOption and search text passed and slider value..
+    
+    NSString *searchText = itemSearchBar.text;
+    
+    NSMutableArray *resultArray = nil; // Get searched arrray from here.
+    
+    if ([resultArray count]) {
+        self.searchListArray = resultArray;
+    }
+    else {
+        [self.searchListArray removeAllObjects];
+    }
+    
+    [self reloadCollectionView];
+}
+
+
+- (void)doneSearching_Clicked
+{
+	searchFlags.doneClicked = YES;
+	itemSearchBar.text = @"";
+	[itemSearchBar resignFirstResponder];
+	searchFlags.searching = NO;
+    
+    [self reloadCollectionView];
+}
+
+
+- (void)abortSearchingMode
+{
+    searchFlags.searching = NO;
+    itemSearchBar.text = @"";
+    [itemSearchBar resignFirstResponder];
+
+    [self.searchListArray removeAllObjects];
+    [self reloadCollectionView];
+}
 
 
 
