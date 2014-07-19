@@ -31,13 +31,16 @@
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
     self.navigationController.navigationBarHidden = YES;
-    self.homeDetailView.backgroundColor = [self.homeDetailView.backgroundColor colorWithAlphaComponent:0.6f];
-    self.homeDetailView.layer.cornerRadius = 6.0f;
-    self.offersView.backgroundColor = [self.offersView.backgroundColor colorWithAlphaComponent:0.6f];
-    self.offersView.layer.cornerRadius = 6.0f;
 
+    self.homeDetailView.layer.cornerRadius = 6.0f;
+    self.offersView.layer.cornerRadius = 6.0f;
+    
     self.carousel.type = iCarouselTypeCylinder;
     [self offersImageAnimation];
+    [[BDUtility sharedInstance] addShadowToView:self.costBgView];
+    [[BDUtility sharedInstance] addShadowToView:self.homeDetailView];
+    [[BDUtility sharedInstance] addShadowToView:self.offersView];
+
 	// Do any additional setup after loading the view.
 }
 
