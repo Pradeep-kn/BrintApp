@@ -21,5 +21,6 @@
     #import <QuartzCore/QuartzCore.h>
     #import "BDColours.h"
     #import "BrinDemoConstant.h"
+    #import "NSString+LocalizedString.h"
 
 #endif

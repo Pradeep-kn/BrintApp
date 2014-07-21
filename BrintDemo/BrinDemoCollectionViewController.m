@@ -13,6 +13,9 @@
 #import "CSStickyHeaderFlowLayout.h"
 #import "CSSearchBarHeader.h"
 #import "SVSegmentedControl.h"
+#import "BDCollectionItemInfo.h"
+#import "BDCollectionDetailVC.h"
+
 
 @interface BrinDemoCollectionViewController ()
 
@@ -33,6 +36,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 @synthesize searchFlags;
 @synthesize searchListArray;
 @synthesize selectedSearchOption;
+@synthesize dataSourceArray;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -62,12 +66,14 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     
     itemSearchBar.placeholder = NSLocalizedString(@"Search", @"Search");
     itemSearchBar.backgroundColor = CLEAR_COLOR;
-    for (UIView *subview in itemSearchBar.subviews) {
-        if ([subview isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
-            [subview removeFromSuperview];
-            break;
-        }
-    }
+    [self.itemSearchBar setBackgroundImage:[[UIImage alloc] init]];
+    
+//    for (UIView *subview in itemSearchBar.subviews) {
+//        if ([subview isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
+//            [subview removeFromSuperview];
+//            break;
+//        }
+//    }
     
     self.rangeSlider.minimumValue = 1000;
     self.rangeSlider.maximumValue = 1000 * 500;
@@ -236,6 +242,19 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    BDCollectionItemInfo *itemInfo = nil;
+    NSMutableArray *detailArray = [dataSourceArray objectAtIndex:indexPath.section];
+    
+    if (indexPath.row < detailArray.count) {
+        itemInfo = [detailArray objectAtIndex:indexPath.row];
+    }
+    
+    BDCollectionDetailVC *detailVC = [[BDCollectionDetailVC alloc] init];
+    detailVC.itemDetails = itemInfo;
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
+    
 //    id object = [pendingImages objectAtIndex:indexPath.row];
 //    if ([selectedArray containsObject:object]) {
 //        [selectedArray removeObject:object];

@@ -133,6 +133,14 @@
 		ED335476194A2BFC004BDEC6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335475194A2BFC004BDEC6 /* Settings.storyboard */; };
 		ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */; };
 		ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */; };
+		ED5366B4197C19F80025B774 /* BDCollectionDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5366B2197C19F80025B774 /* BDCollectionDetailVC.m */; };
+		ED5366B5197C19F80025B774 /* BDCollectionDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5366B3197C19F80025B774 /* BDCollectionDetailVC.xib */; };
+		ED5366B8197C1A750025B774 /* BDCollectionItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5366B7197C1A750025B774 /* BDCollectionItemInfo.m */; };
+		ED5366BC197C21780025B774 /* NSString+LocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5366BB197C21780025B774 /* NSString+LocalizedString.m */; };
+		ED5366BF197C2F090025B774 /* orange_scalable.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5366BD197C2F090025B774 /* orange_scalable.png */; };
+		ED5366C0197C2F090025B774 /* orange_scalable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5366BE197C2F090025B774 /* orange_scalable@2x.png */; };
+		ED5366C3197C31720025B774 /* blue_scalable.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5366C1197C31720025B774 /* blue_scalable.png */; };
+		ED5366C4197C31720025B774 /* blue_scalable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5366C2197C31720025B774 /* blue_scalable@2x.png */; };
 		ED7A1C71195C978600679B47 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A1C70195C978600679B47 /* iCarousel.m */; };
 		ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A1C73195CA8D100679B47 /* BDCollectionInfo.m */; };
 		ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A1C76195CAD6F00679B47 /* BDCollectionView.m */; };
@@ -326,6 +334,17 @@
 		ED335477194A2F26004BDEC6 /* HomeTabbar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTabbar.storyboard; sourceTree = "<group>"; };
 		ED33547A194A2FA4004BDEC6 /* BrinDemoTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoTabbarController.h; sourceTree = "<group>"; };
 		ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoTabbarController.m; sourceTree = "<group>"; };
+		ED5366B1197C19F80025B774 /* BDCollectionDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionDetailVC.h; sourceTree = "<group>"; };
+		ED5366B2197C19F80025B774 /* BDCollectionDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionDetailVC.m; sourceTree = "<group>"; };
+		ED5366B3197C19F80025B774 /* BDCollectionDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionDetailVC.xib; sourceTree = "<group>"; };
+		ED5366B6197C1A750025B774 /* BDCollectionItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionItemInfo.h; sourceTree = "<group>"; };
+		ED5366B7197C1A750025B774 /* BDCollectionItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionItemInfo.m; sourceTree = "<group>"; };
+		ED5366BA197C21780025B774 /* NSString+LocalizedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LocalizedString.h"; sourceTree = "<group>"; };
+		ED5366BB197C21780025B774 /* NSString+LocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LocalizedString.m"; sourceTree = "<group>"; };
+		ED5366BD197C2F090025B774 /* orange_scalable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_scalable.png; sourceTree = "<group>"; };
+		ED5366BE197C2F090025B774 /* orange_scalable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange_scalable@2x.png"; sourceTree = "<group>"; };
+		ED5366C1197C31720025B774 /* blue_scalable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_scalable.png; sourceTree = "<group>"; };
+		ED5366C2197C31720025B774 /* blue_scalable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue_scalable@2x.png"; sourceTree = "<group>"; };
 		ED7A1C6D195C8FBC00679B47 /* BDColours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDColours.h; sourceTree = "<group>"; };
 		ED7A1C6F195C978600679B47 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		ED7A1C70195C978600679B47 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
@@ -473,6 +492,11 @@
 				ED1FF1FC1974423C000779E5 /* CSSearchBarHeader.xib */,
 				ED1FF1FE19744271000779E5 /* CSSearchBarHeader.h */,
 				ED1FF1FF19744271000779E5 /* CSSearchBarHeader.m */,
+				ED5366B1197C19F80025B774 /* BDCollectionDetailVC.h */,
+				ED5366B2197C19F80025B774 /* BDCollectionDetailVC.m */,
+				ED5366B3197C19F80025B774 /* BDCollectionDetailVC.xib */,
+				ED5366B6197C1A750025B774 /* BDCollectionItemInfo.h */,
+				ED5366B7197C1A750025B774 /* BDCollectionItemInfo.m */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -623,6 +647,7 @@
 		27C79C72192E73CE003681BE /* BrintDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ED5366B9197C215E0025B774 /* Categories */,
 				EDE56B96194784A400D68A33 /* Thrid Party Code */,
 				278739E21940E75900973989 /* AppDelegate */,
 				278739E31940E76A00973989 /* StoryBoards */,
@@ -667,6 +692,10 @@
 		27C79CAB192E7AB9003681BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ED5366C1197C31720025B774 /* blue_scalable.png */,
+				ED5366C2197C31720025B774 /* blue_scalable@2x.png */,
+				ED5366BD197C2F090025B774 /* orange_scalable.png */,
+				ED5366BE197C2F090025B774 /* orange_scalable@2x.png */,
 				271FE64619785777004FAD80 /* close.png */,
 				271FE6481978579E004FAD80 /* close@2x.png */,
 				27AE5FAB1977293500A399B4 /* Offers */,
@@ -791,6 +820,15 @@
 				ED33547B194A2FA4004BDEC6 /* BrinDemoTabbarController.m */,
 			);
 			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		ED5366B9197C215E0025B774 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ED5366BA197C21780025B774 /* NSString+LocalizedString.h */,
+				ED5366BB197C21780025B774 /* NSString+LocalizedString.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		ED7A1C6E195C976500679B47 /* iCarousel */ = {
@@ -968,6 +1006,7 @@
 				27C79CDE192FDF4C003681BE /* j6.png in Resources */,
 				27B2F60B195D984E00E17939 /* banner4.png in Resources */,
 				27C79CE1192FDF4C003681BE /* j7@2x.png in Resources */,
+				ED5366C4197C31720025B774 /* blue_scalable@2x.png in Resources */,
 				27B2F60A195D984E00E17939 /* banner3@2x.png in Resources */,
 				27C79C88192E73CE003681BE /* Images.xcassets in Resources */,
 				ED335474194A2B91004BDEC6 /* Platinum.storyboard in Resources */,
@@ -990,6 +1029,7 @@
 				27B2F608195D984E00E17939 /* banner2@2x.png in Resources */,
 				EDA8C699196AFC4C004DD093 /* BDCollectionHeaderView.xib in Resources */,
 				27C79C77192E73CE003681BE /* InfoPlist.strings in Resources */,
+				ED5366C0197C2F090025B774 /* orange_scalable@2x.png in Resources */,
 				27B2F605195D984E00E17939 /* banner1.png in Resources */,
 				27C79CD4192FDF4C003681BE /* j1.png in Resources */,
 				EDA8C69E196AFD22004DD093 /* BDCollectionCell.xib in Resources */,
@@ -997,6 +1037,7 @@
 				27CC4DC7194259B700DC2034 /* HomeBg@2x.png in Resources */,
 				27AE5FBC1977294B00A399B4 /* offers4@2x.png in Resources */,
 				27AE5FBB1977294B00A399B4 /* offers5.png in Resources */,
+				ED5366BF197C2F090025B774 /* orange_scalable.png in Resources */,
 				27C79CE3192FDF4C003681BE /* j8@2x.png in Resources */,
 				27236075196ACA8100CA26B4 /* closest-store-active.png in Resources */,
 				ED2AFBE4196EA6AA008DB914 /* BrinDemoCollectionViewController.xib in Resources */,
@@ -1012,10 +1053,12 @@
 				27B2F60E195D984E00E17939 /* banner5@2x.png in Resources */,
 				ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */,
 				27AE5FC319772AA900A399B4 /* offers1@2x.png in Resources */,
+				ED5366C3197C31720025B774 /* blue_scalable.png in Resources */,
 				27C79CD9192FDF4C003681BE /* j3@2x.png in Resources */,
 				2782592A193F9463000F944A /* mod.png in Resources */,
 				27AE5FBA1977294B00A399B4 /* offers5@2x.png in Resources */,
 				EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */,
+				ED5366B5197C19F80025B774 /* BDCollectionDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1055,6 +1098,7 @@
 				27CC4DBB194249CD00DC2034 /* BrinDemoMasterCell.m in Sources */,
 				27873A111940ED3300973989 /* BrinDemoPlatinumDetailViewController.m in Sources */,
 				27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */,
+				ED5366B4197C19F80025B774 /* BDCollectionDetailVC.m in Sources */,
 				27873A0B1940EA3300973989 /* BrinDemoSilverMasterViewController.m in Sources */,
 				27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */,
 				EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */,
@@ -1073,12 +1117,14 @@
 				27AE5FAA1977186300A399B4 /* BrinDemoHomePageViewController.m in Sources */,
 				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,
 				ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */,
+				ED5366BC197C21780025B774 /* NSString+LocalizedString.m in Sources */,
 				27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */,
 				27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */,
 				278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */,
 				27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */,
 				27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */,
 				ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */,
+				ED5366B8197C1A750025B774 /* BDCollectionItemInfo.m in Sources */,
 				27C79C79192E73CE003681BE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

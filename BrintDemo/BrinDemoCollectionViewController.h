@@ -38,6 +38,7 @@ typedef struct searchBarFlags {
 @property (nonatomic) CGFloat sliderRangeValue;
 @property (strong, nonatomic) NSMutableArray *searchListArray;
 @property (nonatomic) SearchOptions selectedSearchOption;
+@property (strong, nonatomic) NSMutableArray *dataSourceArray;
 
 - (IBAction)rangeSliderValueChanged:(id)sender;
 - (IBAction)rangeSliderValueEditingDidEnd:(id)sender;
