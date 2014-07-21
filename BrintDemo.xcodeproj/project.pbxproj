@@ -70,6 +70,7 @@
 		27B2F60E195D984E00E17939 /* banner5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F602195D984E00E17939 /* banner5@2x.png */; };
 		27B2F60F195D984E00E17939 /* banner6.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F603195D984E00E17939 /* banner6.png */; };
 		27B2F610195D984E00E17939 /* banner6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2F604195D984E00E17939 /* banner6@2x.png */; };
+		27B32DC4197A65B500C42D81 /* BDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B32DC3197A65B500C42D81 /* BDUtility.m */; };
 		27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A923194B72FC0047B1A8 /* LoginRingBg.png */; };
 		27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */; };
 		27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6C192E73CE003681BE /* Foundation.framework */; };
@@ -258,6 +259,8 @@
 		27B2F602195D984E00E17939 /* banner5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner5@2x.png"; sourceTree = "<group>"; };
 		27B2F603195D984E00E17939 /* banner6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner6.png; sourceTree = "<group>"; };
 		27B2F604195D984E00E17939 /* banner6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner6@2x.png"; sourceTree = "<group>"; };
+		27B32DC2197A65B500C42D81 /* BDUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDUtility.h; sourceTree = "<group>"; };
+		27B32DC3197A65B500C42D81 /* BDUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDUtility.m; sourceTree = "<group>"; };
 		27C1A923194B72FC0047B1A8 /* LoginRingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginRingBg.png; sourceTree = "<group>"; };
 		27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginRingBg@2x.png"; sourceTree = "<group>"; };
 		27C79C69192E73CE003681BE /* BrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -411,6 +414,8 @@
 				27470E441965E9F100EF4D06 /* Flickr.m */,
 				27470E451965E9F100EF4D06 /* FlickrPhoto.h */,
 				27470E461965E9F100EF4D06 /* FlickrPhoto.m */,
+				27B32DC2197A65B500C42D81 /* BDUtility.h */,
+				27B32DC3197A65B500C42D81 /* BDUtility.m */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
@@ -1079,6 +1084,7 @@
 			files = (
 				278739F91940E98100973989 /* BrinDemoSilverSplitViewController.m in Sources */,
 				EDE56BA1194793D900D68A33 /* BICollectionsViewController.m in Sources */,
+				27B32DC4197A65B500C42D81 /* BDUtility.m in Sources */,
 				ED1FF1FB197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */,
 				27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */,

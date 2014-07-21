@@ -27,128 +27,111 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cor-Sy-iz8">
-                                <rect key="frame" x="28" y="90" width="604" height="298"/>
+                                <rect key="frame" x="20" y="113" width="604" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ed-Qe-7NH">
-                                        <rect key="frame" x="20" y="20" width="564" height="258"/>
+                                        <rect key="frame" x="20" y="20" width="564" height="240"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.82445790816326525" green="0.71916094837572397" blue="0.22338275615479292" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.82445790819999998" green="0.7191609484" blue="0.2233827562" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eD8-hd-rI9">
-                                <rect key="frame" x="640" y="90" width="364" height="321"/>
+                                <rect key="frame" x="640" y="113" width="364" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBH-II-2xl">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="321"/>
+                                        <rect key="frame" x="0.0" y="-3" width="364" height="283"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.82445790816326525" green="0.70983815217051038" blue="0.22434028264211123" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.82445790819999998" green="0.7191609484" blue="0.2233827562" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gold price =" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1l-xU-WFm">
-                                <rect key="frame" x="28" y="40" width="117" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nrf-bz-djR">
+                                <rect key="frame" x="10" y="31" width="1004" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="VAT" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="oeY-rT-7i0">
+                                        <rect key="frame" x="842" y="11" width="40" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="tEI-Yi-Ayb" id="Krh-Wn-Z0w"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Discount" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="UvA-SZ-Vb9">
+                                        <rect key="frame" x="743" y="11" width="80" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="tEI-Yi-Ayb" id="ySf-S5-GWe"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82445790819999998" green="0.7191609484" blue="0.2233827562" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Cost =" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC7-JE-2xc">
+                                <rect key="frame" x="30" y="46" width="109" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gold price" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="L1Q-Qj-EDW">
-                                <rect key="frame" x="139" y="36" width="110" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Today's Price" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Agg-Y3-fQO">
+                                <rect key="frame" x="147" y="42" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="KE3-By-g5D"/>
+                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="Hl3-wf-Udc"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-7N-qH8">
-                                <rect key="frame" x="254" y="40" width="20" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in grams" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Pjo-wd-MR3">
-                                <rect key="frame" x="280" y="36" width="140" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in grams" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="gF7-g8-Ruv">
+                                <rect key="frame" x="276" y="42" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="hAW-Gj-rJn"/>
+                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="JdA-Zt-UYH"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wastage charges" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="1kQ-vG-Auw">
-                                <rect key="frame" x="453" y="36" width="140" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wastage charges" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="rN5-Cz-2dM">
+                                <rect key="frame" x="435" y="42" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="UI0-Qs-zmf"/>
+                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="mSv-SY-7Rs"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsb-td-rQu">
-                                <rect key="frame" x="425" y="40" width="20" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-dI-nR3">
-                                <rect key="frame" x="600" y="40" width="20" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Making charges" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="DIM-Te-ALg">
-                                <rect key="frame" x="628" y="36" width="140" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Making charges" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="gE5-MH-Qv2">
+                                <rect key="frame" x="594" y="42" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="zrc-UH-faL"/>
+                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="Cu2-iD-fnx"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTp-ee-Dnj">
-                                <rect key="frame" x="776" y="40" width="20" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="VAT" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="IFv-0L-hYj">
-                                <rect key="frame" x="804" y="36" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="tEI-Yi-Ayb" id="BJ7-Kf-iVR"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM3-qY-mMZ">
-                                <rect key="frame" x="850" y="39" width="20" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv1-Yf-8QN">
-                                <rect key="frame" x="878" y="36" width="126" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG7-6I-jsF">
+                                <rect key="frame" x="911" y="42" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
                                 <state key="normal" title="Calculate" backgroundImage="closest-store-active.png">
-                                    <color key="titleColor" red="0.165009774" green="0.72255660079999995" blue="0.084211233199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.045380242840000001" green="0.1993183992" blue="0.024738397030000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="calculateBtnClicked:" destination="tEI-Yi-Ayb" eventType="touchUpInside" id="qeq-yc-dRz"/>
+                                    <action selector="calculateBtnClicked:" destination="tEI-Yi-Ayb" eventType="touchUpInside" id="Ekp-lE-lnw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,19 +141,15 @@
                     <navigationItem key="navigationItem" id="JNI-UM-21j"/>
                     <connections>
                         <outlet property="carousel" destination="Nhz-Mh-k65" id="dgf-nU-2wy"/>
-                        <outlet property="goldPriceTxtField" destination="L1Q-Qj-EDW" id="a3l-ni-ELe"/>
-                        <outlet property="goldWightInGrams" destination="Pjo-wd-MR3" id="yY3-3u-y6J"/>
+                        <outlet property="costBgView" destination="nrf-bz-djR" id="ooa-vb-uXO"/>
                         <outlet property="homeDetailView" destination="cor-Sy-iz8" id="jfi-QZ-M6T"/>
-                        <outlet property="makingChargesTxtField" destination="DIM-Te-ALg" id="8cb-Ob-fQx"/>
                         <outlet property="offersImageView" destination="pBH-II-2xl" id="9RQ-Cn-HpQ"/>
                         <outlet property="offersView" destination="eD8-hd-rI9" id="dwG-tz-9xC"/>
-                        <outlet property="vatTxtField" destination="IFv-0L-hYj" id="2Ib-eN-7PI"/>
-                        <outlet property="wastageChargeTxtField" destination="1kQ-vG-Auw" id="irO-uI-pVR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ae-Az-oFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1479" y="-754"/>
+            <point key="canvasLocation" x="1527" y="-695"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UCY-cl-Yfi">

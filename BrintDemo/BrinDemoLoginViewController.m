@@ -42,23 +42,13 @@
     self.signUpView.layer.cornerRadius = 10.0f;
     self.forgotPasswordView.layer.cornerRadius = 10.0f;
     
-    [self addShadowToView:self.loginView];
-    [self addShadowToView:self.signUpView];
-    [self addShadowToView:self.forgotPasswordView];
+    [[BDUtility sharedInstance] addShadowToView:self.loginView];
+    [[BDUtility sharedInstance] addShadowToView:self.signUpView];
+    [[BDUtility sharedInstance] addShadowToView:self.forgotPasswordView];
 
-    self.loginView.backgroundColor = [self.loginView.backgroundColor colorWithAlphaComponent:0.8f];
-    self.signUpView.backgroundColor = [self.signUpView.backgroundColor colorWithAlphaComponent:0.8f];
-    self.forgotPasswordView.backgroundColor = [self.forgotPasswordView.backgroundColor colorWithAlphaComponent:0.8f];
-}
-- (void)addShadowToView:(UIView *)view
-{
-    CALayer *layer = view.layer;
-    layer.shadowOffset = CGSizeMake(1, 1);
-    layer.shadowColor = [[UIColor blackColor] CGColor];
-    layer.masksToBounds = NO;
-    layer.shadowOpacity = 0.80f;
-    layer.shadowRadius = 10.0f;
-    layer.shadowPath = [[UIBezierPath bezierPathWithRect:layer.bounds] CGPath];
+    self.loginView.backgroundColor = [self.loginView.backgroundColor colorWithAlphaComponent:0.6f];
+    self.signUpView.backgroundColor = [self.signUpView.backgroundColor colorWithAlphaComponent:0.6f];
+    self.forgotPasswordView.backgroundColor = [self.forgotPasswordView.backgroundColor colorWithAlphaComponent:0.6f];
 }
 
 - (void)backgroundImageAnimation
