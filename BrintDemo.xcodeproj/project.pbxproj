@@ -261,6 +261,7 @@
 		27B2F604195D984E00E17939 /* banner6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner6@2x.png"; sourceTree = "<group>"; };
 		27B32DC2197A65B500C42D81 /* BDUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDUtility.h; sourceTree = "<group>"; };
 		27B32DC3197A65B500C42D81 /* BDUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDUtility.m; sourceTree = "<group>"; };
+		27B32DC6197D12C500C42D81 /* BrintDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrintDemo-Prefix.pch"; sourceTree = "<group>"; };
 		27C1A923194B72FC0047B1A8 /* LoginRingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginRingBg.png; sourceTree = "<group>"; };
 		27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginRingBg@2x.png"; sourceTree = "<group>"; };
 		27C79C69192E73CE003681BE /* BrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,7 +271,6 @@
 		27C79C74192E73CE003681BE /* BrintDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrintDemo-Info.plist"; sourceTree = "<group>"; };
 		27C79C76192E73CE003681BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27C79C78192E73CE003681BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27C79C7A192E73CE003681BE /* BrintDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrintDemo-Prefix.pch"; sourceTree = "<group>"; };
 		27C79C7B192E73CE003681BE /* BrinDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrinDemoAppDelegate.h; sourceTree = "<group>"; };
 		27C79C7C192E73CE003681BE /* BrinDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrinDemoAppDelegate.m; sourceTree = "<group>"; };
 		27C79C7F192E73CE003681BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -671,7 +671,7 @@
 				27C79C74192E73CE003681BE /* BrintDemo-Info.plist */,
 				27C79C75192E73CE003681BE /* InfoPlist.strings */,
 				27C79C78192E73CE003681BE /* main.m */,
-				27C79C7A192E73CE003681BE /* BrintDemo-Prefix.pch */,
+				27B32DC6197D12C500C42D81 /* BrintDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
