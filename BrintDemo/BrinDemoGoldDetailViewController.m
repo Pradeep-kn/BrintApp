@@ -7,7 +7,6 @@
 //
 
 #import "BrinDemoGoldDetailViewController.h"
-#import "BrinDemoCollectionViewController.h"
 
 @interface BrinDemoGoldDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIView *backGroundView;

@@ -28,6 +28,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
+    [self pushCollectionView];
+}
+
+
+- (void)pushCollectionView
+{
+    BrinDemoCollectionViewController *collectionVC = [[BrinDemoCollectionViewController alloc] init];
+    [self.navigationController pushViewController:collectionVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
