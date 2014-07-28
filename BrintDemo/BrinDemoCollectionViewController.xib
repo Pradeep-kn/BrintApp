@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="HFS-XQ-TCE">
-                    <rect key="frame" x="0.0" y="217" width="1024" height="531"/>
+                    <rect key="frame" x="0.0" y="162" width="1024" height="586"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="0J3-Bq-bZa" customClass="CSStickyHeaderFlowLayout">
                         <size key="itemSize" width="50" height="50"/>
@@ -36,7 +36,7 @@
                     </connections>
                 </collectionView>
                 <view contentMode="scaleToFill" id="F4o-UY-6z9">
-                    <rect key="frame" x="0.0" y="66" width="1024" height="151"/>
+                    <rect key="frame" x="0.0" y="66" width="1024" height="164"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <searchBar contentMode="redraw" id="Cws-df-ZVF">
@@ -72,7 +72,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97317442600000004" green="0.83742205240000001" blue="0.54975088419999996" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

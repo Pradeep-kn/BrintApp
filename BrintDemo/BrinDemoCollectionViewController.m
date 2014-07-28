@@ -74,7 +74,8 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 //            break;
 //        }
 //    }
-    
+    self.searchView.layer.borderWidth = 1.0f;
+    self.searchView.layer.borderColor = [UIColor darkGrayColor].CGColor;
     self.rangeSlider.minimumValue = 1000;
     self.rangeSlider.maximumValue = 1000 * 500;
     self.sliderRangeValue = self.rangeSlider.minimumValue;
@@ -155,7 +156,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
           forSupplementaryViewOfKind:CSSearchBarHeaderIdentifier
                  withReuseIdentifier:NSStringFromClass([CSSearchBarHeader class])];
     
-    self.collectionView.backgroundColor = [UIColor purpleColor];
+    self.collectionView.backgroundColor =  [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
 }
 
 
@@ -176,13 +177,14 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     BDCollectionHeaderView *view = nil;
-    CSSearchBarHeader *searchHeaderView = nil;
+//    CSSearchBarHeader *searchHeaderView = nil;
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        view = (BDCollectionHeaderView *)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"BDCollectionHeaderView" forIndexPath:indexPath];
+        view = (BDCollectionHeaderView *)[self.collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"BDCollectionHeaderView" forIndexPath:indexPath];
         
-        view.backgroundColor = [UIColor orangeColor];
-        
+        view.backgroundColor =  RGBACOLOR(249.0f, 206, 19, 1.0f);
+        view.layer.borderWidth = 1.0f;
+        view.layer.borderColor = [UIColor darkGrayColor].CGColor;
         view.titleLabel.text = [NSString stringWithFormat:@"Section = %d", indexPath.section];
         
         return view;
@@ -205,7 +207,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 {
     static NSString *cellIdentifier = @"BDCollectionCell";
     
-    BDCollectionCell *cell = (BDCollectionCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    BDCollectionCell *cell = (BDCollectionCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     cell.backgroundColor = BLACK_HALF_TRANSPARENT;
     
     cell.imageView.backgroundColor = WHITE_LIGHT;

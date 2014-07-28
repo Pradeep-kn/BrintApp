@@ -26,7 +26,7 @@ typedef struct searchBarFlags {
 @interface BrinDemoCollectionViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 //@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *collectionView;
 
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIView *searchView;
 @property (weak, nonatomic) IBOutlet UISearchBar *itemSearchBar;
 @property (weak, nonatomic) IBOutlet UISlider *rangeSlider;

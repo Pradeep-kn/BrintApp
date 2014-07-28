@@ -46,10 +46,11 @@
     [self.addToCartButton setBackgroundImage:[[UIImage imageNamed:@"orange_scalable.png"] resizableImageWithCapInsets:insets] forState:UIControlStateNormal];
     
     self.itemDescriptionBgView.backgroundColor = CLEAR_COLOR;
-    self.itemDescriptionTextView.backgroundColor = BLACK_COLOR;
+    self.itemDescriptionTextView.backgroundColor = BLACK_HALF_TRANSPARENT;
     self.itemDescriptionTextView.layer.cornerRadius = 4.0f;
     
-    
+    self.itemDetailBgView.layer.cornerRadius = 10.0f;
+    self.itemDetailBgView.layer.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.75f].CGColor;
 //    #define BLACK_HALF_TRANSPARENT [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5]
     
 //    self.itemCostLabel.text = [NSString stringWithFloatValue:itemDetails.itemCost];
@@ -85,5 +86,10 @@
     }
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.itemImageView.hidden = YES;
+}
 
 @end

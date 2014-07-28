@@ -200,7 +200,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.97317442600000004" green="0.95808546278886697" blue="0.69285576662263881" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.97317442600000004" green="0.83742205240000001" blue="0.54975088419999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pu7-Ai-Oet">
                                 <rect key="frame" x="40" y="109" width="352" height="232"/>
@@ -772,7 +772,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C61106D2-47D5-4B28-A3E5-28D439C51633" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-89-GZ0">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="484539B4-20B3-428E-AEC6-5A9CEFBB35DE" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-89-GZ0">
                                                     <rect key="frame" x="20" y="10" width="90" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1002,7 +1002,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="C61106D2-47D5-4B28-A3E5-28D439C51633" width="150" height="150">
+        <image name="484539B4-20B3-428E-AEC6-5A9CEFBB35DE" width="150" height="150">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
