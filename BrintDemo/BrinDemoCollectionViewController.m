@@ -37,7 +37,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 @synthesize searchListArray;
 @synthesize selectedSearchOption;
 @synthesize dataSourceArray;
-
+@synthesize imagesArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -58,6 +58,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     [self initializeCollectionView];
     
     [self searchResults];
+    self.imagesArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"g37.png"],[UIImage imageNamed:@"j4.png"],[UIImage imageNamed:@"j5.png"],[UIImage imageNamed:@"j6.png"],[UIImage imageNamed:@"j7.png"],[UIImage imageNamed:@"j8.png"],[UIImage imageNamed:@"j9.png"], nil];
 }
 
 
@@ -212,7 +213,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     
     cell.imageView.backgroundColor = WHITE_LIGHT;
     
-    cell.imageView.image = [UIImage imageNamed:@"j6.png"];
+    cell.imageView.image = [self.imagesArray objectAtIndex:indexPath.row];
    
     return cell;
 }
@@ -220,13 +221,13 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 5;
+    return [self.imagesArray count];
 }
 
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 5;
+    return [self.imagesArray count];
 }
 
 
