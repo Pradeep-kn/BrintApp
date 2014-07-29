@@ -21,5 +21,14 @@
 @property (weak, nonatomic) IBOutlet UIView *enlargedImageBgView;
 @property (weak, nonatomic) IBOutlet UIImageView *enlargedImageView;
 - (IBAction)closeButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *calciView;
+@property (weak, nonatomic) IBOutlet UILabel *calciDescriptionLable;
+@property (weak, nonatomic) IBOutlet UITextField *calciValueField;
+- (IBAction)calciSubmitButtonClicked:(id)sender;
+- (IBAction)resetButtonClicked:(id)sender;
+- (IBAction)yesButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *yesBtn;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
+@property (weak, nonatomic) IBOutlet UIButton *resetBtn;
 
 @end

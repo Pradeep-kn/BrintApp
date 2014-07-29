@@ -32,18 +32,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+    
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg2.png"]];
     self.iCarouselView.type = iCarouselTypeCoverFlow;
     [[BDUtility sharedInstance] addShadowToView:self.calculatorView];
     self.calculatorView.backgroundColor = WHITE_HALF_TRANSPARENT;
+    
     [[BDUtility sharedInstance] addShadowToView:self.enlargedImageBgView];
-    [[BDUtility sharedInstance] addShadowToView:self.enlargedImageView];
+
+    [[BDUtility sharedInstance] addShadowToView:self.enlargedImageBgView];
+    [[BDUtility sharedInstance] addShadowToView:self.calciView];
     self.enlargedImageBgView.backgroundColor = WHITE_LIGHT;
 
     self.enlargedImageBgView.layer.cornerRadius = 20.0f;
     self.enlargedImageView.layer.cornerRadius = 20.0f;
+    self.calciView.layer.cornerRadius = 20.0f;
     self.enlargedImageBgView.hidden = YES;
+    
+    self.calciDescriptionLable.text = [NSString stringWithFormat:@"Hi there!\n Do you want to know about total price of what you are looking for?\n Fallow me."];
+    [self.calciDescriptionLable sizeToFit];
 }
 
 
@@ -60,6 +76,11 @@
     self.enlargedImageView.image = [self.arrayOfImages objectAtIndex:index];
     [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         self.enlargedImageBgView.hidden = NO;
+        self.calciView.hidden = YES;
+        self.calculatorView.hidden = YES;
+        self.enlargedImageBgView.alpha = 1.0f;
+        self.calciView.alpha = 0.0f;
+        self.calculatorView.alpha = 0.0f;
     } completion:^(BOOL finished) {
         ;
     }];
@@ -111,8 +132,69 @@
 - (IBAction)closeButtonClicked:(id)sender {
     [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         self.enlargedImageBgView.hidden = YES;
+        self.calciView.hidden = NO;
+        self.calculatorView.hidden = NO;
+        self.enlargedImageBgView.alpha = 0.0f;
+        self.calciView.alpha = 1.0f;
+        self.calculatorView.alpha = 1.0f;
     } completion:^(BOOL finished) {
         ;
     }];
+}
+- (IBAction)calciSubmitButtonClicked:(id)sender {
+}
+
+- (IBAction)resetButtonClicked:(id)sender {
+    self.yesBtn.hidden = NO;
+    self.resetBtn.hidden = YES;
+    self.nextBtn.hidden = YES;
+    self.calciValueField.hidden = YES;
+}
+
+- (IBAction)yesButtonClicked:(id)sender {
+    self.yesBtn.hidden = YES;
+    self.nextBtn.hidden = NO;
+    self.resetBtn.hidden = NO;
+    self.calciValueField.hidden = NO;
+}
+
+- (void)keyboardWasShown:(NSNotification *)notification
+{
+    // Works in both portrait and landscape mode
+    CGRect kbRect = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    kbRect = [self.view convertRect:kbRect toView:nil];
+    
+    CGSize kbSize = kbRect.size;
+    
+    CGRect calciRect = self.calculatorView.frame;
+    calciRect.origin.y -= kbSize.height - 55;
+    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        self.calculatorView.frame = calciRect;
+    } completion:^(BOOL finished) {
+        ;
+    }];
+}
+
+- (void)keyboardWillHide:(NSNotification *)notification
+{
+    // Works in both portrait and landscape mode
+    CGRect kbRect = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    kbRect = [self.view convertRect:kbRect toView:nil];
+    
+    CGSize kbSize = kbRect.size;
+    
+    CGRect calciRect = self.calculatorView.frame;
+    calciRect.origin.y += kbSize.height - 55;
+    
+    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        self.calculatorView.frame = calciRect;
+    } completion:^(BOOL finished) {
+        ;
+    }];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 @end

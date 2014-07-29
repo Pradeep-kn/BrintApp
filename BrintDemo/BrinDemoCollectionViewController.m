@@ -209,12 +209,15 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     static NSString *cellIdentifier = @"BDCollectionCell";
     
     BDCollectionCell *cell = (BDCollectionCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    cell.backgroundColor = BLACK_HALF_TRANSPARENT;
-    
-    cell.imageView.backgroundColor = WHITE_LIGHT;
-    
+
+    cell.baseView.backgroundColor = WHITE_LIGHT;
+    cell.backgroundColor = [UIColor clearColor];
     cell.imageView.image = [self.imagesArray objectAtIndex:indexPath.row];
-   
+    cell.baseView.layer.cornerRadius = 10.0f;
+    [[BDUtility sharedInstance] addShadowToView:cell.baseView];
+    [[BDUtility sharedInstance] addShadowToView:cell.imageView];
+    [[BDUtility sharedInstance] addShadowToView:cell];
+
     return cell;
 }
 
@@ -363,7 +366,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     
     // use combination of selectedSearchOption and search text passed and slider value..
     
-    NSString *searchText = itemSearchBar.text;
+//    NSString *searchText = itemSearchBar.text;
     
     NSMutableArray *resultArray = nil; // Get searched arrray from here.
     
@@ -377,7 +380,6 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     [self reloadCollectionView];
 }
 
-
 - (void)doneSearching_Clicked
 {
 	searchFlags.doneClicked = YES;
@@ -388,7 +390,6 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     [self reloadCollectionView];
 }
 
-
 - (void)abortSearchingMode
 {
     searchFlags.searching = NO;
@@ -398,7 +399,5 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     [self.searchListArray removeAllObjects];
     [self reloadCollectionView];
 }
-
-
 
 @end
