@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BrinDemoGoldSplitViewController : UISplitViewController
+@interface BrinDemoGoldSplitViewController : UISplitViewController < UISplitViewControllerDelegate >
+
+@property (nonatomic) BOOL shouldHideMaster;
 
 @end

@@ -158,6 +158,10 @@
 		EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */; };
 		EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B9B194784CF00D68A33 /* SVSegmentedThumb.m */; };
 		EDE56BA1194793D900D68A33 /* BICollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56BA0194793D900D68A33 /* BICollectionsViewController.m */; };
+		EDF208A8198DF8F5008B368B /* BDImageScrollerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF208A6198DF8F5008B368B /* BDImageScrollerVC.m */; };
+		EDF208A9198DF8F5008B368B /* BDImageScrollerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF208A7198DF8F5008B368B /* BDImageScrollerVC.xib */; };
+		EDF208AC198E01BB008B368B /* BDScrollerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF208AB198E01BB008B368B /* BDScrollerCell.m */; };
+		EDF208AE198E01D3008B368B /* BDScrollerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF208AD198E01D3008B368B /* BDScrollerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -376,6 +380,12 @@
 		EDE56B9B194784CF00D68A33 /* SVSegmentedThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedThumb.m; sourceTree = "<group>"; };
 		EDE56B9F194793D900D68A33 /* BICollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BICollectionsViewController.h; sourceTree = "<group>"; };
 		EDE56BA0194793D900D68A33 /* BICollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BICollectionsViewController.m; sourceTree = "<group>"; };
+		EDF208A5198DF8F5008B368B /* BDImageScrollerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDImageScrollerVC.h; sourceTree = "<group>"; };
+		EDF208A6198DF8F5008B368B /* BDImageScrollerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDImageScrollerVC.m; sourceTree = "<group>"; };
+		EDF208A7198DF8F5008B368B /* BDImageScrollerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDImageScrollerVC.xib; sourceTree = "<group>"; };
+		EDF208AA198E01BB008B368B /* BDScrollerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDScrollerCell.h; sourceTree = "<group>"; };
+		EDF208AB198E01BB008B368B /* BDScrollerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDScrollerCell.m; sourceTree = "<group>"; };
+		EDF208AD198E01D3008B368B /* BDScrollerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDScrollerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,6 +512,12 @@
 				ED5366B3197C19F80025B774 /* BDCollectionDetailVC.xib */,
 				ED5366B6197C1A750025B774 /* BDCollectionItemInfo.h */,
 				ED5366B7197C1A750025B774 /* BDCollectionItemInfo.m */,
+				EDF208A5198DF8F5008B368B /* BDImageScrollerVC.h */,
+				EDF208A6198DF8F5008B368B /* BDImageScrollerVC.m */,
+				EDF208A7198DF8F5008B368B /* BDImageScrollerVC.xib */,
+				EDF208AA198E01BB008B368B /* BDScrollerCell.h */,
+				EDF208AB198E01BB008B368B /* BDScrollerCell.m */,
+				EDF208AD198E01D3008B368B /* BDScrollerCell.xib */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -1015,6 +1031,7 @@
 				27B2F60A195D984E00E17939 /* banner3@2x.png in Resources */,
 				27C79C88192E73CE003681BE /* Images.xcassets in Resources */,
 				ED335474194A2B91004BDEC6 /* Platinum.storyboard in Resources */,
+				EDF208AE198E01D3008B368B /* BDScrollerCell.xib in Resources */,
 				27C79CE0192FDF4C003681BE /* j7.png in Resources */,
 				27236076196ACA8100CA26B4 /* closest-store-active@2x.png in Resources */,
 				27B2F60C195D984E00E17939 /* banner4@2x.png in Resources */,
@@ -1024,6 +1041,7 @@
 				2723606E196ACA8100CA26B4 /* bg1@2x.png in Resources */,
 				27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */,
 				27C79C80192E73CE003681BE /* Main_iPhone.storyboard in Resources */,
+				EDF208A9198DF8F5008B368B /* BDImageScrollerVC.xib in Resources */,
 				ED335465194A259D004BDEC6 /* Gold.storyboard in Resources */,
 				27C79CDA192FDF4C003681BE /* j4.png in Resources */,
 				27CC4DCE194260DB00DC2034 /* Pattren@2x.png in Resources */,
@@ -1114,8 +1132,10 @@
 				ED1FF1FA197435D5000779E5 /* CSStickyHeaderFlowLayout.m in Sources */,
 				27C96A89195B6EB800B08F4F /* BrinDemoGoldListViewController.m in Sources */,
 				27AE5FA41976FC6E00A399B4 /* FXImageView.m in Sources */,
+				EDF208A8198DF8F5008B368B /* BDImageScrollerVC.m in Sources */,
 				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
+				EDF208AC198E01BB008B368B /* BDScrollerCell.m in Sources */,
 				27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */,
 				278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */,
 				EDA8C697196AFC2E004DD093 /* BDCollectionHeaderView.m in Sources */,

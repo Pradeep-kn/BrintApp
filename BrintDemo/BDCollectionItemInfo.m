@@ -17,6 +17,7 @@
 @synthesize itemMetalName;
 @synthesize isAddedToCart;
 @synthesize itemDescription;
+@synthesize cachedImage;
 
 
 - (id)init

@@ -15,7 +15,7 @@
 #import "SVSegmentedControl.h"
 #import "BDCollectionItemInfo.h"
 #import "BDCollectionDetailVC.h"
-
+#import "BDImageScrollerVC.h"
 
 @interface BrinDemoCollectionViewController ()
 
@@ -190,6 +190,8 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
         
         return view;
     }
+    
+    
 //    else if ([kind isEqualToString:CSSearchBarHeaderIdentifier]) {
 //        searchHeaderView = (CSSearchBarHeader *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:CSSearchBarHeaderIdentifier forIndexPath:indexPath];
 //        
@@ -210,6 +212,8 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     
     BDCollectionCell *cell = (BDCollectionCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
 
+    // Store the image you get from url..
+    
     cell.baseView.backgroundColor = WHITE_LIGHT;
     cell.backgroundColor = [UIColor clearColor];
     cell.imageView.image = [self.imagesArray objectAtIndex:indexPath.row];
@@ -255,23 +259,16 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
         itemInfo = [detailArray objectAtIndex:indexPath.row];
     }
     
-    BDCollectionDetailVC *detailVC = [[BDCollectionDetailVC alloc] init];
-    detailVC.itemDetails = itemInfo;
-    
-    [self.navigationController pushViewController:detailVC animated:YES];
-    
-    
-//    id object = [pendingImages objectAtIndex:indexPath.row];
-//    if ([selectedArray containsObject:object]) {
-//        [selectedArray removeObject:object];
-//    }
-//    else {
-//        [selectedArray addObject:object];
-//    }
+//    BDCollectionDetailVC *detailVC = [[BDCollectionDetailVC alloc] init];
+//    detailVC.itemDetails = itemInfo;
 //    
-//    [collectionView reloadItemsAtIndexPaths:[NSArray arrayWithObject:indexPath]];
-//    NSInteger count = pendingImages.count - selectedArray.count;
-//    [self.uploadCountButton setTitle:[NSString stringWithFormat:@"%@ (%ld) %@",NSLocalizedString(@"upload", @""),(long)count,NSLocalizedString(@"images", @"")] forState:UIControlStateNormal];
+//    [self.navigationController pushViewController:detailVC animated:YES];
+    
+    
+    BDImageScrollerVC *imageScroller = [[BDImageScrollerVC alloc] init];
+    imageScroller.dataSourceArray = self.dataSourceArray;
+    
+    [self.navigationController pushViewController:imageScroller animated:YES];
 }
 
 

@@ -16,5 +16,7 @@
 @property (strong, nonatomic) NSString *itemMetalName;
 @property (strong, nonatomic) NSNumber *isAddedToCart;
 @property (strong, nonatomic) NSString *itemDescription;
+@property (strong, nonatomic) UIImage *cachedImage;
+
 
 @end
