@@ -153,6 +153,21 @@
 		EDA8C69C196AFD10004DD093 /* BDCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C69B196AFD10004DD093 /* BDCollectionCell.m */; };
 		EDA8C69E196AFD22004DD093 /* BDCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA8C69D196AFD22004DD093 /* BDCollectionCell.xib */; };
 		EDA8C6A1196AFEAF004DD093 /* BDCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C6A0196AFEAF004DD093 /* BDCollectionFlowLayout.m */; };
+		EDC37859198FF9D7009BAF2C /* UAGradientBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC37854198FF9D7009BAF2C /* UAGradientBackground.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDC3785A198FF9D7009BAF2C /* UANoisyGradientBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC37856198FF9D7009BAF2C /* UANoisyGradientBackground.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDC3785B198FF9D7009BAF2C /* UARoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC37858198FF9D7009BAF2C /* UARoundedRectView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDC37860198FF9EA009BAF2C /* UAModalPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC3785D198FF9EA009BAF2C /* UAModalPanel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDC37861198FF9EA009BAF2C /* UATitledModalPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC3785F198FF9EA009BAF2C /* UATitledModalPanel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDC37868198FF9FA009BAF2C /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC37862198FF9FA009BAF2C /* close.png */; };
+		EDC37869198FF9FA009BAF2C /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC37863198FF9FA009BAF2C /* close@2x.png */; };
+		EDC3786A198FF9FA009BAF2C /* modalButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC37864198FF9FA009BAF2C /* modalButton.png */; };
+		EDC3786B198FF9FA009BAF2C /* modalButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC37865198FF9FA009BAF2C /* modalButton@2x.png */; };
+		EDC3786C198FF9FA009BAF2C /* modalButton-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC37866198FF9FA009BAF2C /* modalButton-selected.png */; };
+		EDC3786D198FF9FA009BAF2C /* modalButton-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC37867198FF9FA009BAF2C /* modalButton-selected@2x.png */; };
+		EDC37870198FFA05009BAF2C /* UIView+JMNoise.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC3786F198FFA05009BAF2C /* UIView+JMNoise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDC37873198FFCAE009BAF2C /* UAExampleModalPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC37871198FFCAE009BAF2C /* UAExampleModalPanel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDCBAA70199BE9ED0057266A /* BDImageScrollerPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCBAA6F199BE9ED0057266A /* BDImageScrollerPanel.m */; };
+		EDCBAA72199BEBDD0057266A /* BDImageScrollerPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCBAA71199BEBDD0057266A /* BDImageScrollerPanel.xib */; };
 		EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B8919477ED100D68A33 /* BIHomeViewController.m */; };
 		EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE56B8C19477EFC00D68A33 /* Home.storyboard */; };
 		EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */; };
@@ -371,6 +386,29 @@
 		EDA8C69D196AFD22004DD093 /* BDCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionCell.xib; sourceTree = "<group>"; };
 		EDA8C69F196AFEAF004DD093 /* BDCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionFlowLayout.h; sourceTree = "<group>"; };
 		EDA8C6A0196AFEAF004DD093 /* BDCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionFlowLayout.m; sourceTree = "<group>"; };
+		EDC37853198FF9D7009BAF2C /* UAGradientBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGradientBackground.h; sourceTree = "<group>"; };
+		EDC37854198FF9D7009BAF2C /* UAGradientBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGradientBackground.m; sourceTree = "<group>"; };
+		EDC37855198FF9D7009BAF2C /* UANoisyGradientBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UANoisyGradientBackground.h; sourceTree = "<group>"; };
+		EDC37856198FF9D7009BAF2C /* UANoisyGradientBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UANoisyGradientBackground.m; sourceTree = "<group>"; };
+		EDC37857198FF9D7009BAF2C /* UARoundedRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UARoundedRectView.h; sourceTree = "<group>"; };
+		EDC37858198FF9D7009BAF2C /* UARoundedRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UARoundedRectView.m; sourceTree = "<group>"; };
+		EDC3785C198FF9EA009BAF2C /* UAModalPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAModalPanel.h; sourceTree = "<group>"; };
+		EDC3785D198FF9EA009BAF2C /* UAModalPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAModalPanel.m; sourceTree = "<group>"; };
+		EDC3785E198FF9EA009BAF2C /* UATitledModalPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATitledModalPanel.h; sourceTree = "<group>"; };
+		EDC3785F198FF9EA009BAF2C /* UATitledModalPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UATitledModalPanel.m; sourceTree = "<group>"; };
+		EDC37862198FF9FA009BAF2C /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		EDC37863198FF9FA009BAF2C /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		EDC37864198FF9FA009BAF2C /* modalButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modalButton.png; sourceTree = "<group>"; };
+		EDC37865198FF9FA009BAF2C /* modalButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "modalButton@2x.png"; sourceTree = "<group>"; };
+		EDC37866198FF9FA009BAF2C /* modalButton-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "modalButton-selected.png"; sourceTree = "<group>"; };
+		EDC37867198FF9FA009BAF2C /* modalButton-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "modalButton-selected@2x.png"; sourceTree = "<group>"; };
+		EDC3786E198FFA05009BAF2C /* UIView+JMNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JMNoise.h"; sourceTree = "<group>"; };
+		EDC3786F198FFA05009BAF2C /* UIView+JMNoise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JMNoise.m"; sourceTree = "<group>"; };
+		EDC37871198FFCAE009BAF2C /* UAExampleModalPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAExampleModalPanel.m; sourceTree = "<group>"; };
+		EDC37872198FFCAE009BAF2C /* UAExampleModalPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAExampleModalPanel.h; sourceTree = "<group>"; };
+		EDCBAA6E199BE9ED0057266A /* BDImageScrollerPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDImageScrollerPanel.h; sourceTree = "<group>"; };
+		EDCBAA6F199BE9ED0057266A /* BDImageScrollerPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDImageScrollerPanel.m; sourceTree = "<group>"; };
+		EDCBAA71199BEBDD0057266A /* BDImageScrollerPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDImageScrollerPanel.xib; sourceTree = "<group>"; };
 		EDE56B8819477ED100D68A33 /* BIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeViewController.h; sourceTree = "<group>"; };
 		EDE56B8919477ED100D68A33 /* BIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeViewController.m; sourceTree = "<group>"; };
 		EDE56B8C19477EFC00D68A33 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -518,6 +556,11 @@
 				EDF208AA198E01BB008B368B /* BDScrollerCell.h */,
 				EDF208AB198E01BB008B368B /* BDScrollerCell.m */,
 				EDF208AD198E01D3008B368B /* BDScrollerCell.xib */,
+				EDC37871198FFCAE009BAF2C /* UAExampleModalPanel.m */,
+				EDC37872198FFCAE009BAF2C /* UAExampleModalPanel.h */,
+				EDCBAA6E199BE9ED0057266A /* BDImageScrollerPanel.h */,
+				EDCBAA6F199BE9ED0057266A /* BDImageScrollerPanel.m */,
+				EDCBAA71199BEBDD0057266A /* BDImageScrollerPanel.xib */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -861,6 +904,63 @@
 			name = iCarousel;
 			sourceTree = "<group>";
 		};
+		EDC3784E198FF979009BAF2C /* UAModelPanel */ = {
+			isa = PBXGroup;
+			children = (
+				EDC37852198FF9C7009BAF2C /* Views */,
+				EDC37851198FF9BC009BAF2C /* Panels */,
+				EDC37850198FF9B0009BAF2C /* Images */,
+				EDC3784F198FF9A2009BAF2C /* Categories */,
+			);
+			name = UAModelPanel;
+			sourceTree = "<group>";
+		};
+		EDC3784F198FF9A2009BAF2C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3786E198FFA05009BAF2C /* UIView+JMNoise.h */,
+				EDC3786F198FFA05009BAF2C /* UIView+JMNoise.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		EDC37850198FF9B0009BAF2C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EDC37862198FF9FA009BAF2C /* close.png */,
+				EDC37863198FF9FA009BAF2C /* close@2x.png */,
+				EDC37864198FF9FA009BAF2C /* modalButton.png */,
+				EDC37865198FF9FA009BAF2C /* modalButton@2x.png */,
+				EDC37866198FF9FA009BAF2C /* modalButton-selected.png */,
+				EDC37867198FF9FA009BAF2C /* modalButton-selected@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EDC37851198FF9BC009BAF2C /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3785C198FF9EA009BAF2C /* UAModalPanel.h */,
+				EDC3785D198FF9EA009BAF2C /* UAModalPanel.m */,
+				EDC3785E198FF9EA009BAF2C /* UATitledModalPanel.h */,
+				EDC3785F198FF9EA009BAF2C /* UATitledModalPanel.m */,
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
+		EDC37852198FF9C7009BAF2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDC37853198FF9D7009BAF2C /* UAGradientBackground.h */,
+				EDC37854198FF9D7009BAF2C /* UAGradientBackground.m */,
+				EDC37855198FF9D7009BAF2C /* UANoisyGradientBackground.h */,
+				EDC37856198FF9D7009BAF2C /* UANoisyGradientBackground.m */,
+				EDC37857198FF9D7009BAF2C /* UARoundedRectView.h */,
+				EDC37858198FF9D7009BAF2C /* UARoundedRectView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		EDE56B8B19477ED900D68A33 /* Home-StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -872,6 +972,7 @@
 		EDE56B96194784A400D68A33 /* Thrid Party Code */ = {
 			isa = PBXGroup;
 			children = (
+				EDC3784E198FF979009BAF2C /* UAModelPanel */,
 				ED7A1C6E195C976500679B47 /* iCarousel */,
 				EDE56B97194784B200D68A33 /* SVSegmentControl */,
 			);
@@ -994,6 +1095,7 @@
 				27C79CDB192FDF4C003681BE /* j4@2x.png in Resources */,
 				27B2F60F195D984E00E17939 /* banner6.png in Resources */,
 				27CC4DBF1942512000DC2034 /* buttonFollow@2x.png in Resources */,
+				EDC3786B198FF9FA009BAF2C /* modalButton@2x.png in Resources */,
 				27236078196ACA8100CA26B4 /* closest-store@2x.png in Resources */,
 				27CC4DC6194259B700DC2034 /* HomeBg.png in Resources */,
 				27236077196ACA8100CA26B4 /* closest-store.png in Resources */,
@@ -1020,6 +1122,7 @@
 				27C79CD5192FDF4C003681BE /* j1@2x.png in Resources */,
 				271FE6491978579E004FAD80 /* close@2x.png in Resources */,
 				27B2F606195D984E00E17939 /* banner1@2x.png in Resources */,
+				EDC3786C198FF9FA009BAF2C /* modalButton-selected.png in Resources */,
 				27AE5FB91977294B00A399B4 /* offers2@2x.png in Resources */,
 				2782592F193F9686000F944A /* model2@2x.png in Resources */,
 				ED335470194A2AEE004BDEC6 /* Silver.storyboard in Resources */,
@@ -1036,8 +1139,10 @@
 				27236076196ACA8100CA26B4 /* closest-store-active@2x.png in Resources */,
 				27B2F60C195D984E00E17939 /* banner4@2x.png in Resources */,
 				27C79CE4192FDF4C003681BE /* j9.png in Resources */,
+				EDC37868198FF9FA009BAF2C /* close.png in Resources */,
 				27CC4DC21942527F00DC2034 /* g37.jpeg in Resources */,
 				27C79CE5192FDF4C003681BE /* j9@2x.png in Resources */,
+				EDCBAA72199BEBDD0057266A /* BDImageScrollerPanel.xib in Resources */,
 				2723606E196ACA8100CA26B4 /* bg1@2x.png in Resources */,
 				27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */,
 				27C79C80192E73CE003681BE /* Main_iPhone.storyboard in Resources */,
@@ -1050,6 +1155,7 @@
 				27C79CD8192FDF4C003681BE /* j3.png in Resources */,
 				27236073196ACA8100CA26B4 /* bg4.png in Resources */,
 				27B2F608195D984E00E17939 /* banner2@2x.png in Resources */,
+				EDC37869198FF9FA009BAF2C /* close@2x.png in Resources */,
 				EDA8C699196AFC4C004DD093 /* BDCollectionHeaderView.xib in Resources */,
 				27C79C77192E73CE003681BE /* InfoPlist.strings in Resources */,
 				ED5366C0197C2F090025B774 /* orange_scalable@2x.png in Resources */,
@@ -1075,10 +1181,12 @@
 				27C96A86195B698A00B08F4F /* goldTab@2x.png in Resources */,
 				27B2F60E195D984E00E17939 /* banner5@2x.png in Resources */,
 				ED335478194A2F26004BDEC6 /* HomeTabbar.storyboard in Resources */,
+				EDC3786D198FF9FA009BAF2C /* modalButton-selected@2x.png in Resources */,
 				27AE5FC319772AA900A399B4 /* offers1@2x.png in Resources */,
 				ED5366C3197C31720025B774 /* blue_scalable.png in Resources */,
 				27C79CD9192FDF4C003681BE /* j3@2x.png in Resources */,
 				2782592A193F9463000F944A /* mod.png in Resources */,
+				EDC3786A198FF9FA009BAF2C /* modalButton.png in Resources */,
 				27AE5FBA1977294B00A399B4 /* offers5@2x.png in Resources */,
 				EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */,
 				ED5366B5197C19F80025B774 /* BDCollectionDetailVC.xib in Resources */,
@@ -1116,12 +1224,17 @@
 				27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */,
 				EDA8C6A1196AFEAF004DD093 /* BDCollectionFlowLayout.m in Sources */,
 				27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */,
+				EDCBAA70199BE9ED0057266A /* BDImageScrollerPanel.m in Sources */,
 				27470E471965E9F100EF4D06 /* Flickr.m in Sources */,
 				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
 				27873A081940EA1100973989 /* BrinDemoPlatinumMasterViewController.m in Sources */,
+				EDC37861198FF9EA009BAF2C /* UATitledModalPanel.m in Sources */,
 				27CC4DBB194249CD00DC2034 /* BrinDemoMasterCell.m in Sources */,
+				EDC37860198FF9EA009BAF2C /* UAModalPanel.m in Sources */,
 				27873A111940ED3300973989 /* BrinDemoPlatinumDetailViewController.m in Sources */,
 				27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */,
+				EDC37870198FFA05009BAF2C /* UIView+JMNoise.m in Sources */,
+				EDC37859198FF9D7009BAF2C /* UAGradientBackground.m in Sources */,
 				ED5366B4197C19F80025B774 /* BDCollectionDetailVC.m in Sources */,
 				27873A0B1940EA3300973989 /* BrinDemoSilverMasterViewController.m in Sources */,
 				27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */,
@@ -1131,6 +1244,8 @@
 				ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */,
 				ED1FF1FA197435D5000779E5 /* CSStickyHeaderFlowLayout.m in Sources */,
 				27C96A89195B6EB800B08F4F /* BrinDemoGoldListViewController.m in Sources */,
+				EDC37873198FFCAE009BAF2C /* UAExampleModalPanel.m in Sources */,
+				EDC3785A198FF9D7009BAF2C /* UANoisyGradientBackground.m in Sources */,
 				27AE5FA41976FC6E00A399B4 /* FXImageView.m in Sources */,
 				EDF208A8198DF8F5008B368B /* BDImageScrollerVC.m in Sources */,
 				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
@@ -1141,6 +1256,7 @@
 				EDA8C697196AFC2E004DD093 /* BDCollectionHeaderView.m in Sources */,
 				278739F61940E96D00973989 /* BrinDemoPlatinumSplitViewController.m in Sources */,
 				27AE5FAA1977186300A399B4 /* BrinDemoHomePageViewController.m in Sources */,
+				EDC3785B198FF9D7009BAF2C /* UARoundedRectView.m in Sources */,
 				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,
 				ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */,
 				ED5366BC197C21780025B774 /* NSString+LocalizedString.m in Sources */,

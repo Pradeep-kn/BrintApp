@@ -9,6 +9,7 @@
 #import "BDImageScrollerVC.h"
 #import "BDScrollerCell.h"
 #import "BDCollectionItemInfo.h"
+#import "BDImageScrollerPanel.h"
 
 @interface BDImageScrollerVC ()
 
@@ -140,7 +141,49 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    ;
+    
+    BDImageScrollerPanel *modalPanel = [[BDImageScrollerPanel alloc] initWithFrame:CGRectMake(0,20, self.view.frame.size.width, self.view.frame.size.height - 110) title:nil];
+    
+	/////////////////////////////////
+	// Randomly use the blocks method, delgate methods, or neither of them
+	int blocksDelegateOrNone = arc4random() % 3;
+	
+	blocksDelegateOrNone = 0;
+	////////////////////////
+	// USE BLOCKS
+	if (0 == blocksDelegateOrNone) {
+		///////////////////////////////////////////
+		// The block is responsible for closing the panel,
+		//   either with -[UAModalPanel hide] or -[UAModalPanel hideWithOnComplete:]
+		//   Panel is a reference to the modalPanel
+		modalPanel.onClosePressed = ^(UAModalPanel* panel) {
+			// [panel hide];
+			[panel hideWithOnComplete:^(BOOL finished) {
+				[panel removeFromSuperview];
+			}];
+			UADebugLog(@"onClosePressed block called from panel: %@", modalPanel);
+		};
+		
+		///////////////////////////////////////////
+		//   Panel is a reference to the modalPanel
+		modalPanel.onActionPressed = ^(UAModalPanel* panel) {
+			UADebugLog(@"onActionPressed block called from panel: %@", modalPanel);
+		};
+		
+		UADebugLog(@"UAModalView will display using blocks: %@", modalPanel);
+        
+        ////////////////////////
+        // USE DELEGATE
+	}
+	
+	
+	///////////////////////////////////
+	// Add the panel to our view
+	[self.view addSubview:modalPanel];
+	
+	///////////////////////////////////
+	// Show the panel from the center of the button that was pressed
+	[modalPanel showFromPoint:[collectionView center]];
 }
 
 
