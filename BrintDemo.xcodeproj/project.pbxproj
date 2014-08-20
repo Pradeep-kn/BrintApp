@@ -153,6 +153,10 @@
 		EDA8C69C196AFD10004DD093 /* BDCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C69B196AFD10004DD093 /* BDCollectionCell.m */; };
 		EDA8C69E196AFD22004DD093 /* BDCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA8C69D196AFD22004DD093 /* BDCollectionCell.xib */; };
 		EDA8C6A1196AFEAF004DD093 /* BDCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C6A0196AFEAF004DD093 /* BDCollectionFlowLayout.m */; };
+		EDAAA2D819A0E0BE003C3411 /* BTGlassScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA2D519A0E0BE003C3411 /* BTGlassScrollView.m */; };
+		EDAAA2D919A0E0BE003C3411 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA2D719A0E0BE003C3411 /* UIImage+ImageEffects.m */; };
+		EDAAA2E219A0E9CC003C3411 /* BDGlassImageScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAAA2E019A0E9CC003C3411 /* BDGlassImageScroller.m */; };
+		EDAAA2E319A0E9CC003C3411 /* BDGlassImageScroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAAA2E119A0E9CC003C3411 /* BDGlassImageScroller.xib */; };
 		EDC37859198FF9D7009BAF2C /* UAGradientBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC37854198FF9D7009BAF2C /* UAGradientBackground.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EDC3785A198FF9D7009BAF2C /* UANoisyGradientBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC37856198FF9D7009BAF2C /* UANoisyGradientBackground.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EDC3785B198FF9D7009BAF2C /* UARoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC37858198FF9D7009BAF2C /* UARoundedRectView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -386,6 +390,13 @@
 		EDA8C69D196AFD22004DD093 /* BDCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionCell.xib; sourceTree = "<group>"; };
 		EDA8C69F196AFEAF004DD093 /* BDCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionFlowLayout.h; sourceTree = "<group>"; };
 		EDA8C6A0196AFEAF004DD093 /* BDCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionFlowLayout.m; sourceTree = "<group>"; };
+		EDAAA2D419A0E0BE003C3411 /* BTGlassScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGlassScrollView.h; sourceTree = "<group>"; };
+		EDAAA2D519A0E0BE003C3411 /* BTGlassScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGlassScrollView.m; sourceTree = "<group>"; };
+		EDAAA2D619A0E0BE003C3411 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		EDAAA2D719A0E0BE003C3411 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		EDAAA2DF19A0E9CC003C3411 /* BDGlassImageScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDGlassImageScroller.h; sourceTree = "<group>"; };
+		EDAAA2E019A0E9CC003C3411 /* BDGlassImageScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDGlassImageScroller.m; sourceTree = "<group>"; };
+		EDAAA2E119A0E9CC003C3411 /* BDGlassImageScroller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDGlassImageScroller.xib; sourceTree = "<group>"; };
 		EDC37853198FF9D7009BAF2C /* UAGradientBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGradientBackground.h; sourceTree = "<group>"; };
 		EDC37854198FF9D7009BAF2C /* UAGradientBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGradientBackground.m; sourceTree = "<group>"; };
 		EDC37855198FF9D7009BAF2C /* UANoisyGradientBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UANoisyGradientBackground.h; sourceTree = "<group>"; };
@@ -561,6 +572,9 @@
 				EDCBAA6E199BE9ED0057266A /* BDImageScrollerPanel.h */,
 				EDCBAA6F199BE9ED0057266A /* BDImageScrollerPanel.m */,
 				EDCBAA71199BEBDD0057266A /* BDImageScrollerPanel.xib */,
+				EDAAA2DF19A0E9CC003C3411 /* BDGlassImageScroller.h */,
+				EDAAA2E019A0E9CC003C3411 /* BDGlassImageScroller.m */,
+				EDAAA2E119A0E9CC003C3411 /* BDGlassImageScroller.xib */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -904,9 +918,21 @@
 			name = iCarousel;
 			sourceTree = "<group>";
 		};
+		EDAAA2D319A0E084003C3411 /* BTGlassScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAA2D419A0E0BE003C3411 /* BTGlassScrollView.h */,
+				EDAAA2D519A0E0BE003C3411 /* BTGlassScrollView.m */,
+				EDAAA2D619A0E0BE003C3411 /* UIImage+ImageEffects.h */,
+				EDAAA2D719A0E0BE003C3411 /* UIImage+ImageEffects.m */,
+			);
+			name = BTGlassScrollView;
+			sourceTree = "<group>";
+		};
 		EDC3784E198FF979009BAF2C /* UAModelPanel */ = {
 			isa = PBXGroup;
 			children = (
+				EDAAA2D319A0E084003C3411 /* BTGlassScrollView */,
 				EDC37852198FF9C7009BAF2C /* Views */,
 				EDC37851198FF9BC009BAF2C /* Panels */,
 				EDC37850198FF9B0009BAF2C /* Images */,
@@ -1189,6 +1215,7 @@
 				EDC3786A198FF9FA009BAF2C /* modalButton.png in Resources */,
 				27AE5FBA1977294B00A399B4 /* offers5@2x.png in Resources */,
 				EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */,
+				EDAAA2E319A0E9CC003C3411 /* BDGlassImageScroller.xib in Resources */,
 				ED5366B5197C19F80025B774 /* BDCollectionDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1250,6 +1277,7 @@
 				EDF208A8198DF8F5008B368B /* BDImageScrollerVC.m in Sources */,
 				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
+				EDAAA2D819A0E0BE003C3411 /* BTGlassScrollView.m in Sources */,
 				EDF208AC198E01BB008B368B /* BDScrollerCell.m in Sources */,
 				27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */,
 				278739FF1940E9CE00973989 /* BrinDemoGoldMasterViewController.m in Sources */,
@@ -1265,7 +1293,9 @@
 				278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */,
 				27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */,
 				27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */,
+				EDAAA2D919A0E0BE003C3411 /* UIImage+ImageEffects.m in Sources */,
 				ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */,
+				EDAAA2E219A0E9CC003C3411 /* BDGlassImageScroller.m in Sources */,
 				ED5366B8197C1A750025B774 /* BDCollectionItemInfo.m in Sources */,
 				27C79C79192E73CE003681BE /* main.m in Sources */,
 			);

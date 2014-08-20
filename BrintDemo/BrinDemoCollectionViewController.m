@@ -16,6 +16,8 @@
 #import "BDCollectionItemInfo.h"
 #import "BDCollectionDetailVC.h"
 #import "BDImageScrollerVC.h"
+#import "BDGlassImageScroller.h"
+
 
 @interface BrinDemoCollectionViewController ()
 
@@ -38,6 +40,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 @synthesize selectedSearchOption;
 @synthesize dataSourceArray;
 @synthesize imagesArray;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -265,9 +268,12 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 //    [self.navigationController pushViewController:detailVC animated:YES];
     
     
-    BDImageScrollerVC *imageScroller = [[BDImageScrollerVC alloc] init];
-    imageScroller.dataSourceArray = self.dataSourceArray;
+//    BDImageScrollerVC *imageScroller = [[BDImageScrollerVC alloc] init];
+//    imageScroller.dataSourceArray = self.dataSourceArray;
+//    
+//    [self.navigationController pushViewController:imageScroller animated:YES];
     
+    BDGlassImageScroller *imageScroller = [[BDGlassImageScroller alloc] init];
     [self.navigationController pushViewController:imageScroller animated:YES];
 }
 

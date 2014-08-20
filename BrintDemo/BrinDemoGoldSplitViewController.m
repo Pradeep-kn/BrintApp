@@ -52,7 +52,7 @@
 - (BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:
 (UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
 {
-    return YES;
+    return NO;
     
     UINavigationController *navigationVC = (UINavigationController *)vc;
     NSArray *vcArray = navigationVC.viewControllers;
