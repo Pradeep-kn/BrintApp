@@ -148,6 +148,8 @@
 		ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7A1C7A195CADBE00679B47 /* BDCollectionView.xib */; };
 		ED7A591A1959F1870068A83F /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7A59181959F1870068A83F /* HomePageController.m */; };
 		ED7A591B1959F1870068A83F /* HomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7A59191959F1870068A83F /* HomePageController.xib */; };
+		ED95F0CD19C76144008BEF26 /* GlassScrollerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED95F0CC19C76144008BEF26 /* GlassScrollerInfoView.xib */; };
+		ED95F0D019C76172008BEF26 /* GlassScrollerInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED95F0CF19C76172008BEF26 /* GlassScrollerInfoView.m */; };
 		EDA8C697196AFC2E004DD093 /* BDCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C696196AFC2E004DD093 /* BDCollectionHeaderView.m */; };
 		EDA8C699196AFC4C004DD093 /* BDCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA8C698196AFC4C004DD093 /* BDCollectionHeaderView.xib */; };
 		EDA8C69C196AFD10004DD093 /* BDCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8C69B196AFD10004DD093 /* BDCollectionCell.m */; };
@@ -382,6 +384,9 @@
 		ED7A59171959F1870068A83F /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
 		ED7A59181959F1870068A83F /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		ED7A59191959F1870068A83F /* HomePageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageController.xib; sourceTree = "<group>"; };
+		ED95F0CC19C76144008BEF26 /* GlassScrollerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlassScrollerInfoView.xib; sourceTree = "<group>"; };
+		ED95F0CE19C76172008BEF26 /* GlassScrollerInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassScrollerInfoView.h; sourceTree = "<group>"; };
+		ED95F0CF19C76172008BEF26 /* GlassScrollerInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlassScrollerInfoView.m; sourceTree = "<group>"; };
 		EDA8C695196AFC2E004DD093 /* BDCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionHeaderView.h; sourceTree = "<group>"; };
 		EDA8C696196AFC2E004DD093 /* BDCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionHeaderView.m; sourceTree = "<group>"; };
 		EDA8C698196AFC4C004DD093 /* BDCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionHeaderView.xib; sourceTree = "<group>"; };
@@ -575,6 +580,9 @@
 				EDAAA2DF19A0E9CC003C3411 /* BDGlassImageScroller.h */,
 				EDAAA2E019A0E9CC003C3411 /* BDGlassImageScroller.m */,
 				EDAAA2E119A0E9CC003C3411 /* BDGlassImageScroller.xib */,
+				ED95F0CE19C76172008BEF26 /* GlassScrollerInfoView.h */,
+				ED95F0CF19C76172008BEF26 /* GlassScrollerInfoView.m */,
+				ED95F0CC19C76144008BEF26 /* GlassScrollerInfoView.xib */,
 			);
 			name = Gold;
 			sourceTree = "<group>";
@@ -1142,6 +1150,7 @@
 				27AE5FBE1977294B00A399B4 /* offers3@2x.png in Resources */,
 				ED7A1C7B195CADBE00679B47 /* BDCollectionView.xib in Resources */,
 				2782592E193F9686000F944A /* model2.png in Resources */,
+				ED95F0CD19C76144008BEF26 /* GlassScrollerInfoView.xib in Resources */,
 				27C79CDC192FDF4C003681BE /* j5.png in Resources */,
 				27B2F609195D984E00E17939 /* banner3.png in Resources */,
 				27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */,
@@ -1260,6 +1269,7 @@
 				EDC37860198FF9EA009BAF2C /* UAModalPanel.m in Sources */,
 				27873A111940ED3300973989 /* BrinDemoPlatinumDetailViewController.m in Sources */,
 				27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */,
+				ED95F0D019C76172008BEF26 /* GlassScrollerInfoView.m in Sources */,
 				EDC37870198FFA05009BAF2C /* UIView+JMNoise.m in Sources */,
 				EDC37859198FF9D7009BAF2C /* UAGradientBackground.m in Sources */,
 				ED5366B4197C19F80025B774 /* BDCollectionDetailVC.m in Sources */,
@@ -1372,7 +1382,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Martin Arvidson (3GLSD2AD2E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Martin Arvidson (3GLSD2AD2E)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1390,6 +1401,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "51ABA765-DED4-4146-9808-7FD052A18D97";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1412,7 +1424,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Martin Arvidson (3GLSD2AD2E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Martin Arvidson (3GLSD2AD2E)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1423,6 +1436,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "51ABA765-DED4-4146-9808-7FD052A18D97";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1434,11 +1448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Martin Arvidson (3GLSD2AD2E)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrintDemo/BrintDemo-Prefix.pch";
 				INFOPLIST_FILE = "BrintDemo/BrintDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2D153951-7058-492C-BBE4-B2587CAAC76B";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1449,11 +1465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Martin Arvidson (3GLSD2AD2E)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrintDemo/BrintDemo-Prefix.pch";
 				INFOPLIST_FILE = "BrintDemo/BrintDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2D153951-7058-492C-BBE4-B2587CAAC76B";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

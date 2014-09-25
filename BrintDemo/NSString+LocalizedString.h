@@ -14,5 +14,7 @@
 
 + (NSString *)stringWithFloatValue:(CGFloat)value;
 
++ (NSString *)itemDetailString;
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "BDGlassImageScroller.h"
+#import "GlassScrollerInfoView.h"
 
 @interface BDGlassImageScroller ()
 
@@ -128,37 +129,45 @@
 }
 
 
-- (UIView *)customView:(NSInteger)index
+- (GlassScrollerInfoView *)customView:(NSInteger)index
 {
     CGFloat width = initialScrollFrame.size.width;
+    CGFloat hieght = 720;
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 720)];
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"GlassScrollerInfoView" owner:nil options:nil];
+    GlassScrollerInfoView *detailView = (GlassScrollerInfoView *)[nib objectAtIndex:0];
+    detailView.frame = CGRectMake(0, 0, width, hieght);
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, width - 20, 120)];
-    [label setText:[NSString stringWithFormat:@"%i℉",arc4random_uniform(20) + 60]];
-    [label setTextColor:[UIColor whiteColor]];
-    [label setFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:120]];
-    [label setShadowColor:[UIColor blackColor]];
-    [label setShadowOffset:CGSizeMake(1, 1)];
-    [label setTextAlignment:NSTextAlignmentCenter];
-    [view addSubview:label];
+    return detailView;
     
-    UIView *box1 = [[UIView alloc] initWithFrame:CGRectMake(10, 140, width - 20, 125)];
-    box1.layer.cornerRadius = 3;
-    box1.backgroundColor = [UIColor colorWithWhite:0 alpha:.15];
-    [view addSubview:box1];
+
+    UIView *infoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, hieght)];
     
-    UIView *box2 = [[UIView alloc] initWithFrame:CGRectMake(10, 270, width - 20, 300)];
-    box2.layer.cornerRadius = 3;
-    box2.backgroundColor = [UIColor colorWithWhite:0 alpha:.15];
-    [view addSubview:box2];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, width - 20, 100)];
+    [titleLabel setText:@"Item name"];
+    [titleLabel setTextColor:[UIColor whiteColor]];
+    [titleLabel setFont:[UIFont fontWithName:HELVETICA_LIGHT_FONT size:80]];
+    [titleLabel setShadowColor:[UIColor blackColor]];
+    [titleLabel setShadowOffset:CGSizeMake(1, 1)];
+    [titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [infoView addSubview:titleLabel];
     
-    UIView *box3 = [[UIView alloc] initWithFrame:CGRectMake(10, 575, width - 20, 125)];
-    box3.layer.cornerRadius = 3;
-    box3.backgroundColor = [UIColor colorWithWhite:0 alpha:.15];
-    [view addSubview:box3];
+    UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(10, 130, width - 20, 125)];
+    subview1.layer.cornerRadius = 3;
+    subview1.backgroundColor = [UIColor colorWithWhite:0 alpha:.15];
+    [infoView addSubview:subview1];
     
-    return view;
+    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(10, 270, width - 20, 300)];
+    subview2.layer.cornerRadius = 3;
+    subview2.backgroundColor = [UIColor colorWithWhite:0 alpha:.15];
+    [infoView addSubview:subview2];
+    
+    UIView *subview3 = [[UIView alloc] initWithFrame:CGRectMake(10, 585, width - 20, 125)];
+    subview3.layer.cornerRadius = 3;
+    subview3.backgroundColor = [UIColor colorWithWhite:0 alpha:.15];
+    [infoView addSubview:subview3];
+    
+    return infoView;
 }
 
 
@@ -179,18 +188,32 @@
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    CGFloat ratio = scrollView.contentOffset.x/scrollView.frame.size.width;
-    NSInteger page = (int)floor(ratio);
-    if (page < 0) {
-        page = 0;
-    }
-    
-    BTGlassScrollView *glassView = [self glassScrollViewForIndex:page];
-    
-    for (int index = 0; index < imagesArray.count; index ++) {
-        BTGlassScrollView *glassScrollView = [self glassScrollViewForIndex:index];
-        [glassScrollView scrollVerticallyToOffset:glassView.foregroundScrollView.contentOffset.y];
-    }
+//    CGFloat ratio = scrollView.contentOffset.x/scrollView.frame.size.width;
+//    NSInteger page = (int)floor(ratio);
+//    if (page < 0) {
+//        page = 0;
+//    }
+//    
+//    BTGlassScrollView *glassView = [self glassScrollViewForIndex:page];
+//    
+//    for (int index = 0; index < imagesArray.count; index ++) {
+//        BTGlassScrollView *glassScrollView = [self glassScrollViewForIndex:index];
+//        [glassScrollView scrollVerticallyToOffset:glassView.foregroundScrollView.contentOffset.y];
+//    }
+}
+
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+//    CGFloat ratio = scrollView.contentOffset.x/scrollView.frame.size.width;
+//    NSInteger page = (int)floor(ratio);
+//    if (page < 0) {
+//        page = 0;
+//    }
+//    
+//    BTGlassScrollView *glassView = [self glassScrollViewForIndex:page];
+//    
+//    [glassView scrollVerticallyToOffset:glassView.foregroundScrollView.contentOffset.y];
 }
 
 

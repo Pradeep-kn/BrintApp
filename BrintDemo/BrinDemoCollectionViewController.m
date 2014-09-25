@@ -189,7 +189,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
         view.backgroundColor =  RGBACOLOR(249.0f, 206, 19, 1.0f);
         view.layer.borderWidth = 1.0f;
         view.layer.borderColor = [UIColor darkGrayColor].CGColor;
-        view.titleLabel.text = [NSString stringWithFormat:@"Section = %d", indexPath.section];
+        view.titleLabel.text = [NSString stringWithFormat:@"Section = %ld", (long)indexPath.section];
         
         return view;
     }
