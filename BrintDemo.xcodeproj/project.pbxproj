@@ -143,6 +143,11 @@
 		ED3E277719D5DB4A00B02438 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E276D19D5DB4A00B02438 /* SDWebImagePrefetcher.m */; };
 		ED3E277819D5DB4A00B02438 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E276F19D5DB4A00B02438 /* UIButton+WebCache.m */; };
 		ED3E277919D5DB4A00B02438 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E277119D5DB4A00B02438 /* UIImageView+WebCache.m */; };
+		ED3E278119D5DD6300B02438 /* APIBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E277C19D5DD6300B02438 /* APIBase.m */; };
+		ED3E278219D5DD6300B02438 /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E277E19D5DD6300B02438 /* WebService.m */; };
+		ED3E278319D5DD6300B02438 /* AFNetWorkAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E278019D5DD6300B02438 /* AFNetWorkAPIClient.m */; };
+		ED3E278719D5DDB200B02438 /* ParserUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E278619D5DDB200B02438 /* ParserUtility.m */; };
+		ED3E278D19D5DF5500B02438 /* HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E278C19D5DF5500B02438 /* HelperMethods.m */; };
 		ED5366B4197C19F80025B774 /* BDCollectionDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5366B2197C19F80025B774 /* BDCollectionDetailVC.m */; };
 		ED5366B5197C19F80025B774 /* BDCollectionDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5366B3197C19F80025B774 /* BDCollectionDetailVC.xib */; };
 		ED5366B8197C1A750025B774 /* BDCollectionItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5366B7197C1A750025B774 /* BDCollectionItemInfo.m */; };
@@ -394,6 +399,17 @@
 		ED3E276F19D5DB4A00B02438 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		ED3E277019D5DB4A00B02438 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		ED3E277119D5DB4A00B02438 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		ED3E277B19D5DD6300B02438 /* APIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBase.h; sourceTree = "<group>"; };
+		ED3E277C19D5DD6300B02438 /* APIBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIBase.m; sourceTree = "<group>"; };
+		ED3E277D19D5DD6300B02438 /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		ED3E277E19D5DD6300B02438 /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
+		ED3E277F19D5DD6300B02438 /* AFNetWorkAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetWorkAPIClient.h; sourceTree = "<group>"; };
+		ED3E278019D5DD6300B02438 /* AFNetWorkAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetWorkAPIClient.m; sourceTree = "<group>"; };
+		ED3E278519D5DDB200B02438 /* ParserUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserUtility.h; sourceTree = "<group>"; };
+		ED3E278619D5DDB200B02438 /* ParserUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserUtility.m; sourceTree = "<group>"; };
+		ED3E278819D5DDD500B02438 /* APIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIDefines.h; sourceTree = "<group>"; };
+		ED3E278B19D5DF5500B02438 /* HelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperMethods.h; sourceTree = "<group>"; };
+		ED3E278C19D5DF5500B02438 /* HelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperMethods.m; sourceTree = "<group>"; };
 		ED5366B1197C19F80025B774 /* BDCollectionDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionDetailVC.h; sourceTree = "<group>"; };
 		ED5366B2197C19F80025B774 /* BDCollectionDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionDetailVC.m; sourceTree = "<group>"; };
 		ED5366B3197C19F80025B774 /* BDCollectionDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionDetailVC.xib; sourceTree = "<group>"; };
@@ -768,6 +784,8 @@
 		27C79C72192E73CE003681BE /* BrintDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ED3E278A19D5DF2D00B02438 /* Utility Classes */,
+				ED3E277A19D5DD3600B02438 /* Network */,
 				ED5366B9197C215E0025B774 /* Categories */,
 				EDE56B96194784A400D68A33 /* Thrid Party Code */,
 				278739E21940E75900973989 /* AppDelegate */,
@@ -977,6 +995,39 @@
 				ED3E277119D5DB4A00B02438 /* UIImageView+WebCache.m */,
 			);
 			name = SDImageCache;
+			sourceTree = "<group>";
+		};
+		ED3E277A19D5DD3600B02438 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E278419D5DD6C00B02438 /* Base Network Objects */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ED3E278419D5DD6C00B02438 /* Base Network Objects */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E278819D5DDD500B02438 /* APIDefines.h */,
+				ED3E278519D5DDB200B02438 /* ParserUtility.h */,
+				ED3E278619D5DDB200B02438 /* ParserUtility.m */,
+				ED3E277B19D5DD6300B02438 /* APIBase.h */,
+				ED3E277C19D5DD6300B02438 /* APIBase.m */,
+				ED3E277D19D5DD6300B02438 /* WebService.h */,
+				ED3E277E19D5DD6300B02438 /* WebService.m */,
+				ED3E277F19D5DD6300B02438 /* AFNetWorkAPIClient.h */,
+				ED3E278019D5DD6300B02438 /* AFNetWorkAPIClient.m */,
+			);
+			name = "Base Network Objects";
+			sourceTree = "<group>";
+		};
+		ED3E278A19D5DF2D00B02438 /* Utility Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E278B19D5DF5500B02438 /* HelperMethods.h */,
+				ED3E278C19D5DF5500B02438 /* HelperMethods.m */,
+			);
+			path = "Utility Classes";
 			sourceTree = "<group>";
 		};
 		ED5366B9197C215E0025B774 /* Categories */ = {
@@ -1382,6 +1433,7 @@
 				27873A111940ED3300973989 /* BrinDemoPlatinumDetailViewController.m in Sources */,
 				27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */,
 				ED95F0D019C76172008BEF26 /* GlassScrollerInfoView.m in Sources */,
+				ED3E278719D5DDB200B02438 /* ParserUtility.m in Sources */,
 				EDC37870198FFA05009BAF2C /* UIView+JMNoise.m in Sources */,
 				EDC37859198FF9D7009BAF2C /* UAGradientBackground.m in Sources */,
 				ED5366B4197C19F80025B774 /* BDCollectionDetailVC.m in Sources */,
@@ -1394,11 +1446,13 @@
 				ED1FF1FA197435D5000779E5 /* CSStickyHeaderFlowLayout.m in Sources */,
 				27C96A89195B6EB800B08F4F /* BrinDemoGoldListViewController.m in Sources */,
 				EDC37873198FFCAE009BAF2C /* UAExampleModalPanel.m in Sources */,
+				ED3E278D19D5DF5500B02438 /* HelperMethods.m in Sources */,
 				EDC3785A198FF9D7009BAF2C /* UANoisyGradientBackground.m in Sources */,
 				27AE5FA41976FC6E00A399B4 /* FXImageView.m in Sources */,
 				EDF208A8198DF8F5008B368B /* BDImageScrollerVC.m in Sources */,
 				EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */,
 				27C79CF1192FF87B003681BE /* BrinDemoSettingsViewController.m in Sources */,
+				ED3E278219D5DD6300B02438 /* WebService.m in Sources */,
 				ED3E277819D5DB4A00B02438 /* UIButton+WebCache.m in Sources */,
 				EDAAA2D819A0E0BE003C3411 /* BTGlassScrollView.m in Sources */,
 				ED3E277919D5DB4A00B02438 /* UIImageView+WebCache.m in Sources */,
@@ -1417,6 +1471,8 @@
 				278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */,
 				27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */,
 				27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */,
+				ED3E278319D5DD6300B02438 /* AFNetWorkAPIClient.m in Sources */,
+				ED3E278119D5DD6300B02438 /* APIBase.m in Sources */,
 				ED3E277419D5DB4A00B02438 /* SDWebImageDecoder.m in Sources */,
 				EDAAA2D919A0E0BE003C3411 /* UIImage+ImageEffects.m in Sources */,
 				ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */,
@@ -1484,7 +1540,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1526,7 +1581,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1597,7 +1651,6 @@
 		27C79CA2192E73CE003681BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrintDemo.app/BrintDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1620,7 +1673,6 @@
 		27C79CA3192E73CE003681BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrintDemo.app/BrintDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
