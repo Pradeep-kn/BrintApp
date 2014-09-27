@@ -11,22 +11,22 @@
 /* Api url's */
 
 
-#define KBaseURL @"" // Production server base url
+// Production server base url
+static NSString * const KBaseURL = @"";
 
+static NSString * const kOffersApiUrl = @"";
 
+static NSString * const kStatusCode = @"status Code";
 
-#define API_SUCESS 200
+static NSString * const kErrorCode = @"errorCode";
 
-#define kStatusCode @"statusCode"
+static NSString * const kErrorMessage = @"ErrorMessage";
 
-#define kErrorMessage @"ErrorMessage"
+static NSString * const kStatusMessage = @"Result Message";
 
-#define kStatusMessage @"StatusMessage"
+static NSString * const kResult = @"Result";
 
-
-
-
-
+static NSInteger API_SUCESS = 200;
 
 
 

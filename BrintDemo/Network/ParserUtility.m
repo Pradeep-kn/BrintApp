@@ -20,7 +20,6 @@
 }
 
 
-
 + (id)checkForNilObjectAssignEmptyValue:(id)object
 {
     if (nil != object && (object != [NSNull null])) {
@@ -46,5 +45,6 @@
     
     return [NSNull null];
 }
+
 
 @end

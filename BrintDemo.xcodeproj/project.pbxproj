@@ -148,6 +148,8 @@
 		ED3E278319D5DD6300B02438 /* AFNetWorkAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E278019D5DD6300B02438 /* AFNetWorkAPIClient.m */; };
 		ED3E278719D5DDB200B02438 /* ParserUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E278619D5DDB200B02438 /* ParserUtility.m */; };
 		ED3E278D19D5DF5500B02438 /* HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E278C19D5DF5500B02438 /* HelperMethods.m */; };
+		ED3E279719D6CFE500B02438 /* OffersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E279619D6CFE500B02438 /* OffersDetails.m */; };
+		ED3E279A19D6DEA800B02438 /* OffersApi.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3E279919D6DEA800B02438 /* OffersApi.m */; };
 		ED5366B4197C19F80025B774 /* BDCollectionDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5366B2197C19F80025B774 /* BDCollectionDetailVC.m */; };
 		ED5366B5197C19F80025B774 /* BDCollectionDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5366B3197C19F80025B774 /* BDCollectionDetailVC.xib */; };
 		ED5366B8197C1A750025B774 /* BDCollectionItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5366B7197C1A750025B774 /* BDCollectionItemInfo.m */; };
@@ -410,6 +412,11 @@
 		ED3E278819D5DDD500B02438 /* APIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIDefines.h; sourceTree = "<group>"; };
 		ED3E278B19D5DF5500B02438 /* HelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperMethods.h; sourceTree = "<group>"; };
 		ED3E278C19D5DF5500B02438 /* HelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperMethods.m; sourceTree = "<group>"; };
+		ED3E279519D6CFE500B02438 /* OffersDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffersDetails.h; sourceTree = "<group>"; };
+		ED3E279619D6CFE500B02438 /* OffersDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffersDetails.m; sourceTree = "<group>"; };
+		ED3E279819D6DEA800B02438 /* OffersApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffersApi.h; sourceTree = "<group>"; };
+		ED3E279919D6DEA800B02438 /* OffersApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffersApi.m; sourceTree = "<group>"; };
+		ED3E279C19D6DEF800B02438 /* OffersApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffersApiKeys.h; sourceTree = "<group>"; };
 		ED5366B1197C19F80025B774 /* BDCollectionDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCollectionDetailVC.h; sourceTree = "<group>"; };
 		ED5366B2197C19F80025B774 /* BDCollectionDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCollectionDetailVC.m; sourceTree = "<group>"; };
 		ED5366B3197C19F80025B774 /* BDCollectionDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDCollectionDetailVC.xib; sourceTree = "<group>"; };
@@ -1000,6 +1007,7 @@
 		ED3E277A19D5DD3600B02438 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				ED3E279419D6CFC300B02438 /* OffersApiObjects */,
 				ED3E278419D5DD6C00B02438 /* Base Network Objects */,
 			);
 			path = Network;
@@ -1028,6 +1036,18 @@
 				ED3E278C19D5DF5500B02438 /* HelperMethods.m */,
 			);
 			path = "Utility Classes";
+			sourceTree = "<group>";
+		};
+		ED3E279419D6CFC300B02438 /* OffersApiObjects */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E279519D6CFE500B02438 /* OffersDetails.h */,
+				ED3E279619D6CFE500B02438 /* OffersDetails.m */,
+				ED3E279819D6DEA800B02438 /* OffersApi.h */,
+				ED3E279919D6DEA800B02438 /* OffersApi.m */,
+				ED3E279C19D6DEF800B02438 /* OffersApiKeys.h */,
+			);
+			path = OffersApiObjects;
 			sourceTree = "<group>";
 		};
 		ED5366B9197C215E0025B774 /* Categories */ = {
@@ -1423,6 +1443,7 @@
 				EDA8C6A1196AFEAF004DD093 /* BDCollectionFlowLayout.m in Sources */,
 				27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */,
 				EDCBAA70199BE9ED0057266A /* BDImageScrollerPanel.m in Sources */,
+				ED3E279719D6CFE500B02438 /* OffersDetails.m in Sources */,
 				27470E471965E9F100EF4D06 /* Flickr.m in Sources */,
 				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
 				27873A081940EA1100973989 /* BrinDemoPlatinumMasterViewController.m in Sources */,
@@ -1432,6 +1453,7 @@
 				ED3E277219D5DB4A00B02438 /* MKAnnotationView+WebCache.m in Sources */,
 				27873A111940ED3300973989 /* BrinDemoPlatinumDetailViewController.m in Sources */,
 				27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */,
+				ED3E279A19D6DEA800B02438 /* OffersApi.m in Sources */,
 				ED95F0D019C76172008BEF26 /* GlassScrollerInfoView.m in Sources */,
 				ED3E278719D5DDB200B02438 /* ParserUtility.m in Sources */,
 				EDC37870198FFA05009BAF2C /* UIView+JMNoise.m in Sources */,

@@ -15,6 +15,8 @@
 @synthesize message;
 @synthesize errormessage;
 @synthesize sessionId;
+@synthesize errorCode;
+
 
 - (id)init
 {
@@ -22,6 +24,7 @@
     
     if (self) {
         self.statusCode = [NSNumber numberWithInt:-1];
+        self.errorCode = [NSNumber numberWithInt:0];
         self.message = nil;
         self.errormessage = nil;
         self.sessionId = nil;
@@ -33,6 +36,7 @@
 
 #pragma -
 #pragma - mark super class method.
+
 
 - (NSString *)apiName
 {
@@ -55,6 +59,7 @@
         
         if (API_SUCESS != [statusCode integerValue]) {
             self.errormessage = [ParserUtility JSONObjectValue:response forKey:kErrorMessage];
+            self.errorCode = [ParserUtility JSONObjectValue:response forKey:kErrorCode];
         }
     }
     
