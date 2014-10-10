@@ -29,3 +29,7 @@ static NSString * const kStatusMessage = @"Result Message";
 static NSString * const kResult = @"Result";
 
 static NSInteger API_SUCESS = 200;
+
+static NSInteger SignupSubmitTag = 1001;
+
+static NSInteger SignupValidateTag = 1001;

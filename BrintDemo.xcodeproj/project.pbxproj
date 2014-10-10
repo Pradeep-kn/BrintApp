@@ -22,6 +22,7 @@
 		27470E471965E9F100EF4D06 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E441965E9F100EF4D06 /* Flickr.m */; };
 		27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E461965E9F100EF4D06 /* FlickrPhoto.m */; };
 		27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */; };
+		275899FC19E7FC9B00BB28D0 /* ValidateApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 275899FB19E7FC9B00BB28D0 /* ValidateApi.m */; };
 		2782592A193F9463000F944A /* mod.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825928193F9463000F944A /* mod.png */; };
 		2782592B193F9463000F944A /* mod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825929193F9463000F944A /* mod@2x.png */; };
 		2782592E193F9686000F944A /* model2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2782592C193F9686000F944A /* model2.png */; };
@@ -232,6 +233,8 @@
 		27470E461965E9F100EF4D06 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrPhoto.m; path = ../FlickrPhoto.m; sourceTree = "<group>"; };
 		27470E581965FE6800EF4D06 /* BrinDemoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoCollectionViewController.h; sourceTree = "<group>"; };
 		27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoCollectionViewController.m; sourceTree = "<group>"; };
+		275899FA19E7FC9B00BB28D0 /* ValidateApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateApi.h; sourceTree = "<group>"; };
+		275899FB19E7FC9B00BB28D0 /* ValidateApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateApi.m; sourceTree = "<group>"; };
 		27825928193F9463000F944A /* mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mod.png; sourceTree = "<group>"; };
 		27825929193F9463000F944A /* mod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mod@2x.png"; sourceTree = "<group>"; };
 		2782592C193F9686000F944A /* model2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model2.png; sourceTree = "<group>"; };
@@ -545,6 +548,15 @@
 				27B32DC3197A65B500C42D81 /* BDUtility.m */,
 			);
 			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		275899F919E7FC8300BB28D0 /* ValidateApi */ = {
+			isa = PBXGroup;
+			children = (
+				275899FA19E7FC9B00BB28D0 /* ValidateApi.h */,
+				275899FB19E7FC9B00BB28D0 /* ValidateApi.m */,
+			);
+			path = ValidateApi;
 			sourceTree = "<group>";
 		};
 		278739E11940E73900973989 /* ViewControllers */ = {
@@ -1054,6 +1066,7 @@
 		ED3E277A19D5DD3600B02438 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				275899F919E7FC8300BB28D0 /* ValidateApi */,
 				27C4981B19E68EA5002CC2DD /* CollectionsApi */,
 				27C4981C19E68EA5002CC2DD /* ForgotPasswordApi */,
 				27C4981D19E68EA5002CC2DD /* HomeScreenApi */,
@@ -1554,6 +1567,7 @@
 				ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */,
 				EDAAA2E219A0E9CC003C3411 /* BDGlassImageScroller.m in Sources */,
 				ED5366B8197C1A750025B774 /* BDCollectionItemInfo.m in Sources */,
+				275899FC19E7FC9B00BB28D0 /* ValidateApi.m in Sources */,
 				27C79C79192E73CE003681BE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

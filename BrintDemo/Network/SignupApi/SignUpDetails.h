@@ -10,4 +10,9 @@
 
 @interface SignUpDetails : NSObject
 
+@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) NSString *email;
+@property (strong, nonatomic) NSString *mnumber;
+@property (strong, nonatomic) NSString *password;
+
 @end

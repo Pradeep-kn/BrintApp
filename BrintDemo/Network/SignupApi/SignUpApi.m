@@ -9,12 +9,14 @@
 #import "SignUpApi.h"
 
 @implementation SignUpApi
+@synthesize signUpDetails;
 
 - (id)init
 {
     self = [super init];
     if (self) {
         //
+        self.signUpDetails = [[SignUpDetails alloc] init];
     }
     return self;
 }
@@ -35,7 +37,7 @@
     [super createJsonObjectForRequest];
     
     // Create request json object here..
-    NSMutableDictionary *jsonObject = nil;
+    NSMutableDictionary *jsonObject = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.signUpDetails.username,@"username",self.signUpDetails.password,@"password",self.signUpDetails.email,@"email",self.signUpDetails.mnumber,@"mnumber", nil];
     
     return jsonObject;
 }
@@ -55,9 +57,9 @@
         return nil;
     }
     
-    if (nil != self.errormessage || self.errorCode) {
-        return nil;
-    }
+//    if (nil != self.errormessage || self.errorCode) {
+//        return nil;
+//    }
     
     NSDictionary *responseDict = [ParserUtility JSONObjectValue:response forKey:kResult];
     

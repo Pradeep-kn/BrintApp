@@ -12,4 +12,5 @@
 
 @interface SignUpApi : APIBase
 
+@property (nonatomic, strong) SignUpDetails *signUpDetails;
 @end

@@ -13,6 +13,5 @@ static NSString * const kUsername = @"username";
 static NSString * const kEmail = @"email";
 static NSString * const kNumber = @"mnumber";
 static NSString * const kPassword = @"password";
-static NSString * const kValidation_code = @"validation_code";
 
 #endif

@@ -32,6 +32,8 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = NO;
     self.loginScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"mod.png"]];
+    [self.signUpSubmitBtn setTitle:[NSString localizedValueForKey:@"Submit"] forState:UIControlStateNormal];
+    self.signUpSubmitBtn.tag = SignupSubmitTag;
     [self modifyUIElements];
     [self backgroundImageAnimation];
 }
@@ -86,11 +88,31 @@
     
 }
 - (IBAction)signUpSubmitBtnClicked:(id)sender {
+    [self callSignUpApi];
+}
+
+- (void)callSignUpApi
+{
     SignUpApi *signUpApi = [[SignUpApi alloc] init];
+    signUpApi.signUpDetails = [[SignUpDetails alloc] init];
+    signUpApi.signUpDetails.username = self.usernameTxtField.text;
+    signUpApi.signUpDetails.password = self.signUpPasswordField.text;
+    signUpApi.signUpDetails.mnumber = self.mobileNumber.text;
+    signUpApi.signUpDetails.email = self.emailField.text;
+    
     [[WebService sharedInstance] postRequest:signUpApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
-        ;
+        if ((int)signUpApi.statusCode == 200) {
+            BrinDemoAppDelegate *appDelegate = (BrinDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
+            [appDelegate showHomeView];
+        }
     }];
 }
+
+- (void)callValidateApi
+{
+    
+}
+
 - (IBAction)signUpBtnClicked:(id)sender {
     [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         self.loginView.hidden = YES;

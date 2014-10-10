@@ -20,10 +20,13 @@
 
 - (IBAction)signUpSubmitBtnClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *usernameTxtField;
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UITextField *mobileNumber;
 @property (weak, nonatomic) IBOutlet UIButton *signUpSubmitBtn;
 @property (weak, nonatomic) IBOutlet UITextField *loginUsernameTxtField;
 - (IBAction)signUpBtnClicked:(id)sender;
 - (IBAction)forgotPasswordBtnClicked:(id)sender;
 - (IBAction)closeBtnClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *signUpView;
+@property (weak, nonatomic) IBOutlet UITextField *validationCode;
 @end

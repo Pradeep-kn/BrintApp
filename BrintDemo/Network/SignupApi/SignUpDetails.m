@@ -10,4 +10,9 @@
 
 @implementation SignUpDetails
 
+@synthesize username;
+@synthesize email;
+@synthesize mnumber;
+@synthesize password;
+
 @end
