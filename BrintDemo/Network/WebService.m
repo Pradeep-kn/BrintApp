@@ -74,7 +74,8 @@ static WebService *webInstance;
     __block NSMutableDictionary *parameters = [apiBase createJsonObjectForRequest];
     
     [[AFNetWorkAPIClient sharedClient] getPath:apiPath parameters:parameters  success:^(AFHTTPRequestOperation *operation, id JSON) {
-        
+        DBLog(@"JSON = %@",JSON);
+
         callback(apiBase, JSON, nil);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

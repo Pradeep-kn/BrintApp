@@ -31,7 +31,7 @@
 
 - (NSString *)apiName
 {
-    return [NSString stringWithFormat:@"%@%@",[super apiName],kOffers];
+    return [NSString stringWithFormat:@"%@%@",[super apiName],kOffersApiUrl];
 }
 
 
@@ -64,6 +64,12 @@
         return nil;
     }
     
+    NSDictionary *responseDict = [ParserUtility JSONObjectValue:response forKey:kResult];
+    
+    self.statusCode = [ParserUtility JSONObjectValue:responseDict forKey:kStatusCode];
+    self.errormessage = [ParserUtility JSONObjectValue:responseDict forKey:kStatusMessage];
+    self.errorCode = [ParserUtility JSONObjectValue:responseDict forKey:kErrorCode];
+    
     if ([response respondsToSelector:@selector(objectForKey:)]) {
         
         NSMutableArray *array = [ParserUtility checkForNilObjectAssignEmptyValue:kOffers];
@@ -76,7 +82,6 @@
                 [self.offersArray addObject:details];
             }
         }
-        
     }
     
     return nil;

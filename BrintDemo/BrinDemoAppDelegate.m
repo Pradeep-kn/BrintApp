@@ -15,15 +15,17 @@
 #import "BIHomeViewController.h"
 #import "BrinDemoTabbarController.h"
 
-
 @implementation BrinDemoAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    return YES;
+    OffersApi *offersApi = [[OffersApi alloc] init];
+    [[WebService sharedInstance] getRequest:offersApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
+        ;
+    }];
+     return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

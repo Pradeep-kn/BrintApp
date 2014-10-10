@@ -8,6 +8,7 @@
 
 #import "BDGlassImageScroller.h"
 #import "GlassScrollerInfoView.h"
+#import "BTGlassScrollView.h"
 
 @interface BDGlassImageScroller ()
 

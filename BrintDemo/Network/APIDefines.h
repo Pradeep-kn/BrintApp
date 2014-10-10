@@ -12,9 +12,11 @@
 
 
 // Production server base url
-static NSString * const KBaseURL = @"";
+static NSString * const KBaseURL = @"http://brinvents.com/project/";
 
-static NSString * const kOffersApiUrl = @"";
+static NSString * const kOffersApiUrl = @"get_offers.php";
+
+static NSString * const kSignupApiUrl = @"signupclass.php";
 
 static NSString * const kStatusCode = @"status Code";
 
@@ -27,22 +29,3 @@ static NSString * const kStatusMessage = @"Result Message";
 static NSString * const kResult = @"Result";
 
 static NSInteger API_SUCESS = 200;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

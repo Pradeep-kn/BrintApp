@@ -73,6 +73,8 @@
 		27B32DC4197A65B500C42D81 /* BDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B32DC3197A65B500C42D81 /* BDUtility.m */; };
 		27C1A925194B72FC0047B1A8 /* LoginRingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A923194B72FC0047B1A8 /* LoginRingBg.png */; };
 		27C1A926194B72FC0047B1A8 /* LoginRingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */; };
+		27C4982219E69456002CC2DD /* SignUpDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C4982119E69456002CC2DD /* SignUpDetails.m */; };
+		27C4982519E6946F002CC2DD /* SignUpApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C4982419E6946F002CC2DD /* SignUpApi.m */; };
 		27C79C6D192E73CE003681BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6C192E73CE003681BE /* Foundation.framework */; };
 		27C79C6F192E73CE003681BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C6E192E73CE003681BE /* CoreGraphics.framework */; };
 		27C79C71192E73CE003681BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C79C70192E73CE003681BE /* UIKit.framework */; };
@@ -305,6 +307,11 @@
 		27B32DC6197D12C500C42D81 /* BrintDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrintDemo-Prefix.pch"; sourceTree = "<group>"; };
 		27C1A923194B72FC0047B1A8 /* LoginRingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginRingBg.png; sourceTree = "<group>"; };
 		27C1A924194B72FC0047B1A8 /* LoginRingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginRingBg@2x.png"; sourceTree = "<group>"; };
+		27C4982019E69456002CC2DD /* SignUpDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDetails.h; sourceTree = "<group>"; };
+		27C4982119E69456002CC2DD /* SignUpDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDetails.m; sourceTree = "<group>"; };
+		27C4982319E6946F002CC2DD /* SignUpApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpApi.h; sourceTree = "<group>"; };
+		27C4982419E6946F002CC2DD /* SignUpApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpApi.m; sourceTree = "<group>"; };
+		27C4982619E694AB002CC2DD /* SignUpApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpApiKeys.h; sourceTree = "<group>"; };
 		27C79C69192E73CE003681BE /* BrintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C79C6C192E73CE003681BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27C79C6E192E73CE003681BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -755,6 +762,46 @@
 			path = Banners;
 			sourceTree = "<group>";
 		};
+		27C4981B19E68EA5002CC2DD /* CollectionsApi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionsApi;
+			sourceTree = "<group>";
+		};
+		27C4981C19E68EA5002CC2DD /* ForgotPasswordApi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ForgotPasswordApi;
+			sourceTree = "<group>";
+		};
+		27C4981D19E68EA5002CC2DD /* HomeScreenApi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeScreenApi;
+			sourceTree = "<group>";
+		};
+		27C4981E19E68EA5002CC2DD /* LoginApi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginApi;
+			sourceTree = "<group>";
+		};
+		27C4981F19E68EA5002CC2DD /* SignupApi */ = {
+			isa = PBXGroup;
+			children = (
+				27C4982019E69456002CC2DD /* SignUpDetails.h */,
+				27C4982119E69456002CC2DD /* SignUpDetails.m */,
+				27C4982319E6946F002CC2DD /* SignUpApi.h */,
+				27C4982419E6946F002CC2DD /* SignUpApi.m */,
+				27C4982619E694AB002CC2DD /* SignUpApiKeys.h */,
+			);
+			path = SignupApi;
+			sourceTree = "<group>";
+		};
 		27C79C60192E73CE003681BE = {
 			isa = PBXGroup;
 			children = (
@@ -1007,6 +1054,11 @@
 		ED3E277A19D5DD3600B02438 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				27C4981B19E68EA5002CC2DD /* CollectionsApi */,
+				27C4981C19E68EA5002CC2DD /* ForgotPasswordApi */,
+				27C4981D19E68EA5002CC2DD /* HomeScreenApi */,
+				27C4981E19E68EA5002CC2DD /* LoginApi */,
+				27C4981F19E68EA5002CC2DD /* SignupApi */,
 				ED3E279419D6CFC300B02438 /* OffersApiObjects */,
 				ED3E278419D5DD6C00B02438 /* Base Network Objects */,
 			);
@@ -1444,6 +1496,7 @@
 				27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */,
 				EDCBAA70199BE9ED0057266A /* BDImageScrollerPanel.m in Sources */,
 				ED3E279719D6CFE500B02438 /* OffersDetails.m in Sources */,
+				27C4982219E69456002CC2DD /* SignUpDetails.m in Sources */,
 				27470E471965E9F100EF4D06 /* Flickr.m in Sources */,
 				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
 				27873A081940EA1100973989 /* BrinDemoPlatinumMasterViewController.m in Sources */,
@@ -1487,6 +1540,7 @@
 				EDC3785B198FF9D7009BAF2C /* UARoundedRectView.m in Sources */,
 				27873A141940ED4A00973989 /* BrinDemoSilverDetailViewController.m in Sources */,
 				ED7A1C77195CAD6F00679B47 /* BDCollectionView.m in Sources */,
+				27C4982519E6946F002CC2DD /* SignUpApi.m in Sources */,
 				ED5366BC197C21780025B774 /* NSString+LocalizedString.m in Sources */,
 				27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */,
 				27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */,

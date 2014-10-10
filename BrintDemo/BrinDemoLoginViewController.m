@@ -86,6 +86,10 @@
     
 }
 - (IBAction)signUpSubmitBtnClicked:(id)sender {
+    SignUpApi *signUpApi = [[SignUpApi alloc] init];
+    [[WebService sharedInstance] postRequest:signUpApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
+        ;
+    }];
 }
 - (IBAction)signUpBtnClicked:(id)sender {
     [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
