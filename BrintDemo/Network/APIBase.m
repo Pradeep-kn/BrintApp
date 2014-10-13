@@ -24,7 +24,7 @@
     
     if (self) {
         self.statusCode = [NSNumber numberWithInt:-1];
-        self.errorCode = [NSNumber numberWithInt:0];
+        self.errorCode = nil;
         self.message = nil;
         self.errormessage = nil;
         self.sessionId = nil;
@@ -54,13 +54,11 @@
 {
     if ([response respondsToSelector:@selector(objectForKey:)]) {
         
-        self.statusCode = [ParserUtility JSONObjectValue:response forKey:kStatusCode];
-        self.message = [ParserUtility JSONObjectValue:response forKey:kStatusMessage];
+        NSDictionary *responseDict = [ParserUtility JSONObjectValue:response forKey:kResult];
         
-        if (API_SUCESS != [statusCode integerValue]) {
-            self.errormessage = [ParserUtility JSONObjectValue:response forKey:kErrorMessage];
-            self.errorCode = [ParserUtility JSONObjectValue:response forKey:kErrorCode];
-        }
+        self.statusCode = [ParserUtility JSONObjectValue:responseDict forKey:kStatusCode];
+        self.errormessage = [ParserUtility JSONObjectValue:responseDict forKey:kStatusMessage];
+        self.errorCode = [ParserUtility JSONObjectValue:responseDict forKey:kErrorCode];
     }
     
     return nil;

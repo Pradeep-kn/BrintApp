@@ -60,7 +60,7 @@ static WebService *webInstance;
         
         DBLog(@"error = %@",error);
         if (callback) {
-            callback(apiBase,nil, error);
+            callback(apiBase, nil, error);
         }
     }];
 }
@@ -76,6 +76,8 @@ static WebService *webInstance;
     [[AFNetWorkAPIClient sharedClient] getPath:apiPath parameters:parameters  success:^(AFHTTPRequestOperation *operation, id JSON) {
         DBLog(@"JSON = %@",JSON);
 
+        [apiBase parseJsonObjectFromResponse:JSON];
+        
         callback(apiBase, JSON, nil);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

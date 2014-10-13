@@ -14,6 +14,9 @@
 #import "BrinDemoSilverSplitViewController.h"
 #import "BIHomeViewController.h"
 #import "BrinDemoTabbarController.h"
+#import "WebService.h"
+#import "OffersApi.h"
+
 
 @implementation BrinDemoAppDelegate
 
@@ -24,6 +27,7 @@
     OffersApi *offersApi = [[OffersApi alloc] init];
     [[WebService sharedInstance] getRequest:offersApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
         ;
+        DBLog(@"offersApi = %@",offersApi.offersArray);
     }];
      return YES;
 }

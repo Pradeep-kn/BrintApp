@@ -60,19 +60,15 @@
         return nil;
     }
     
-    if (nil != self.errormessage || self.errorCode) {
+    if (API_SUCESS != [self.statusCode integerValue]) {
         return nil;
     }
     
     NSDictionary *responseDict = [ParserUtility JSONObjectValue:response forKey:kResult];
     
-    self.statusCode = [ParserUtility JSONObjectValue:responseDict forKey:kStatusCode];
-    self.errormessage = [ParserUtility JSONObjectValue:responseDict forKey:kStatusMessage];
-    self.errorCode = [ParserUtility JSONObjectValue:responseDict forKey:kErrorCode];
-    
-    if ([response respondsToSelector:@selector(objectForKey:)]) {
+    if ([responseDict respondsToSelector:@selector(objectForKey:)]) {
         
-        NSMutableArray *array = [ParserUtility checkForNilObjectAssignEmptyValue:kOffers];
+        NSMutableArray *array = [ParserUtility JSONObjectValue:responseDict forKey:kOffers];
         
         if (nil != array && [array count]) {
             self.offersArray = [[NSMutableArray alloc] init];

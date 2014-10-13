@@ -8,15 +8,22 @@
 
 #import "BrinDemoLoginViewController.h"
 #import "BrinDemoAppDelegate.h"
+#import "APIDefines.h"
+#import "SignUpApi.h"
+#import "WebService.h"
+
 
 @interface BrinDemoLoginViewController ()
+
 @property (weak, nonatomic) IBOutlet UIScrollView *loginScrollView;
 @property (weak, nonatomic) IBOutlet UIView *loginView;
 @property (weak, nonatomic) IBOutlet UIImageView *scrollViewImageView;
 
 @end
 
+
 @implementation BrinDemoLoginViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
