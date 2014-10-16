@@ -1,22 +1,22 @@
 //
-//  SignUpApi.m
+//  LoginApi.m
 //  BrintDemo
 //
-//  Created by Pradeep on 09/10/14.
+//  Created by Pradeep on 17/10/14.
 //  Copyright (c) 2014 Pradeep. All rights reserved.
 //
 
-#import "SignUpApi.h"
+#import "LoginApi.h"
 
-@implementation SignUpApi
-@synthesize signUpDetails;
+@implementation LoginApi
+
+@synthesize loginDetails;
 
 - (id)init
 {
     self = [super init];
     if (self) {
         //
-        self.signUpDetails = [[SignUpDetails alloc] init];
     }
     return self;
 }
@@ -28,7 +28,7 @@
 
 - (NSString *)apiName
 {
-    return [NSString stringWithFormat:@"%@%@",[super apiName],kSignupApiUrl];
+    return [NSString stringWithFormat:@"%@%@",[super apiName],kLoginApiUrl];
 }
 
 
@@ -37,7 +37,8 @@
     [super createJsonObjectForRequest];
     
     // Create request json object here..
-    NSMutableDictionary *jsonObject = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.signUpDetails.username,@"username",self.signUpDetails.password,@"password",self.signUpDetails.email,@"email",self.signUpDetails.mnumber,@"mnumber", nil];
+    NSMutableDictionary *jsonObject = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.loginDetails.username,@"username",self.loginDetails.password,@"password",self.loginDetails.email,@"email",self.loginDetails.mnumber,@"mnumber", nil];
+
     
     return jsonObject;
 }
@@ -62,25 +63,22 @@
     }
     
     NSDictionary *responseDict = [ParserUtility JSONObjectValue:response forKey:kResult];
-    
     NSString *value = [ParserUtility JSONObjectValue:responseDict forKey:kStatusCode];
     self.statusCode = [NSNumber numberWithInteger:[value integerValue]];
     self.errormessage = [ParserUtility JSONObjectValue:responseDict forKey:kErrorMessage];
     value = [ParserUtility JSONObjectValue:responseDict forKey:kErrorCode];
     self.errorCode = [NSNumber numberWithInteger:[value integerValue]];
     
-    if ([response respondsToSelector:@selector(objectForKey:)]) {
-    }
-    
+    NSLog(@"Login Response = %@", responseDict);
     return nil;
 }
 
 
-- (SignUpDetails *)parsedOffersDetails:(NSDictionary *)offersDict
+- (LoginDetails *)parsedOffersDetails:(NSDictionary *)offersDict
 {
-    SignUpDetails *details = [[SignUpDetails alloc] init];
-    
+    LoginDetails *details = [[LoginDetails alloc] init];
     return details;
 }
+
 
 @end

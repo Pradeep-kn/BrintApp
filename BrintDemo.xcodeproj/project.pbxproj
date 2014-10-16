@@ -55,6 +55,9 @@
 		27AE5FBF1977294B00A399B4 /* offers3.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FB51977294B00A399B4 /* offers3.png */; };
 		27AE5FC219772AA900A399B4 /* offers1.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FC019772AA900A399B4 /* offers1.png */; };
 		27AE5FC319772AA900A399B4 /* offers1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5FC119772AA900A399B4 /* offers1@2x.png */; };
+		27B094A219F060A000444D0E /* LoginDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B094A119F060A000444D0E /* LoginDetails.m */; };
+		27B094A519F060B900444D0E /* LoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B094A419F060B900444D0E /* LoginApi.m */; };
+		27B094A919F06DE700444D0E /* ForgotPasswordApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B094A819F06DE700444D0E /* ForgotPasswordApi.m */; };
 		27B2B9831961E85C00731835 /* BrinDemoGoldDetailsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */; };
 		27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5EF195D83D500E17939 /* BrinDemoDiamondListViewController.m */; };
 		27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2F5F1195D83D500E17939 /* BrinDemoPlatinumViewController.m */; };
@@ -284,6 +287,14 @@
 		27AE5FB51977294B00A399B4 /* offers3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offers3.png; sourceTree = "<group>"; };
 		27AE5FC019772AA900A399B4 /* offers1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offers1.png; sourceTree = "<group>"; };
 		27AE5FC119772AA900A399B4 /* offers1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offers1@2x.png"; sourceTree = "<group>"; };
+		27B094A019F060A000444D0E /* LoginDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDetails.h; sourceTree = "<group>"; };
+		27B094A119F060A000444D0E /* LoginDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDetails.m; sourceTree = "<group>"; };
+		27B094A319F060B900444D0E /* LoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginApi.h; sourceTree = "<group>"; };
+		27B094A419F060B900444D0E /* LoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginApi.m; sourceTree = "<group>"; };
+		27B094A619F0624B00444D0E /* LoginApiKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginApiKeys.h; sourceTree = "<group>"; };
+		27B094A719F06DE700444D0E /* ForgotPasswordApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordApi.h; sourceTree = "<group>"; };
+		27B094A819F06DE700444D0E /* ForgotPasswordApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordApi.m; sourceTree = "<group>"; };
+		27B094AA19F06DF800444D0E /* ForgotPasswordApiKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordApiKey.h; sourceTree = "<group>"; };
 		27B2B9811961E85C00731835 /* BrinDemoGoldDetailsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoGoldDetailsListViewController.h; sourceTree = "<group>"; };
 		27B2B9821961E85C00731835 /* BrinDemoGoldDetailsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoGoldDetailsListViewController.m; sourceTree = "<group>"; };
 		27B2F5EE195D83BC00E17939 /* BrinDemoDiamondListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrinDemoDiamondListViewController.h; sourceTree = "<group>"; };
@@ -784,6 +795,9 @@
 		27C4981C19E68EA5002CC2DD /* ForgotPasswordApi */ = {
 			isa = PBXGroup;
 			children = (
+				27B094A719F06DE700444D0E /* ForgotPasswordApi.h */,
+				27B094A819F06DE700444D0E /* ForgotPasswordApi.m */,
+				27B094AA19F06DF800444D0E /* ForgotPasswordApiKey.h */,
 			);
 			path = ForgotPasswordApi;
 			sourceTree = "<group>";
@@ -798,6 +812,11 @@
 		27C4981E19E68EA5002CC2DD /* LoginApi */ = {
 			isa = PBXGroup;
 			children = (
+				27B094A019F060A000444D0E /* LoginDetails.h */,
+				27B094A119F060A000444D0E /* LoginDetails.m */,
+				27B094A319F060B900444D0E /* LoginApi.h */,
+				27B094A419F060B900444D0E /* LoginApi.m */,
+				27B094A619F0624B00444D0E /* LoginApiKeys.h */,
 			);
 			path = LoginApi;
 			sourceTree = "<group>";
@@ -1495,6 +1514,7 @@
 				ED1FF1FB197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */,
 				27C79CBA192E8ACA003681BE /* BrinDemoLoginViewController.m in Sources */,
+				27B094A519F060B900444D0E /* LoginApi.m in Sources */,
 				27B2F5F6195D83D500E17939 /* BrinDemoSilverListViewController.m in Sources */,
 				ED3E277319D5DB4A00B02438 /* SDImageCache.m in Sources */,
 				27873A051940E9F100973989 /* BrinDemoDiamondMasterViewController.m in Sources */,
@@ -1512,6 +1532,7 @@
 				27C4982219E69456002CC2DD /* SignUpDetails.m in Sources */,
 				27470E471965E9F100EF4D06 /* Flickr.m in Sources */,
 				278739E91940E7D100973989 /* BrinDemoGoldSplitViewController.m in Sources */,
+				27B094A219F060A000444D0E /* LoginDetails.m in Sources */,
 				27873A081940EA1100973989 /* BrinDemoPlatinumMasterViewController.m in Sources */,
 				EDC37861198FF9EA009BAF2C /* UATitledModalPanel.m in Sources */,
 				27CC4DBB194249CD00DC2034 /* BrinDemoMasterCell.m in Sources */,
@@ -1565,6 +1586,7 @@
 				ED3E277419D5DB4A00B02438 /* SDWebImageDecoder.m in Sources */,
 				EDAAA2D919A0E0BE003C3411 /* UIImage+ImageEffects.m in Sources */,
 				ED7A1C74195CA8D100679B47 /* BDCollectionInfo.m in Sources */,
+				27B094A919F06DE700444D0E /* ForgotPasswordApi.m in Sources */,
 				EDAAA2E219A0E9CC003C3411 /* BDGlassImageScroller.m in Sources */,
 				ED5366B8197C1A750025B774 /* BDCollectionItemInfo.m in Sources */,
 				275899FC19E7FC9B00BB28D0 /* ValidateApi.m in Sources */,

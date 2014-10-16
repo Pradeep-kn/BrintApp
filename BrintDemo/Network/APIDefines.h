@@ -14,15 +14,19 @@
 // Production server base url
 static NSString * const KBaseURL = @"http://brinvents.com/project/";
 
-static NSString * const kOffersApiUrl = @"get_offers.php";
+static NSString * const kLoginApiUrl = @"loginclass.php";
+
+static NSString * const kForgotPasswordUrl = @"/forgetpwdclass.php?";
 
 static NSString * const kSignupApiUrl = @"signupclass.php";
+
+static NSString * const kOffersApiUrl = @"get_offers.php";
 
 static NSString * const kStatusCode = @"status Code";
 
 static NSString * const kErrorCode = @"errorCode";
 
-static NSString * const kErrorMessage = @"ErrorMessage";
+static NSString * const kErrorMessage = @"error Message";
 
 static NSString * const kStatusMessage = @"Result Message";
 

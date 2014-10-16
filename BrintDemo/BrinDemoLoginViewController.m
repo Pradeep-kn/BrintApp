@@ -8,10 +8,11 @@
 
 #import "BrinDemoLoginViewController.h"
 #import "BrinDemoAppDelegate.h"
+#import "WebService.h"
 #import "APIDefines.h"
 #import "SignUpApi.h"
-#import "WebService.h"
-
+#import "LoginApi.h"
+#import "ForgotPasswordApi.h"
 
 @interface BrinDemoLoginViewController ()
 
@@ -86,14 +87,44 @@
 
 - (IBAction)loginButtonClicked:(id)sender
 {
-    BrinDemoAppDelegate *appDelegate = (BrinDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate showHomeView];
+    [self callLoginApi];
 }
 
 - (IBAction)forgotPasswordSubmitBtnClicked:(id)sender {
 
-    
+    ForgotPasswordApi *forgotPasswordApi = [[ForgotPasswordApi alloc] init];
+    forgotPasswordApi.email = self.forgotPasswordTextField.text;
+    [[WebService sharedInstance] getRequest:forgotPasswordApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
+        if ([forgotPasswordApi.errorCode isEqualToNumber:[NSNumber numberWithInteger:0]]) {
+            [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+                self.loginView.hidden = NO;
+                self.forgotPasswordView.hidden = YES;
+                self.signUpView.hidden = YES;
+            } completion:^(BOOL finished) {
+                ;
+            }];
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Brinvents" message:@"Your password has been sent to your mail address" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alertView show];
+        }
+    }];
 }
+
+- (void)callLoginApi
+{
+    LoginApi *loginApi = [[LoginApi alloc] init];
+    loginApi.loginDetails = [[LoginDetails alloc] init];
+    loginApi.loginDetails.username = self.loginUsernameTxtField.text;
+    loginApi.loginDetails.password = self.loginPasswordTxtField.text;
+    loginApi.loginDetails.email = self.loginUsernameTxtField.text;
+    
+    [[WebService sharedInstance] postRequest:loginApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
+        if ([loginApi.errorCode isEqualToNumber:[NSNumber numberWithInteger:0]]) {
+            BrinDemoAppDelegate *appDelegate = (BrinDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
+            [appDelegate showHomeView];
+        }
+    }];
+}
+
 - (IBAction)signUpSubmitBtnClicked:(id)sender {
     [self callSignUpApi];
 }
@@ -108,7 +139,7 @@
     signUpApi.signUpDetails.email = self.emailField.text;
     
     [[WebService sharedInstance] postRequest:signUpApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
-        if ((int)signUpApi.statusCode == 200) {
+        if ([signUpApi.errorCode isEqualToNumber:[NSNumber numberWithInteger:0]]) {
             BrinDemoAppDelegate *appDelegate = (BrinDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
             [appDelegate showHomeView];
         }
