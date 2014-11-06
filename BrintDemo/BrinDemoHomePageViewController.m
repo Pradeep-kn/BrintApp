@@ -7,6 +7,7 @@
 //
 
 #import "BrinDemoHomePageViewController.h"
+#import "HomeScreenApi.h"
 
 @interface BrinDemoHomePageViewController ()
 
@@ -36,7 +37,7 @@
     self.offersView.layer.cornerRadius = 6.0f;
     
     self.carousel.type = iCarouselTypeCylinder;
-    [self offersImageAnimation];
+    [self callHomeScreensApi];
     [[BDUtility sharedInstance] addShadowToView:self.costBgView];
     [[BDUtility sharedInstance] addShadowToView:self.homeDetailView];
     [[BDUtility sharedInstance] addShadowToView:self.offersView];
@@ -44,11 +45,37 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)offersImageAnimation
+- (void)callHomeScreensApi
+{
+    HomeScreenApi *homeScreensApi = [[HomeScreenApi alloc] init];
+    _imagesArray = [[NSMutableArray alloc] init];
+    [[WebService sharedInstance] getRequest:homeScreensApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
+        for (HomeScreenDetails *homeScreensDetails in homeScreensApi.homeScreenArray) {
+            //            UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:offersDetails.offer_image]]];
+            [_imagesArray addObject:homeScreensDetails];
+        }
+        //        [self offersImageAnimationWithImages:_imagesArray];
+    }];
+}
+
+
+//- (void)callOffersApi
+//{
+//    OffersApi *offersApi = [[OffersApi alloc] init];
+//    _imagesArray = [[NSMutableArray alloc] init];
+//    [[WebService sharedInstance] getRequest:offersApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
+//        for (OffersDetails *offersDetails in offersApi.offersArray) {
+////            UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:offersDetails.offer_image]]];
+//            [_imagesArray addObject:offersDetails.offer_image];
+//        }
+////        [self offersImageAnimationWithImages:_imagesArray];
+//    }];
+//}
+
+- (void)offersImageAnimationWithImages:(NSMutableArray *)imagesArray
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSMutableArray *emmaImagesArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"offers1.png"],[UIImage imageNamed:@"offers2.png"],[UIImage imageNamed:@"offers3.png"],[UIImage imageNamed:@"offers4.png"],[UIImage imageNamed:@"offers5.png"], nil];
-        self.offersImageView.animationImages = emmaImagesArray;
+        self.offersImageView.animationImages = imagesArray;
         self.offersImageView.animationDuration = 10.0;
         self.offersImageView.animationRepeatCount = 0;
         self.offersImageView.contentMode = UIViewContentModeScaleAspectFit;

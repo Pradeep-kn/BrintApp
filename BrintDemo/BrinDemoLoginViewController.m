@@ -44,6 +44,9 @@
     self.signUpSubmitBtn.tag = SignupSubmitTag;
     [self modifyUIElements];
     [self backgroundImageAnimation];
+    
+    self.loginUsernameTxtField.text = @"Pradeep";
+    self.loginPasswordTxtField.text = @"welcome";
 }
 
 - (void)modifyUIElements

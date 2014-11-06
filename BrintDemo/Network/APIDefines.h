@@ -12,15 +12,37 @@
 
 
 // Production server base url
-static NSString * const KBaseURL = @"http://brinvents.com/project/";
+static NSString * const KBaseURL = @"http://brinvents.com/jewel/Apis/";
 
 static NSString * const kLoginApiUrl = @"loginclass.php";
 
-static NSString * const kForgotPasswordUrl = @"/forgetpwdclass.php?";
-
 static NSString * const kSignupApiUrl = @"signupclass.php";
 
+static NSString * const kForgotPasswordUrl = @"forgetpwdclass.php?";
+
+static NSString * const kHomeScreenApiUrl = @"ListOfHomeScreens/retrieve.json";
+
 static NSString * const kOffersApiUrl = @"get_offers.php";
+
+static NSString * const kPostOffersApiUrl = @"post_offers.php";
+
+static NSString * const kLaunchScreenApiUrl = @"get_offers.php";
+
+static NSString * const kListOfGoldApiApiUrl = @"ListOfGoldItems/retrieve.json";
+
+static NSString * const kListOfDiamondApiApiUrl = @"ListOfDiamindItems/retrieve.json";
+
+static NSString * const kListOfSilverApiApiUrl = @"ListOfSilverItems/retrieve.json";
+
+static NSString * const kListOfPlatinumApiApiUrl = @"ListOfPlatinumItems/retrieve.json";
+
+static NSString * const kNewCollectionsApiApiUrl = @"new_collections.php";
+
+static NSString * const kPostNewCollectionsApiUrl = @"post_new_collections.php";
+
+static NSString * const kStoresApiUrl = @"get_stores.php";
+
+static NSString * const kPostStoresApiUrl = @"post_stores.php";
 
 static NSString * const kStatusCode = @"status Code";
 

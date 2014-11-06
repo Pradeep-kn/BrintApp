@@ -61,17 +61,17 @@
         return nil;
     }
     
-    NSDictionary *responseDict = [ParserUtility JSONObjectValue:response forKey:kResult];
-    
-    NSString *value = [ParserUtility JSONObjectValue:responseDict forKey:kStatusCode];
-    self.statusCode = [NSNumber numberWithInteger:[value integerValue]];
-    self.errormessage = [ParserUtility JSONObjectValue:responseDict forKey:kErrorMessage];
-    value = [ParserUtility JSONObjectValue:responseDict forKey:kErrorCode];
-    self.errorCode = [NSNumber numberWithInteger:[value integerValue]];
-    
-    if ([response respondsToSelector:@selector(objectForKey:)]) {
-    }
-    
+//    NSDictionary *responseDict = [ParserUtility JSONObjectValue:response forKey:kResult];
+//    
+//    NSString *value = [ParserUtility JSONObjectValue:responseDict forKey:kStatusCode];
+//    self.statusCode = [NSNumber numberWithInteger:[value integerValue]];
+//    self.errormessage = [ParserUtility JSONObjectValue:responseDict forKey:kErrorMessage];
+//    value = [ParserUtility JSONObjectValue:responseDict forKey:kErrorCode];
+//    self.errorCode = [NSNumber numberWithInteger:[value integerValue]];
+//    
+//    if ([response respondsToSelector:@selector(objectForKey:)]) {
+//    }
+//    
     return nil;
 }
 

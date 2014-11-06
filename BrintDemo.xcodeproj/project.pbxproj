@@ -19,6 +19,8 @@
 		27236076196ACA8100CA26B4 /* closest-store-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723606A196ACA8100CA26B4 /* closest-store-active@2x.png */; };
 		27236077196ACA8100CA26B4 /* closest-store.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723606B196ACA8100CA26B4 /* closest-store.png */; };
 		27236078196ACA8100CA26B4 /* closest-store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2723606C196ACA8100CA26B4 /* closest-store@2x.png */; };
+		272515F919FE6EFF008F355B /* HomeScreenApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 272515F819FE6EFF008F355B /* HomeScreenApi.m */; };
+		272515FC19FE6F1A008F355B /* HomeScreenDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 272515FB19FE6F1A008F355B /* HomeScreenDetails.m */; };
 		27470E471965E9F100EF4D06 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E441965E9F100EF4D06 /* Flickr.m */; };
 		27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E461965E9F100EF4D06 /* FlickrPhoto.m */; };
 		27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */; };
@@ -128,6 +130,7 @@
 		27CC4DCF194260DB00DC2034 /* Pattren.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DCD194260DB00DC2034 /* Pattren.png */; };
 		27CC4DD2194261DD00DC2034 /* RingBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DD0194261DD00DC2034 /* RingBg.png */; };
 		27CC4DD3194261DD00DC2034 /* RingBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27CC4DD1194261DD00DC2034 /* RingBg@2x.png */; };
+		27D4A7F01A0BEAB300C7A94F /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4A7EF1A0BEAB300C7A94F /* BIHomeViewController.m */; };
 		997F752B3FE92E34EE4636ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 805688D4D8FDC67E3F10BADC /* libPods.a */; };
 		ED1FF1FA197435D5000779E5 /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF1F7197435D5000779E5 /* CSStickyHeaderFlowLayout.m */; };
 		ED1FF1FB197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1FF1F9197435D5000779E5 /* CSStickyHeaderFlowLayoutAttributes.m */; };
@@ -196,7 +199,6 @@
 		EDC37873198FFCAE009BAF2C /* UAExampleModalPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC37871198FFCAE009BAF2C /* UAExampleModalPanel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EDCBAA70199BE9ED0057266A /* BDImageScrollerPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCBAA6F199BE9ED0057266A /* BDImageScrollerPanel.m */; };
 		EDCBAA72199BEBDD0057266A /* BDImageScrollerPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCBAA71199BEBDD0057266A /* BDImageScrollerPanel.xib */; };
-		EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B8919477ED100D68A33 /* BIHomeViewController.m */; };
 		EDE56B8D19477EFC00D68A33 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE56B8C19477EFC00D68A33 /* Home.storyboard */; };
 		EDE56B9C194784CF00D68A33 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */; };
 		EDE56B9D194784CF00D68A33 /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE56B9B194784CF00D68A33 /* SVSegmentedThumb.m */; };
@@ -230,6 +232,11 @@
 		2723606A196ACA8100CA26B4 /* closest-store-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closest-store-active@2x.png"; sourceTree = "<group>"; };
 		2723606B196ACA8100CA26B4 /* closest-store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closest-store.png"; sourceTree = "<group>"; };
 		2723606C196ACA8100CA26B4 /* closest-store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closest-store@2x.png"; sourceTree = "<group>"; };
+		272515F619FE6EE9008F355B /* HomeScreenApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenApiKeys.h; sourceTree = "<group>"; };
+		272515F719FE6EFF008F355B /* HomeScreenApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenApi.h; sourceTree = "<group>"; };
+		272515F819FE6EFF008F355B /* HomeScreenApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenApi.m; sourceTree = "<group>"; };
+		272515FA19FE6F1A008F355B /* HomeScreenDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenDetails.h; sourceTree = "<group>"; };
+		272515FB19FE6F1A008F355B /* HomeScreenDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenDetails.m; sourceTree = "<group>"; };
 		27470E431965E9F100EF4D06 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flickr.h; path = ../Flickr.h; sourceTree = "<group>"; };
 		27470E441965E9F100EF4D06 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Flickr.m; path = ../Flickr.m; sourceTree = "<group>"; };
 		27470E451965E9F100EF4D06 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrPhoto.h; path = ../FlickrPhoto.h; sourceTree = "<group>"; };
@@ -383,6 +390,8 @@
 		27CC4DCD194260DB00DC2034 /* Pattren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pattren.png; sourceTree = "<group>"; };
 		27CC4DD0194261DD00DC2034 /* RingBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RingBg.png; sourceTree = "<group>"; };
 		27CC4DD1194261DD00DC2034 /* RingBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RingBg@2x.png"; sourceTree = "<group>"; };
+		27D4A7EE1A0BEAB300C7A94F /* BIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeViewController.h; sourceTree = "<group>"; };
+		27D4A7EF1A0BEAB300C7A94F /* BIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeViewController.m; sourceTree = "<group>"; };
 		3CA8BBB43C41DBF5FDEC8399 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		805688D4D8FDC67E3F10BADC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51E441F08B7ABC1E3055696 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -501,8 +510,6 @@
 		EDCBAA6E199BE9ED0057266A /* BDImageScrollerPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDImageScrollerPanel.h; sourceTree = "<group>"; };
 		EDCBAA6F199BE9ED0057266A /* BDImageScrollerPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDImageScrollerPanel.m; sourceTree = "<group>"; };
 		EDCBAA71199BEBDD0057266A /* BDImageScrollerPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDImageScrollerPanel.xib; sourceTree = "<group>"; };
-		EDE56B8819477ED100D68A33 /* BIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeViewController.h; sourceTree = "<group>"; };
-		EDE56B8919477ED100D68A33 /* BIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeViewController.m; sourceTree = "<group>"; };
 		EDE56B8C19477EFC00D68A33 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EDE56B98194784CF00D68A33 /* SVSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedControl.h; sourceTree = "<group>"; };
 		EDE56B99194784CF00D68A33 /* SVSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedControl.m; sourceTree = "<group>"; };
@@ -805,6 +812,11 @@
 		27C4981D19E68EA5002CC2DD /* HomeScreenApi */ = {
 			isa = PBXGroup;
 			children = (
+				272515F619FE6EE9008F355B /* HomeScreenApiKeys.h */,
+				272515F719FE6EFF008F355B /* HomeScreenApi.h */,
+				272515F819FE6EFF008F355B /* HomeScreenApi.m */,
+				272515FA19FE6F1A008F355B /* HomeScreenDetails.h */,
+				272515FB19FE6F1A008F355B /* HomeScreenDetails.m */,
 			);
 			path = HomeScreenApi;
 			sourceTree = "<group>";
@@ -1254,8 +1266,8 @@
 		EDE56B9E194793A900D68A33 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EDE56B8819477ED100D68A33 /* BIHomeViewController.h */,
-				EDE56B8919477ED100D68A33 /* BIHomeViewController.m */,
+				27D4A7EE1A0BEAB300C7A94F /* BIHomeViewController.h */,
+				27D4A7EF1A0BEAB300C7A94F /* BIHomeViewController.m */,
 				EDE56B9F194793D900D68A33 /* BICollectionsViewController.h */,
 				EDE56BA0194793D900D68A33 /* BICollectionsViewController.m */,
 				ED7A59171959F1870068A83F /* HomePageController.h */,
@@ -1548,13 +1560,14 @@
 				ED5366B4197C19F80025B774 /* BDCollectionDetailVC.m in Sources */,
 				27873A0B1940EA3300973989 /* BrinDemoSilverMasterViewController.m in Sources */,
 				27C79C7D192E73CE003681BE /* BrinDemoAppDelegate.m in Sources */,
-				EDE56B8A19477ED100D68A33 /* BIHomeViewController.m in Sources */,
+				272515FC19FE6F1A008F355B /* HomeScreenDetails.m in Sources */,
 				ED7A591A1959F1870068A83F /* HomePageController.m in Sources */,
 				27AE5FA51976FC6E00A399B4 /* UIImage+FX.m in Sources */,
 				ED33547C194A2FA4004BDEC6 /* BrinDemoTabbarController.m in Sources */,
 				ED1FF1FA197435D5000779E5 /* CSStickyHeaderFlowLayout.m in Sources */,
 				27C96A89195B6EB800B08F4F /* BrinDemoGoldListViewController.m in Sources */,
 				EDC37873198FFCAE009BAF2C /* UAExampleModalPanel.m in Sources */,
+				272515F919FE6EFF008F355B /* HomeScreenApi.m in Sources */,
 				ED3E278D19D5DF5500B02438 /* HelperMethods.m in Sources */,
 				EDC3785A198FF9D7009BAF2C /* UANoisyGradientBackground.m in Sources */,
 				27AE5FA41976FC6E00A399B4 /* FXImageView.m in Sources */,
@@ -1577,6 +1590,7 @@
 				27C4982519E6946F002CC2DD /* SignUpApi.m in Sources */,
 				ED5366BC197C21780025B774 /* NSString+LocalizedString.m in Sources */,
 				27873A191940F78800973989 /* UIImage+animatedGIF.m in Sources */,
+				27D4A7F01A0BEAB300C7A94F /* BIHomeViewController.m in Sources */,
 				27B2F5F4195D83D500E17939 /* BrinDemoDiamondListViewController.m in Sources */,
 				278739F31940E95D00973989 /* BrinDemoDiamondSplitViewController.m in Sources */,
 				27873A0E1940ED0E00973989 /* BrinDemoDiamondDetailViewController.m in Sources */,

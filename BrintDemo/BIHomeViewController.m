@@ -52,17 +52,6 @@
     [self loadHomeDetails];
     [self loadOffersDetails];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg4.png"]];
-//    self.containerView.backgroundColor = BLACK_COLOR;
-//    
-//    self.corouselDataSource = [NSMutableArray array];
-//    
-//    for (int i = 0; i < 10; i++) {
-//        BDCollectionInfo *info = [[BDCollectionInfo alloc] init];
-//        [self.corouselDataSource addObject:info];
-//    }
-//    
-//    [self addGradientColourToInfoViews];
-//    [self backgroundImageAnimation];
 }
 
 - (void)loadImages
@@ -95,10 +84,6 @@
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         NSMutableArray *offersArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"j5.png"],[UIImage imageNamed:@"j6.png"],[UIImage imageNamed:@"j7.png"],[UIImage imageNamed:@"j8.png"],[UIImage imageNamed:@"j9.png"],[UIImage imageNamed:@"j10.png"], nil];
-//        self.collectionsImageView.animationImages = offersArray;
-//        self.collectionsImageView.animationDuration = 10.0;
-//        self.collectionsImageView.animationRepeatCount = 0;
-        
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.offersScrollView.frame];
         imageView.animationImages = offersArray;
         imageView.animationDuration = 20.0f;
@@ -152,43 +137,7 @@
     [self.offersInfoView.layer insertSublayer:offersLayer atIndex:0];
 
     self.collectionsInfoView.backgroundColor = [UIColor blackColor];
-    
-//    CAGradientLayer *collectionsLayer = [CAGradientLayer layer];
-//    collectionsLayer.frame = self.collectionsInfoView.bounds;
-//    
-//    collectionsLayer.colors = [NSArray arrayWithObjects:(id)[WINTER1 CGColor], (id)[WINTER2 CGColor], nil];
-//    [self.collectionsInfoView.layer insertSublayer:collectionsLayer atIndex:0];
 }
-
-
-/*
- 
- case ThemeAutumn:
- colorArray = [NSArray arrayWithObjects:(id)[AUTUMN1 CGColor], (id)[AUTUMN2 CGColor], nil];
- break;
- 
- case ThemeOceanDepths:
- colorArray = [NSArray arrayWithObjects:(id)[OCEANDEPTHS1 CGColor], (id)[OCEANDEPTHS2 CGColor], nil];
- break;
- 
- case ThemePinkPanther:
- colorArray = [NSArray arrayWithObjects:(id)[PINKPANTHER1 CGColor], (id)[PINKPANTHER2 CGColor], nil];
- break;
- 
- case ThemeSpring:
- colorArray = [NSArray arrayWithObjects:(id)[SPRING1 CGColor], (id)[SPRING2 CGColor], nil];
- break;
- 
- case ThemeSummer:
- colorArray = [NSArray arrayWithObjects:(id)[SUMMER1 CGColor], (id)[SUMMER2 CGColor], nil];
- break;
- 
- case ThemeWinter:
- colorArray = [NSArray arrayWithObjects:(id)[WINTER1 CGColor], (id)[WINTER2 CGColor], nil];
- break;
- 
- */
-
 
 #pragma mark - iCarousel delegate and data source methods..
 
@@ -355,16 +304,6 @@
     return collecttionView;
 }
 
-
-//- (CATransform3D)carousel:(iCarousel *)_carousel itemTransformForOffset:(CGFloat)offset baseTransform:(CATransform3D)transform
-//{
-//    //implement 'flip3D' style carousel
-//    transform = CATransform3DRotate(transform, M_PI / 8.0f, 0.0f, 1.0f, 0.0f);
-//    return CATransform3DTranslate(transform, 0.0f, 0.0f, offset * collectionsCarouselView.itemWidth);
-//}
-
-
-
 - (CGFloat)carousel:(iCarousel *)carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value
 {
     if (option == iCarouselOptionSpacing)
@@ -373,44 +312,6 @@
     }
     return value;
 }
-
-
-
-
-
-/*
- 
-- (CGFloat)carousel:(iCarousel *)_carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value
-{
-    //customize carousel display
-    switch (option)
-    {
-        case iCarouselOptionWrap: {
-            //normally you would hard-code this to YES or NO
-            return YES;
-        }
-        case iCarouselOptionSpacing: {
-            //add a bit of spacing between the item views
-            return value * 1.05f;
-        }
-        case iCarouselOptionFadeMax: {
-            if (collectionsCarouselView.type == iCarouselTypeCustom) {
-                //set opacity based on distance from camera
-                return 0.0f;
-            }
-            return 0.0f;
-        }
-        case iCarouselOptionFadeMin: {
-            return 0.0f;
-        }
-        default:
-        {
-            return value;
-        }
-    }
-}
-
- */
 
 #pragma mark -
 #pragma mark iCarousel taps
@@ -440,6 +341,7 @@
 
 - (IBAction)leftArrowBtnCliked:(id)sender {
 }
+
 - (IBAction)rightArrowButtonClicked:(id)sender {
 }
 @end

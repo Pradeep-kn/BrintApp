@@ -24,12 +24,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    OffersApi *offersApi = [[OffersApi alloc] init];
-    [[WebService sharedInstance] getRequest:offersApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
-        ;
-        DBLog(@"offersApi = %@",offersApi.offersArray);
-    }];
-     return YES;
+    return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -25,4 +25,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *vatTxtField;
 @property (weak, nonatomic) IBOutlet UIView *costBgView;
 
+@property (strong, nonatomic) NSMutableArray *imagesArray;
+
 @end

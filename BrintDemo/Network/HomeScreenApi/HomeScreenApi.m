@@ -1,19 +1,16 @@
 //
-//  OffersApi.m
+//  HomeScreenApi.m
 //  BrintDemo
 //
-//  Created by Tabrez on 27/09/14.
+//  Created by Pradeep on 27/10/14.
 //  Copyright (c) 2014 Pradeep. All rights reserved.
 //
 
-#import "OffersApi.h"
+#import "HomeScreenApi.h"
 
+@implementation HomeScreenApi
 
-@implementation OffersApi
-
-
-@synthesize offersArray;
-
+@synthesize homeScreenArray;
 
 - (id)init
 {
@@ -64,22 +61,12 @@
         return nil;
     }
     
+    self.homeScreenArray = [[NSMutableArray alloc] init];
     NSDictionary *responseDict = [ParserUtility JSONObjectValue:response forKey:kResult];
     
     if ([responseDict respondsToSelector:@selector(objectForKey:)]) {
-        
-        NSMutableArray *array = [ParserUtility JSONObjectValue:responseDict forKey:kOffers];
-        
-        if (nil != array && [array count]) {
-            self.offersArray = [[NSMutableArray alloc] init];
-            
-            for ( NSDictionary *offersDict in array) {
-                OffersDetails *details = [self parsedOffersDetails:offersDict];
-                [self.offersArray addObject:details];
-            }
-        }
+        self.homeScreenArray = [ParserUtility JSONObjectValue:responseDict forKey:kHomeScreensImages];
     }
-    
     return nil;
 }
 
@@ -99,6 +86,5 @@
     
     return details;
 }
-
 
 @end
