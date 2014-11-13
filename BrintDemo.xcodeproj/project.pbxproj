@@ -220,6 +220,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2707306D1A0E1F2300FF31BF /* BrintDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BrintDemo-Prefix.pch"; sourceTree = "<group>"; };
 		271FE64619785777004FAD80 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		271FE6481978579E004FAD80 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
 		27236061196ACA8100CA26B4 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
@@ -902,6 +903,7 @@
 				27C79C74192E73CE003681BE /* BrintDemo-Info.plist */,
 				27C79C75192E73CE003681BE /* InfoPlist.strings */,
 				27C79C78192E73CE003681BE /* main.m */,
+				2707306D1A0E1F2300FF31BF /* BrintDemo-Prefix.pch */,
 				27B32DC6197D12C500C42D81 /* BrintDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";

@@ -8,6 +8,7 @@
 
 #import "BrinDemoHomePageViewController.h"
 #import "HomeScreenApi.h"
+#import "WebService.h"
 
 @interface BrinDemoHomePageViewController ()
 

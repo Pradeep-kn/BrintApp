@@ -72,12 +72,6 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     itemSearchBar.backgroundColor = CLEAR_COLOR;
     [self.itemSearchBar setBackgroundImage:[[UIImage alloc] init]];
     
-//    for (UIView *subview in itemSearchBar.subviews) {
-//        if ([subview isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
-//            [subview removeFromSuperview];
-//            break;
-//        }
-//    }
     self.searchView.layer.borderWidth = 1.0f;
     self.searchView.layer.borderColor = [UIColor darkGrayColor].CGColor;
     self.rangeSlider.minimumValue = 1000;
@@ -86,20 +80,20 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     
     [self updateSliderLabels];
     
-    SVSegmentedControl *yellowRC = [[SVSegmentedControl alloc] initWithSectionTitles:[NSArray arrayWithObjects:@"Name", @"Value", @"Metal Type", nil]];
+    SVSegmentedControl *yellowRC = [[SVSegmentedControl alloc] initWithSectionTitles:[NSArray arrayWithObjects:@"Price", @"Purity", @"Weight", nil]];
     [yellowRC addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
     
-    CGRect frame = CGRectMake(380, 82, 310, 40);
+    CGRect frame = CGRectMake((self.searchView.frame.size.width/2) - (self.searchView.frame.size.width/3), 110, 340, 30);
     
     yellowRC.frame = frame;
     
 	yellowRC.crossFadeLabelsOnDrag = YES;
-	yellowRC.font = [UIFont fontWithName:@"Marker Felt" size:20];
+	yellowRC.font = [UIFont fontWithName:@"Menlo" size:16];
 	yellowRC.titleEdgeInsets = UIEdgeInsetsMake(0, 14, 0, 14);
 	yellowRC.height = 45;
     [yellowRC setSelectedSegmentIndex:0 animated:NO];
-	yellowRC.thumb.tintColor = [UIColor colorWithRed:0.999 green:0.889 blue:0.312 alpha:1.000];
-	yellowRC.thumb.textColor = [UIColor blackColor];
+	yellowRC.thumb.tintColor = [UIColor grayColor];
+	yellowRC.thumb.textColor = [UIColor whiteColor];
 	yellowRC.thumb.textShadowColor = [UIColor colorWithWhite:1 alpha:0.5];
 	yellowRC.thumb.textShadowOffset = CGSizeMake(0, 1);
     
@@ -190,7 +184,8 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
         view.layer.borderWidth = 1.0f;
         view.layer.borderColor = [UIColor darkGrayColor].CGColor;
         view.titleLabel.text = [NSString stringWithFormat:@"Section = %ld", (long)indexPath.section];
-        
+        view.titleLabel.font = [UIFont fontWithName:@"Menlo" size:16];
+
         return view;
     }
     
@@ -220,7 +215,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
     cell.baseView.backgroundColor = WHITE_LIGHT;
     cell.backgroundColor = [UIColor clearColor];
     cell.imageView.image = [self.imagesArray objectAtIndex:indexPath.row];
-    cell.baseView.layer.cornerRadius = 10.0f;
+    cell.baseView.layer.cornerRadius = 1.0f;
     [[BDUtility sharedInstance] addShadowToView:cell.baseView];
     [[BDUtility sharedInstance] addShadowToView:cell.imageView];
     [[BDUtility sharedInstance] addShadowToView:cell];
@@ -249,7 +244,7 @@ NSString *const CSSearchBarHeaderIdentifier = @"CSSearchBarHeader";
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(215 , 215);
+    return CGSizeMake(180 , 180);
 }
 
 

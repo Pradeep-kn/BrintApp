@@ -69,7 +69,7 @@
         
         self.backgroundColor = [UIColor clearColor];
         //self.backgroundTintColor = [UIColor colorWithWhite:0 alpha:0.5];
-        self.backgroundTintColor = [UIColor blackColor];
+        self.backgroundTintColor = [UIColor darkGrayColor];
         self.clipsToBounds = YES;
         self.userInteractionEnabled = YES;
         self.animateToInitialSelection = NO;
@@ -84,7 +84,7 @@
         
         self.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
         self.thumbEdgeInset = UIEdgeInsetsMake(2, 2, 3, 2);
-        self.height = 32.0;
+        self.height = 24.0;
         self.cornerRadius = 4.0;
         
         self.selectedSegmentIndex = 0;

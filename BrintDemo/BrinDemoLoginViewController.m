@@ -114,18 +114,21 @@
 
 - (void)callLoginApi
 {
-    LoginApi *loginApi = [[LoginApi alloc] init];
-    loginApi.loginDetails = [[LoginDetails alloc] init];
-    loginApi.loginDetails.username = self.loginUsernameTxtField.text;
-    loginApi.loginDetails.password = self.loginPasswordTxtField.text;
-    loginApi.loginDetails.email = self.loginUsernameTxtField.text;
+    BrinDemoAppDelegate *appDelegate = (BrinDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate showHomeView];
     
-    [[WebService sharedInstance] postRequest:loginApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
-        if ([loginApi.errorCode isEqualToNumber:[NSNumber numberWithInteger:0]]) {
-            BrinDemoAppDelegate *appDelegate = (BrinDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
-            [appDelegate showHomeView];
-        }
-    }];
+//    LoginApi *loginApi = [[LoginApi alloc] init];
+//    loginApi.loginDetails = [[LoginDetails alloc] init];
+//    loginApi.loginDetails.username = self.loginUsernameTxtField.text;
+//    loginApi.loginDetails.password = self.loginPasswordTxtField.text;
+//    loginApi.loginDetails.email = self.loginUsernameTxtField.text;
+//    
+//    [[WebService sharedInstance] postRequest:loginApi andCallback:^(APIBase *apiObject, id JSON, NSError *error) {
+//        if ([loginApi.errorCode isEqualToNumber:[NSNumber numberWithInteger:0]]) {
+//            BrinDemoAppDelegate *appDelegate = (BrinDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
+//            [appDelegate showHomeView];
+//        }
+//    }];
 }
 
 - (IBAction)signUpSubmitBtnClicked:(id)sender {
