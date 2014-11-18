@@ -25,6 +25,9 @@
 		27470E481965E9F100EF4D06 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E461965E9F100EF4D06 /* FlickrPhoto.m */; };
 		27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */; };
 		275899FC19E7FC9B00BB28D0 /* ValidateApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 275899FB19E7FC9B00BB28D0 /* ValidateApi.m */; };
+		276E96091A1B912B000E371D /* PICoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 276E96081A1B912B000E371D /* PICoreDataManager.m */; };
+		276E960C1A1B92B5000E371D /* BDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 276E960A1A1B92B5000E371D /* BDModel.xcdatamodeld */; };
+		276E960E1A1B92EA000E371D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276E960D1A1B92EA000E371D /* CoreData.framework */; };
 		2782592A193F9463000F944A /* mod.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825928193F9463000F944A /* mod.png */; };
 		2782592B193F9463000F944A /* mod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27825929193F9463000F944A /* mod@2x.png */; };
 		2782592E193F9686000F944A /* model2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2782592C193F9686000F944A /* model2.png */; };
@@ -246,6 +249,10 @@
 		27470E591965FE6800EF4D06 /* BrinDemoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrinDemoCollectionViewController.m; sourceTree = "<group>"; };
 		275899FA19E7FC9B00BB28D0 /* ValidateApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateApi.h; sourceTree = "<group>"; };
 		275899FB19E7FC9B00BB28D0 /* ValidateApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateApi.m; sourceTree = "<group>"; };
+		276E96071A1B912B000E371D /* PICoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICoreDataManager.h; sourceTree = "<group>"; };
+		276E96081A1B912B000E371D /* PICoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICoreDataManager.m; sourceTree = "<group>"; };
+		276E960B1A1B92B5000E371D /* BDModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BDModel.xcdatamodel; sourceTree = "<group>"; };
+		276E960D1A1B92EA000E371D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		27825928193F9463000F944A /* mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mod.png; sourceTree = "<group>"; };
 		27825929193F9463000F944A /* mod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mod@2x.png"; sourceTree = "<group>"; };
 		2782592C193F9686000F944A /* model2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model2.png; sourceTree = "<group>"; };
@@ -531,6 +538,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276E960E1A1B92EA000E371D /* CoreData.framework in Frameworks */,
 				27AE5FA71977099000A399B4 /* QuartzCore.framework in Frameworks */,
 				27C79C6F192E73CE003681BE /* CoreGraphics.framework in Frameworks */,
 				27C79C71192E73CE003681BE /* UIKit.framework in Frameworks */,
@@ -869,6 +877,7 @@
 		27C79C6B192E73CE003681BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				276E960D1A1B92EA000E371D /* CoreData.framework */,
 				27AE5FA61977099000A399B4 /* QuartzCore.framework */,
 				27C79C6C192E73CE003681BE /* Foundation.framework */,
 				27C79C6E192E73CE003681BE /* CoreGraphics.framework */,
@@ -892,6 +901,7 @@
 				27C79C87192E73CE003681BE /* Images.xcassets */,
 				27C79C73192E73CE003681BE /* Supporting Files */,
 				27B2F5F7195D92D400E17939 /* BrinDemoConstant.h */,
+				276E960A1A1B92B5000E371D /* BDModel.xcdatamodeld */,
 			);
 			path = BrintDemo;
 			sourceTree = "<group>";
@@ -1132,6 +1142,8 @@
 			children = (
 				ED3E278B19D5DF5500B02438 /* HelperMethods.h */,
 				ED3E278C19D5DF5500B02438 /* HelperMethods.m */,
+				276E96071A1B912B000E371D /* PICoreDataManager.h */,
+				276E96081A1B912B000E371D /* PICoreDataManager.m */,
 			);
 			path = "Utility Classes";
 			sourceTree = "<group>";
@@ -1541,6 +1553,7 @@
 				27470E5B1965FE6800EF4D06 /* BrinDemoCollectionViewController.m in Sources */,
 				EDA8C6A1196AFEAF004DD093 /* BDCollectionFlowLayout.m in Sources */,
 				27B2F5F5195D83D500E17939 /* BrinDemoPlatinumViewController.m in Sources */,
+				276E96091A1B912B000E371D /* PICoreDataManager.m in Sources */,
 				EDCBAA70199BE9ED0057266A /* BDImageScrollerPanel.m in Sources */,
 				ED3E279719D6CFE500B02438 /* OffersDetails.m in Sources */,
 				27C4982219E69456002CC2DD /* SignUpDetails.m in Sources */,
@@ -1556,6 +1569,7 @@
 				27873A021940E9DC00973989 /* BrinDemoGoldDetailViewController.m in Sources */,
 				ED3E279A19D6DEA800B02438 /* OffersApi.m in Sources */,
 				ED95F0D019C76172008BEF26 /* GlassScrollerInfoView.m in Sources */,
+				276E960C1A1B92B5000E371D /* BDModel.xcdatamodeld in Sources */,
 				ED3E278719D5DDB200B02438 /* ParserUtility.m in Sources */,
 				EDC37870198FFA05009BAF2C /* UIView+JMNoise.m in Sources */,
 				EDC37859198FF9D7009BAF2C /* UAGradientBackground.m in Sources */,
@@ -1847,6 +1861,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		276E960A1A1B92B5000E371D /* BDModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				276E960B1A1B92B5000E371D /* BDModel.xcdatamodel */,
+			);
+			currentVersion = 276E960B1A1B92B5000E371D /* BDModel.xcdatamodel */;
+			path = BDModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 27C79C61192E73CE003681BE /* Project object */;
 }
